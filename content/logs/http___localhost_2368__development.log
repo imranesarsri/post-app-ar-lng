@@ -1,0 +1,104 @@
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Ghost is running in development...","time":"2024-11-04T11:38:09.609Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Listening on: 127.0.0.1:2368","time":"2024-11-04T11:38:09.610Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Url configured as: http://localhost:2368/","time":"2024-11-04T11:38:09.611Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Ctrl+C to shut down","time":"2024-11-04T11:38:09.611Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Ghost server started in 1.118s","time":"2024-11-04T11:38:09.613Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":40,"version":"5.99.0","msg":"Database state requires initialisation.","time":"2024-11-04T11:38:09.882Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: newsletters","time":"2024-11-04T11:38:10.376Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: posts","time":"2024-11-04T11:38:10.400Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: posts_meta","time":"2024-11-04T11:38:10.430Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: users","time":"2024-11-04T11:38:10.444Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: posts_authors","time":"2024-11-04T11:38:10.463Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: roles","time":"2024-11-04T11:38:10.470Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: roles_users","time":"2024-11-04T11:38:10.481Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: permissions","time":"2024-11-04T11:38:10.488Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: permissions_users","time":"2024-11-04T11:38:10.501Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: permissions_roles","time":"2024-11-04T11:38:10.509Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: settings","time":"2024-11-04T11:38:10.515Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: tags","time":"2024-11-04T11:38:10.525Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: posts_tags","time":"2024-11-04T11:38:10.534Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: invites","time":"2024-11-04T11:38:10.545Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: brute","time":"2024-11-04T11:38:10.559Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: sessions","time":"2024-11-04T11:38:10.564Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: integrations","time":"2024-11-04T11:38:10.574Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: webhooks","time":"2024-11-04T11:38:10.585Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: api_keys","time":"2024-11-04T11:38:10.593Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: mobiledoc_revisions","time":"2024-11-04T11:38:10.605Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: post_revisions","time":"2024-11-04T11:38:10.616Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members","time":"2024-11-04T11:38:10.632Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: products","time":"2024-11-04T11:38:10.658Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: offers","time":"2024-11-04T11:38:10.669Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: benefits","time":"2024-11-04T11:38:10.690Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: products_benefits","time":"2024-11-04T11:38:10.701Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_products","time":"2024-11-04T11:38:10.707Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: posts_products","time":"2024-11-04T11:38:10.714Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_created_events","time":"2024-11-04T11:38:10.720Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_cancel_events","time":"2024-11-04T11:38:10.732Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_payment_events","time":"2024-11-04T11:38:10.738Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_login_events","time":"2024-11-04T11:38:10.744Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_email_change_events","time":"2024-11-04T11:38:10.749Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_status_events","time":"2024-11-04T11:38:10.756Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_product_events","time":"2024-11-04T11:38:10.762Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_paid_subscription_events","time":"2024-11-04T11:38:10.768Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: labels","time":"2024-11-04T11:38:10.779Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_labels","time":"2024-11-04T11:38:10.794Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_stripe_customers","time":"2024-11-04T11:38:10.799Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: subscriptions","time":"2024-11-04T11:38:10.813Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_stripe_customers_subscriptions","time":"2024-11-04T11:38:10.824Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_subscription_created_events","time":"2024-11-04T11:38:10.854Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: offer_redemptions","time":"2024-11-04T11:38:10.870Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_subscribe_events","time":"2024-11-04T11:38:10.876Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: donation_payment_events","time":"2024-11-04T11:38:10.883Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: stripe_products","time":"2024-11-04T11:38:10.889Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: stripe_prices","time":"2024-11-04T11:38:10.899Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: actions","time":"2024-11-04T11:38:10.908Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: emails","time":"2024-11-04T11:38:10.913Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: email_batches","time":"2024-11-04T11:38:10.929Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: email_recipients","time":"2024-11-04T11:38:10.934Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: email_recipient_failures","time":"2024-11-04T11:38:10.967Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: tokens","time":"2024-11-04T11:38:10.974Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: snippets","time":"2024-11-04T11:38:10.986Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: custom_theme_settings","time":"2024-11-04T11:38:10.998Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_newsletters","time":"2024-11-04T11:38:11.005Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: comments","time":"2024-11-04T11:38:11.017Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: comment_likes","time":"2024-11-04T11:38:11.024Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: comment_reports","time":"2024-11-04T11:38:11.031Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: jobs","time":"2024-11-04T11:38:11.037Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: redirects","time":"2024-11-04T11:38:11.049Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_click_events","time":"2024-11-04T11:38:11.055Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: members_feedback","time":"2024-11-04T11:38:11.062Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: suppressions","time":"2024-11-04T11:38:11.068Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: email_spam_complaint_events","time":"2024-11-04T11:38:11.080Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: mentions","time":"2024-11-04T11:38:11.092Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: milestones","time":"2024-11-04T11:38:11.099Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: temp_mail_events","time":"2024-11-04T11:38:11.107Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: collections","time":"2024-11-04T11:38:11.114Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: collections_posts","time":"2024-11-04T11:38:11.127Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: recommendations","time":"2024-11-04T11:38:11.134Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: recommendation_click_events","time":"2024-11-04T11:38:11.141Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Creating table: recommendation_subscribe_events","time":"2024-11-04T11:38:11.148Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Model: Collection","time":"2024-11-04T11:38:11.816Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Model: Product","time":"2024-11-04T11:38:11.822Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Model: Newsletter","time":"2024-11-04T11:38:11.838Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Model: Tag","time":"2024-11-04T11:38:11.844Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Model: Permission","time":"2024-11-04T11:38:11.851Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Model: Post","time":"2024-11-04T11:38:12.060Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Model: Integration","time":"2024-11-04T11:38:12.851Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Relation: Role to Permission","time":"2024-11-04T11:38:12.897Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Relation: Post to Tag","time":"2024-11-04T11:38:13.107Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Database is in a ready state.","time":"2024-11-04T11:38:13.225Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Ghost database ready in 4.732s","time":"2024-11-04T11:38:13.226Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Invalidating assets for regeneration","time":"2024-11-04T11:38:15.329Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Adding offloaded job to the queue","time":"2024-11-04T11:38:16.218Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Scheduling job mentions-email-report at 17 24 * * * *. Next run on: Mon Nov 04 2024 13:24:17 GMT+0100 (GMT+01:00)","time":"2024-11-04T11:38:16.229Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Adding one-off job to queue with current length = 0 called 'members-migrations'","time":"2024-11-04T11:38:16.944Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Stripe not configured - skipping migrations","time":"2024-11-04T11:38:16.955Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Ghost URL Service Ready in 8.655s","time":"2024-11-04T11:38:17.150Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Adding offloaded job to the queue","time":"2024-11-04T11:38:17.406Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Scheduling job clean-expired-comped at 49 32 1 * * *. Next run on: Tue Nov 05 2024 01:32:49 GMT+0100 (GMT+01:00)","time":"2024-11-04T11:38:17.423Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Adding offloaded job to the queue","time":"2024-11-04T11:38:17.453Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Scheduling job clean-tokens at 21 57 11 * * *. Next run on: Tue Nov 05 2024 11:57:21 GMT+0100 (GMT+01:00)","time":"2024-11-04T11:38:17.467Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Ghost booted in 9.006s","time":"2024-11-04T11:38:17.501Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Adding offloaded job to the queue","time":"2024-11-04T11:38:17.518Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Scheduling job update-check at 14 8 2 * * *. Next run on: Tue Nov 05 2024 02:08:14 GMT+0100 (GMT+01:00)","time":"2024-11-04T11:38:17.527Z","v":0}
+{"name":"Log","hostname":"DESKTOP-I52ILQE","pid":14012,"level":30,"version":"5.99.0","msg":"Running milestone emails job on Mon Nov 04 2024 12:38:22 GMT+0100 (GMT+01:00)","time":"2024-11-04T11:38:17.553Z","v":0}
