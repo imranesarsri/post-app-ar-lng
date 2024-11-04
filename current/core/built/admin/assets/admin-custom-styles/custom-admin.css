@@ -1,0 +1,59 @@
+/* start custom dashboard admin */
+
+body {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+.gh-nav-menu-icon {
+    margin-left: 10px;
+
+}
+
+.gh-nav-list svg {
+    margin-left: 17px;
+
+}
+
+.gh-nav-list a,
+.gh-nav-list button.main-menu-item {
+    padding: 7px 39px 7px 32px;
+}
+
+.gh-nav-list .gh-secondary-action {
+    right: 21rem !important;
+}
+
+.gh-nav-list .gh-nav-member-count {
+    right: 24rem !important;
+}
+
+.gh-nav-menu-dropdown .dropdown-menu {
+    right: 0;
+    left: 0 !important;
+}
+
+.gh-nav-view-list a {
+    padding-right: 72px !important;
+    padding-left: 0 !important;
+
+}
+
+.gh-user-avatar {
+    margin: 0 0 0 8px !important;
+}
+
+/* end custom dashboard admin */
+
+
+/* start custom settings admin */
+
+.admin-x-settings .mr-\[7px\] {
+    margin-left: 7px !important;
+    margin-right: 0px !important;
+}
+
+.admin-x-settings .dark\:tablet\:bg-transparent:is(.dark *) {
+    left: 0 !important;
+
+}
