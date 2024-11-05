@@ -17766,7 +17766,7 @@ const Sr = ({ title: e, description: t, children: n, beta: r = !1 }) => /* @__PU
   );
   return e || (e = /* @__PURE__ */ c.jsxs(c.Fragment, {
     children: [
-    /* @__PURE__ */ c.jsx("span", { className: "sr-only", children: "Connect with Stripe" }),
+    /* @__PURE__ */ c.jsx("span", { className: "sr-only", children: "تواصل مع Stripe" }),
     /* @__PURE__ */ c.jsxs("svg", {
       fill: "none", height: "16", width: "132", xmlns: "http://www.w3.org/2000/svg", children: [
       /* @__PURE__ */ c.jsx("g", { clipPath: "url(#clip0_1443_3527)", fill: "#fff", children: /* @__PURE__ */ c.jsx("path", { d: "M2 7.6c0-2.3 1.3-3.9 3-3.9 1.3 0 2.2.8 2.5 2l1.8-.6C8.7 3.2 7.2 2 5 2 2.1 2 0 4.3 0 7.6s2.1 5.6 5 5.6c2.2 0 3.7-1.2 4.3-3.1l-1.8-.6c-.3 1.3-1.2 2-2.5 2-1.8 0-3-1.6-3-3.9zm15.6 1.5C17.6 6.7 16 5 13.8 5 11.6 5 10 6.6 10 9.1c0 2.5 1.6 4.1 3.8 4.1 2.3 0 3.8-1.7 3.8-4.1zm-5.7 0c0-1.6.8-2.6 2-2.6s2 1 2 2.6-.8 2.6-2 2.6-2-1-2-2.6zM19 13h1.8V8.4c0-1.1.8-1.7 1.6-1.7 1 0 1.4.7 1.4 1.7V13h1.8V7.8c0-1.7-1-2.8-2.6-2.8-1 0-1.7.5-2.2 1v-.8H19V13zm8.5 0h1.8V8.4c0-1.1.8-1.7 1.6-1.7 1 0 1.4.7 1.4 1.7V13h1.8V7.8c0-1.7-1-2.8-2.6-2.8-1 0-1.7.5-2.2 1v-.8h-1.8V13zm11.8.2c1.6 0 2.8-.8 3.4-2.2l-1.5-.6c-.2.8-.9 1.3-1.8 1.3-1.2 0-2-.8-2.1-2.2h5.5v-.6c0-2.2-1.2-3.9-3.5-3.9-2.2 0-3.8 1.8-3.8 4.1 0 2.4 1.5 4.1 3.8 4.1zm-.1-6.7c1.1 0 1.7.8 1.7 1.6h-3.6c.2-1.1 1-1.6 1.9-1.6zm6.2 2.6c0-1.6.8-2.5 2.1-2.5 1 0 1.5.6 1.8 1.5l1.5-.8c-.4-1.3-1.6-2.2-3.3-2.2-2.2 0-3.9 1.7-3.9 4.1 0 2.4 1.6 4.1 3.9 4.1 1.7 0 2.9-1 3.3-2.3l-1.5-.8c-.2.9-.8 1.5-1.8 1.5-1.3-.1-2.1-1-2.1-2.6zM52 11c0 1.6.8 2.1 2.3 2.1.5 0 .9 0 1.2-.1v-1.5h-.7c-.6 0-1.1-.1-1.1-.8V6.6h1.7V5.1h-1.7V2.8h-1.8v2.3h-1.1v1.5h1.1L52 11zm11.7-5.9l-1.4 5.2-1.4-5.2h-1.8l2.4 7.9h1.6l1.4-5.2 1.4 5.2h1.6l2.4-7.9h-1.8l-1.5 5.2-1.4-5.2h-1.5zm7.1-1h1.8V2.3h-1.9l.1 1.8zm1.8 1h-1.8V13h1.8V5.1zm2 5.9c0 1.6.8 2.1 2.3 2.1.5 0 .9 0 1.2-.1v-1.5h-.7c-.6 0-1.1-.1-1.1-.8V6.6H78V5.1h-1.7V2.8h-1.7v2.3h-1.1v1.5h1.1V11zm4.9 2h1.8V8.4c0-1.1.8-1.7 1.6-1.7 1 0 1.4.7 1.4 1.7V13h1.8V7.8c0-1.7-1-2.8-2.6-2.8-1 0-1.7.5-2.2 1V2.3h-1.8V13zM117.1 15.4v-3c.4.3.9.7 1.9.7 1.9 0 3.6-1.5 3.6-4.9 0-3.1-1.7-4.8-3.6-4.8-1 0-1.7.5-2.1.9l-.1-.6h-2.3V16l2.6-.6zm1.2-9.7c1 0 1.6 1.1 1.6 2.5 0 1.5-.6 2.5-1.6 2.5-.6 0-1-.2-1.3-.5v-4c.4-.2.7-.5 1.3-.5zM127.701 13.2c1.3 0 2.2-.3 3-.7v-2.2c-.7.4-1.5.6-2.6.6s-1.9-.4-2.1-1.7h5.2v-1c0-2.8-1.3-4.9-3.8-4.9s-4.1 2.2-4.1 4.9c0 3.3 1.8 5 4.4 5zm-.3-7.7c.6 0 1.3.5 1.3 1.7h-2.8c.1-1.1.8-1.7 1.5-1.7zM107.6 6.5c.6-.9 1.7-.7 2-.6V3.4c-.4-.1-1.6-.4-2.1.8l-.2-.8H105v9.4h2.6V6.5zM95.602 10.2c0 .5-.4.6-1 .6-.9 0-2-.4-2.9-.9v2.6c1 .4 2 .6 2.9.6 2.2 0 3.7-1.1 3.7-3 0-3.2-4-2.6-4-3.8 0-.4.3-.6.9-.6.8 0 1.8.2 2.6.7V3.8c-.9-.4-1.7-.5-2.6-.5-2.1 0-3.6 1.1-3.6 3 0 3.1 4 2.6 4 3.9zM102.001 13.2c.8 0 1.5-.2 1.9-.4v-2.2c-.3.1-2 .6-2-1V5.8h2V3.5h-2V1.2l-2.6.6v8.6c0 1.6 1.1 2.8 2.7 2.8zM110.5.6v2.1l2.7-.5V0l-2.7.6zM113.1 3.5h-2.6v9.3h2.6V3.5z" }) }),
@@ -21342,12 +21342,12 @@ const Pi = ({ label: e, flag: t }) => {
   const [t, n] = L("import"), r = [
     {
       id: "import",
-      title: "Import",
+      title: "استيراد",
       contents: /* @__PURE__ */ c.jsx(CT, {})
     },
     {
       id: "export",
-      title: "Export",
+      title: "تصدير",
       contents: /* @__PURE__ */ c.jsx(MT, {})
     }
   ].filter(Boolean);
@@ -26154,7 +26154,7 @@ const ga = "OffersResponseType", J2 = vt({
 }, al = [
   {
     value: "all",
-    label: "Anyone can sign up",
+    label: "يمكن لأي شخص التسجيل",
     hint: "All visitors will be able to subscribe and sign in"
   },
   {
@@ -26164,13 +26164,13 @@ const ga = "OffersResponseType", J2 = vt({
   },
   {
     value: "none",
-    label: "Nobody",
+    label: "لا أحد",
     hint: "Disable all member features, including newsletters"
   }
 ], ll = [
   {
-    value: "public",
-    label: "Public",
+    value: "عام",
+    label: "عام",
     hint: "All site visitors to your site, no login required"
   },
   {
@@ -26201,7 +26201,7 @@ const ga = "OffersResponseType", J2 = vt({
   },
   {
     value: "off",
-    label: "Nobody",
+    label: "لا أحد",
     hint: "Disable commenting completely"
   }
 ], vz = ({ keywords: e }) => {
@@ -26235,17 +26235,17 @@ const ga = "OffersResponseType", J2 = vt({
     {
       values: [
         {
-          heading: "Subscription access",
+          heading: "الوصول إلى الاشتراك",
           key: "subscription-access",
           value: p
         },
         {
-          heading: "Default post access",
+          heading: "الوصول الافتراضي للنشر",
           key: "default-post-access",
           value: m
         },
         {
-          heading: "Commenting",
+          heading: "التعليق",
           key: "commenting",
           value: A
         }
@@ -26260,7 +26260,7 @@ const ga = "OffersResponseType", J2 = vt({
         options: al,
         selectedOption: al.find((x) => x.value === l),
         testId: "subscription-access-select",
-        title: "Subscription access",
+        title: "الوصول إلى الاشتراك",
         onSelect: (x) => {
           s("members_signup_access", (x == null ? void 0 : x.value) || null);
         }
@@ -26273,7 +26273,7 @@ const ga = "OffersResponseType", J2 = vt({
         options: ll,
         selectedOption: ll.find((x) => x.value === u),
         testId: "default-post-access-select",
-        title: "Default post access",
+        title: "الوصول الافتراضي للنشر",
         onSelect: (x) => {
           s("default_content_visibility", (x == null ? void 0 : x.value) || null);
         }
@@ -26298,7 +26298,7 @@ const ga = "OffersResponseType", J2 = vt({
           options: cl,
           selectedOption: cl.find((x) => x.value === f),
           testId: "commenting-select",
-          title: "Commenting",
+          title: "التعليق",
           onSelect: (x) => {
             s("comments_enabled", (x == null ? void 0 : x.value) || null);
           }
@@ -26309,13 +26309,13 @@ const ga = "OffersResponseType", J2 = vt({
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      description: "Set up default access options for subscription and posts",
+      description: "إعداد خيارات الوصول الافتراضية للاشتراك والمشاركات",
       isEditing: n,
       keywords: e,
       navid: "members",
       saveState: r,
       testId: "access",
-      title: "Access",
+      title: "وصول",
       onCancel: i,
       onEditingChange: a,
       onSave: o,
@@ -26363,7 +26363,7 @@ const ga = "OffersResponseType", J2 = vt({
         checked: l,
         direction: "rtl",
         gap: "gap-0",
-        label: "Newsletter opens",
+        label: " افتتاح النشرة الإخبارية",
         labelClasses: "py-4 w-full",
         onChange: (v) => {
           p("email_track_opens", v);
@@ -26377,7 +26377,7 @@ const ga = "OffersResponseType", J2 = vt({
         checked: u,
         direction: "rtl",
         gap: "gap-0",
-        label: "Newsletter clicks",
+        label: "نقرات النشرة الإخبارية",
         labelClasses: "py-4 w-full",
         onChange: (v) => {
           p("email_track_clicks", v);
@@ -26391,7 +26391,7 @@ const ga = "OffersResponseType", J2 = vt({
         checked: d,
         direction: "rtl",
         gap: "gap-0",
-        label: "Member sources",
+        label: "مصادر الأعضاء",
         labelClasses: "py-4 w-full",
         onChange: (v) => {
           p("members_track_sources", v);
@@ -26405,7 +26405,7 @@ const ga = "OffersResponseType", J2 = vt({
         checked: f,
         direction: "rtl",
         gap: "gap-0",
-        label: "Outbound link tagging",
+        label: "وسم الروابط الخارجية",
         labelClasses: "py-4 w-full",
         onChange: (v) => {
           p("outbound_link_tagging", v);
@@ -26417,13 +26417,13 @@ const ga = "OffersResponseType", J2 = vt({
   return /* @__PURE__ */ c.jsxs(
     ce,
     {
-      description: "Decide what data you collect from your members",
+      description: "حدد البيانات التي تقوم بجمعها من أعضائك",
       isEditing: n,
       keywords: e,
       navid: "analytics",
       saveState: r,
       testId: "analytics",
-      title: "Analytics",
+      title: "التحليلات",
       hideEditButton: !0,
       onCancel: i,
       onEditingChange: a,
@@ -26432,8 +26432,8 @@ const ga = "OffersResponseType", J2 = vt({
         h,
         /* @__PURE__ */ c.jsxs("div", {
           className: "items-center-mt-1 flex justify-between", children: [
-          /* @__PURE__ */ c.jsx(J, { color: "green", label: "Export", link: !0, linkWithPadding: !0, onClick: A }),
-          /* @__PURE__ */ c.jsx("a", { className: "text-sm text-green", href: "https://ghost.org/help/post-analytics/", rel: "noopener noreferrer", target: "_blank", children: "Learn about analytics" })
+          /* @__PURE__ */ c.jsx(J, { color: "green", label: "تصدير", link: !0, linkWithPadding: !0, onClick: A }),
+          /* @__PURE__ */ c.jsx("a", { className: "text-sm text-green", href: "https://ghost.org/help/post-analytics/", rel: "noopener noreferrer", target: "_blank", children: "تعرف على التحليلات" })
           ]
         })
       ]
@@ -26446,12 +26446,12 @@ const ga = "OffersResponseType", J2 = vt({
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", disabled: r === "none", label: "Customize", size: "sm", onClick: o }),
-      description: "Customize members modal signup flow",
+      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", disabled: r === "none", label: "تخصيص", size: "sm", onClick: o }),
+      description: "تخصيص تدفق تسجيل الأعضاء",
       keywords: e,
       navid: "portal",
       testId: "portal",
-      title: "Portal settings"
+      title: "إعدادات البوابة"
     }
   );
 }, xz = ge(Iz, "Portal settings"), eh = ({ size: e = "md", trialDays: t }) => {
@@ -26627,11 +26627,11 @@ const ga = "OffersResponseType", J2 = vt({
     ce,
     {
       customButtons: Ir(r, o) ? /* @__PURE__ */ c.jsx(j1, { className: "hidden tablet:!visible tablet:!block", onClick: p }) : /* @__PURE__ */ c.jsx(t1, { className: "hidden tablet:!visible tablet:!block", onClick: p }),
-      description: "Set prices and paid member sign up settings",
+      description: "تعيين الأسعار وإعدادات التسجيل للأعضاء المدفوعين",
       keywords: e,
       navid: "tiers",
       testId: "tiers",
-      title: "Tiers",
+      title: "الطبقات",
       children: [
         /* @__PURE__ */ c.jsx("div", { className: "w-full tablet:hidden", children: Ir(r, o) ? /* @__PURE__ */ c.jsx(j1, { className: "w-full", onClick: p }) : /* @__PURE__ */ c.jsx(t1, { onClick: p }) }),
         h,
@@ -26652,7 +26652,7 @@ const ga = "OffersResponseType", J2 = vt({
   tiers: ["membership", "tiers", "payment", "paid", "stripe"],
   analytics: ["membership", "analytics", "tracking", "privacy", "membership"]
 }, Sz = () => /* @__PURE__ */ c.jsxs(qr, {
-  keywords: Object.values(St).flat(), title: "Membership", children: [
+  keywords: Object.values(St).flat(), title: "عضوية", children: [
   /* @__PURE__ */ c.jsx(xz, { keywords: St.portal }),
   /* @__PURE__ */ c.jsx(Az, { keywords: St.access }),
   /* @__PURE__ */ c.jsx(Dz, { keywords: St.tiers }),
@@ -26665,12 +26665,12 @@ const ga = "OffersResponseType", J2 = vt({
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "Customize", size: "sm", onClick: n }),
-      description: "Highlight important updates or offers",
+      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "تخصيص", size: "sm", onClick: n }),
+      description: "تسليط الضوء على التحديثات أو العروض المهمة",
       keywords: e,
       navid: "announcement-bar",
       testId: "announcement-bar",
-      title: "Announcement bar"
+      title: "شريط الإعلان"
     }
   );
 }, kz = ge(Lz, "Announcement bar"), zO = null, Md = "CustomThemeSettingsResponseType", Tz = Md, OO = vt({
@@ -26776,7 +26776,7 @@ const zz = ({ keywords: e }) => {
     {
       values: [
         {
-          heading: "Active theme",
+          heading: "القالب النشط",
           key: "active-theme",
           value: r ? `${r.name} (v${((s = r.package) == null ? void 0 : s.version) || "1.0"})` : "Loading..."
         }
@@ -26786,12 +26786,12 @@ const zz = ({ keywords: e }) => {
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "Change theme", size: "sm", onClick: o }),
-      description: "Browse and install official themes or upload one",
+      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "تغيير القالب", size: "sm", onClick: o }),
+      description: "تصفح وتثبيت السمات الرسمية أو تحميل واحدة",
       keywords: e,
       navid: "theme",
       testId: "theme",
-      title: "Theme",
+      title: "القالب",
       children: i
     }
   );
@@ -26802,12 +26802,12 @@ const zz = ({ keywords: e }) => {
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "Customize", size: "sm", onClick: n }),
-      description: "Customize the style and layout of your site",
+      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "تخصيص", size: "sm", onClick: n }),
+      description: "تخصيص نمط وتخطيط موقعك",
       keywords: e,
       navid: "design",
       testId: "design",
-      title: "Design & branding",
+      title: "التصميم والعلامة التجارية",
       children: /* @__PURE__ */ c.jsx("img", { src: Rz })
     }
   );
@@ -26818,22 +26818,22 @@ const zz = ({ keywords: e }) => {
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "Customize", size: "sm", onClick: n }),
-      description: "Set up primary and secondary menus",
+      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "تخصيص", size: "sm", onClick: n }),
+      description: "إعداد الروابط الأساسية والثانوية",
       keywords: e,
       navid: "navigation",
       testId: "navigation",
-      title: "Navigation"
+      title: "التنقل (بين الروابط في الموقع)"
     }
   );
 }, Zz = ge(Uz, "Navigation"), Lt = {
-  design: ["site", "logo", "cover", "colors", "fonts", "background", "themes", "appearance", "style", "design & branding", "design and branding"],
-  theme: ["theme", "template", "upload"],
-  navigation: ["site", "navigation", "menus", "primary", "secondary", "links"],
-  announcementBar: ["site", "announcement bar", "important", "banner"]
+  design: ["الموقع", "الشعار", "الغلاف", "الألوان", "الخطوط", "الخلفية", "السمات", "المظهر", "النمط", "التصميم والعلامة التجارية", "التصميم والعلامة التجارية"],
+  theme: ["السمة", "القالب", "تحميل"],
+  navigation: ["الموقع", "التنقل", "القوائم", "الأساسي", "الثانوي", "الروابط"],
+  announcementBar: ["الموقع", "شريط الإعلان", "مهم", "راية"]
 }, Wz = () => /* @__PURE__ */ c.jsx(c.Fragment, {
   children: /* @__PURE__ */ c.jsxs(qr, {
-    keywords: Object.values(Lt).flat(), title: "Site", children: [
+    keywords: Object.values(Lt).flat(), title: "موقع", children: [
   /* @__PURE__ */ c.jsx(Bz, { keywords: Lt.design }),
   /* @__PURE__ */ c.jsx(Oz, { keywords: Lt.theme }),
   /* @__PURE__ */ c.jsx(Zz, { keywords: Lt.navigation }),
@@ -26956,7 +26956,7 @@ const zz = ({ keywords: e }) => {
       /* @__PURE__ */ c.jsxs(cr, {
           isVisible: n(Object.values(Lt).flat()), title: "الموقع", children: [
         /* @__PURE__ */ c.jsx(ue, { icon: "palette", keywords: Lt.design, navid: "design", title: "التصميم والعلامة التجارية", onClick: p }),
-        /* @__PURE__ */ c.jsx(ue, { icon: "layout-2-col", keywords: Lt.theme, navid: "theme", title: "السمة", onClick: p }),
+        /* @__PURE__ */ c.jsx(ue, { icon: "layout-2-col", keywords: Lt.theme, navid: "theme", title: "القالب", onClick: p }),
         /* @__PURE__ */ c.jsx(ue, { icon: "navigation", keywords: Lt.navigation, navid: "navigation", title: "التنقل", onClick: p }),
         /* @__PURE__ */ c.jsx(ue, { icon: "megaphone", keywords: Lt.announcementBar, navid: "announcement-bar", title: "شريط الإعلان", onClick: p })
           ]

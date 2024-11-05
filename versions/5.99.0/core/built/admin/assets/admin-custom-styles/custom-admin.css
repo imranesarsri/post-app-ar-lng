@@ -55,9 +55,19 @@ body {
 
 .admin-x-settings .dark\:tablet\:bg-transparent:is(.dark *) {
     left: 0 !important;
+    right: auto !important;
 
 }
 
 .admin-x-settings .data-\[state\=checked\]\:translate-x-\[14px\][data-state=checked] {
     --tw-translate-x: -14px !important;
+}
+
+.admin-x-settings .right-\[400px\] {
+    right: 0 !important;
+}
+
+[data-testid="theme-preview"] {
+    display: flex;
+    justify-content: end;
 }
