@@ -71,3 +71,18 @@ body {
     display: flex;
     justify-content: end;
 }
+
+
+/* posts pages */
+.ember-power-select-trigger:not(.ember-power-select-multiple-trigger):not(.gh-preview-newsletter-trigger) svg {
+    margin-right: 2px !important;
+    margin-left: -4px !important;
+}
+
+.gh-editor-feature-image-unsplash {
+    margin-right: 24px !important;
+}
+
+.gh-editor-feature-image-add-button svg {
+    margin-left: 6px;
+}
