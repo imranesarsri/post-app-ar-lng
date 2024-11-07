@@ -73,7 +73,8 @@ body {
 }
 
 
-/* posts pages */
+/* start work in posts pages */
+
 .ember-power-select-trigger:not(.ember-power-select-multiple-trigger):not(.gh-preview-newsletter-trigger) svg {
     margin-right: 2px !important;
     margin-left: -4px !important;
@@ -85,4 +86,78 @@ body {
 
 .gh-editor-feature-image-add-button svg {
     margin-left: 6px;
+}
+
+.modal-header h1 {
+    margin: -5px 0 0 0 !important;
+}
+
+/* model New view  */
+
+.modal-content .close {
+    right: auto !important;
+    left: 2rem !important;
+}
+
+.modal-footer .gh-btn:not(:first-child) {
+    margin-right: 12px !important;
+}
+
+/* Members */
+
+@media (min-width: 1440px) and (max-width: 1560px) {
+    .gh-members-help-content .text {
+        margin: 0 2rem 0 0 !important;
+    }
+}
+
+.gh-member-actions-menu {
+    left: 0 !important;
+    right: auto !important;
+}
+
+#ember31 {
+    margin-right: 10px;
+}
+
+.gh-member-initials {
+    margin-left: 1.2rem;
+    margin-right: 0 !important;
+}
+
+.gh-list-scrolling th:not(.wrap) {
+    text-align: start;
+}
+
+div .w-80 {
+    margin-right: 10px;
+}
+
+
+/* work in posts create */
+
+
+.koenig-lexical .left-\[-32px\] {
+    right: -29px !important;
+    left: auto;
+}
+
+.koenig-lexical .top-\[-2px\] {
+    top: -1px !important;
+}
+
+@media (min-width: 500px) {
+    .koenig-lexical .xs\:left-\[-66px\] {
+        right: -66px !important;
+        left: auto;
+    }
+}
+
+.koenig-lexical .left-\[-16px\] {
+    right: -16px !important;
+}
+
+.ember-power-select-status-icon {
+    left: 10px !important;
+    right: auto !important;
 }

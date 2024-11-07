@@ -26144,7 +26144,7 @@ const ga = "OffersResponseType", J2 = vt({
 }, hz = () => {
   const { config: e, settings: t } = Ze(), n = Ir(t || [], e || {});
   return /* @__PURE__ */ c.jsxs(qr, {
-    keywords: Object.values(Dt).flat(), title: "Growth", children: [
+    keywords: Object.values(Dt).flat(), title: "نمو", children: [
     /* @__PURE__ */ c.jsx(fz, { keywords: Dt.recommendations }),
     /* @__PURE__ */ c.jsx(UP, { keywords: Dt.embedSignupForm }),
       n && /* @__PURE__ */ c.jsx(qP, { keywords: Dt.offers }),

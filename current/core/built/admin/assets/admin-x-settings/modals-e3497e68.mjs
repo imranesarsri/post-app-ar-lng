@@ -18252,7 +18252,7 @@ const MI = ({
               {
                 checked: t.show_post_title_section,
                 direction: "rtl",
-                label: "Post title",
+                label: "Post titleddd",
                 labelStyle: "heading",
                 onChange: (D) => r({ show_post_title_section: D.target.checked })
               }
