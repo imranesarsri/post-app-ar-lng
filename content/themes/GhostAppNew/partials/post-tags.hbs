@@ -1,0 +1,14 @@
+{{#foreach tags}}
+
+    {{#if @first}}
+        <div class="gh-tags-wrapper">
+        {{>icons/tag}}
+    {{/if}}
+        
+     <a href="{{url}}" class="gh-tag-link" {{#if accent_color}}style="color:{{accent_color}}"{{/if}} aria-label="{{name}}">{{name}}</a>
+
+    {{#if @last}}
+        </div>
+    {{/if}}
+
+{{/foreach}}

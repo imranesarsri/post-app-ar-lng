@@ -1,0 +1,32 @@
+{{#if @site.members_enabled}}
+    {{#unless @member}}
+        <div class="gh-container">
+            <form class="gh-cta-form gh-post-page-cta" data-members-form="subscribe" data-members-autoredirect="false" novalidate>
+                <div class="gh-post-page-cta__text-box">
+                    <h2 class="gh-post-page-cta__title">{{@custom.cta_text_for_subscription_section}}</h2>
+                    <p class="gh-post-page-cta__text">{{@custom.cta_subtext_for_subscription_section}}</p>
+                </div>
+                <div class="gh-post-page-cta__subscribe">
+                    <input class="gh-post-page-cta__input" data-members-email type="email" name="email-input" id="email-input" placeholder="E-mail" aria-label="{{t "Your email address"}}"required>
+                    <button aria-label="{{t "Subscribe"}}" class="gh-post-page-cta__btn gh-accent-button" type="submit">
+                        <span>{{t "Subscribe"}}</span>
+                        {{> "icons/loader"}}
+                    </button>
+                    <p class="gh-post-page-cta__error" data-members-error></p>
+                </div>
+                <div class="gh-post-page-cta__success">
+                    <p class="gh-post-page-cta__success-title">
+                        <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M43.2008 24C43.2008 34.6039 34.6046 43.2 24.0008 43.2C13.3969 43.2 4.80078 34.6039 4.80078 24C4.80078 13.3962 13.3969 4.80005 24.0008 4.80005C27.0132 4.80005 29.8635 5.49378 32.4008 6.73021M39.6008 12L22.8008 28.8L18.0008 24"
+                                stroke="#17996A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>{{t "Success! Now Check Your Email"}}</span>
+                    </p>
+                    <p class="gh-post-page-cta__success-text">{{t "To complete Subscribe, click the confirmation link in your inbox. If it doesn’t arrive within 3 minutes, check your spam folder."}}</p>
+                    <a href="{{@site.url}}" class="gh-post-page-cta__success-button">{{t "Ok, Thanks"}}</a>
+                </div>
+            </form>
+        </div>
+    {{/unless}}
+{{/if}}

@@ -1,0 +1,46 @@
+    <div class="gh-mobile-menu">
+            <button class="gh-burger-btn gh-burger-btn--close" aria-label="{{t "close mobile menu button"}}" id="close-mobile-menu">
+                {{> "icons/burger-close"}}
+            </button>
+        <div class="gh-mobile-menu__top{{#if @site.members_enabled}}{{#unless @member}} gh-mobile-menu__top--subscribe{{/unless}}{{/if}}">
+            {{navigation fontSize="false" position="mobileMenu"}}
+            {{#if @site.members_enabled}}
+                {{#if @member}}
+                    <a class="gh-nav-menu-item--hide gh-mobile-account-btn gh-accent-button" href="{{@site.url}}/account" aria-label="{{t "My Account"}}"><span>{{t "My Account"}}</span></a>
+                {{else}}
+                    <a class="gh-nav-menu-item--hide gh-mobile-account-btn gh-accent-button" href="{{@site.url}}/signin" aria-label="{{t "Sign in"}}"><span>{{t "Sign in"}}</span></a>
+                {{/if}}
+            {{/if}}
+            {{navigation type="secondary"}}
+        </div>
+        <div class="gh-mobile-bottom">
+            {{#if @site.members_enabled}}
+                {{#unless @member}}
+                    <form class="gh-form" data-members-form="subscribe" data-members-autoredirect="false" novalidate>
+                        <h2 class="gh-form__title">{{t "Subscribe to Our Newsletter"}}</h2>
+                        <div class="gh-form__input-wrapper">
+                            <input class="gh-form-input" data-members-email type="email" name="email-input-mobile-menu" id="email-input-mobile-menu" placeholder="E-mail" aria-label="{{t "Your Email Address"}}" required>
+                            <button aria-label="{{t "Subscribe"}}" class="gh-main-button gh-form__submit-button gh-accent-button" type="submit">
+                                <span>{{t "Subscribe"}}</span>
+                                {{> "icons/loader"}}
+                            </button>
+                        </div>
+                        <p class="gh-form__error" data-members-error></p>
+                        <div class="gh-form__success">
+                            <p class="gh-form__success-title">
+                                <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M43.2008 24C43.2008 34.6039 34.6046 43.2 24.0008 43.2C13.3969 43.2 4.80078 34.6039 4.80078 24C4.80078 13.3962 13.3969 4.80005 24.0008 4.80005C27.0132 4.80005 29.8635 5.49378 32.4008 6.73021M39.6008 12L22.8008 28.8L18.0008 24"
+                                        stroke="#17996A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg><span>{{t "Success! Now Check Your Email"}}</span>
+                            </p>
+                            <p class="gh-form__success-text">{{t "To complete Subscribe, click the confirmation link in your inbox. If it doesn't arrive within 3 minutes, check your spam folder."}}</p>
+                            <a href="{{@site.url}}" class="gh-form__success-button">{{t "Ok, Thanks"}}</a>
+                        </div>
+                    </form>
+                {{/unless}}
+            {{/if}}
+            {{>socials}}
+        </div>
+    </div>
+<div class="gh-mobile-overlay gh-mobile-overlay--close"></div>

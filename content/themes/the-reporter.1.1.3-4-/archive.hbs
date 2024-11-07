@@ -1,0 +1,42 @@
+{{!< default}}
+
+{{#page}}
+    <main class="gh-archive-page gh-container{{^match @page.show_title_and_feature_image}} without-title-image{{/match}}">
+        {{#match @page.show_title_and_feature_image}}
+            <div class="gh-archive-page-header{{#if feature_image}} with-image{{/if}}">
+                <div class="gh-archive-page-header-main">
+                    <h1 class="gh-archive-page-title">{{title}}</h1>
+                    {{#if custom_excerpt}}
+                    <p class="gh-archive-page-excerpt">{{custom_excerpt}}</p>
+                    {{/if}}
+                </div>
+                {{#if feature_image}}
+                <div class="gh-archive-page-image-wrapper">
+                    <picture>
+                        <source srcset="{{img_url feature_image size="1600" format="webp" }} 1600w, {{img_url feature_image
+                            size="1000" format="webp" }} 1000w, {{img_url feature_image size="800" format="webp" }} 800w, {{img_url
+                            feature_image size="600" format="webp" }} 600w, {{img_url feature_image size="500" format="webp" }} 500w"
+                            sizes="(max-width: 900px) 96vw, (max-width: 1480px) 46vw, (min-width: 1481px) 672px" type="image/webp">
+                        <img class="gh-archive-page-feature-image" srcset="{{img_url feature_image size="1600" }} 1600w, {{img_url feature_image
+                            size="1000" }} 1000w, {{img_url feature_image size="800" }} 800w, {{img_url feature_image size="600" }}
+                            600w, {{img_url feature_image size="500" }} 500w" sizes="(max-width: 900px) 96vw, (max-width: 1480px) 46vw, (min-width: 1481px) 672px"
+                            src="{{img_url feature_image size="1600"}}"
+                            alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}} {{t "post image"}}{{/if}}">
+                    </picture>
+                </div>
+                {{/if}}
+            </div>
+        {{/match}}
+{{/page}}
+        
+    <div class="gh-archive-page-posts-feed-wrapper gh-archive-feed-wrapper">
+        <div class="gh-archive-page-posts-feed gh-posts-feed">
+            {{#foreach posts}}
+
+            {{>featured-post type="9-1" classNames="gh-featured-post--column gh-posts-feed-post"}}
+                        
+            {{/foreach}}
+        </div>
+        {{>load-more-button}}
+    </div>
+</main>

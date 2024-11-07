@@ -1,0 +1,500 @@
+/* Membership Page Styles */
+
+/* Main Quieries */
+/* ------------------------------------------------------------------------------------------- */
+
+.gh-membership-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 104px;
+}
+
+.gh-membership-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gh-membership-page-header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 32px;
+    margin-top: 24px;
+}
+
+.gh-membership-page-title {
+    font-size: 42px;
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    letter-spacing: var(--letter-spacing-site-title-1);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.gh-membership-page-desc {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 60%;
+}
+
+/* Toggle Styles */
+/* ------------------------------------------------------------------------------------------- */
+
+.gh-membership-toggle-btn {
+    position: relative;
+    background-color: var(--membership-toggle-bg-color);
+    border-radius: var(--border-radius-buttons);
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    padding: 25px 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: max-content;
+    transition: background-color 0.4s ease;
+}
+
+.gh-membership-toggle-btn:hover {
+    background-color: var(--membership-toggle-bg-color--hover);
+}
+
+.gh-membership-toggle-btn::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 118px;
+    height: 48px;
+    border-radius: var(--border-radius-buttons);
+    transition: left 0.3s ease;
+}
+
+.gh-membership-page.yearly .gh-membership-toggle-btn::after {
+    left: 136px;
+}
+
+.gh-membership-toggle-value {
+    display: block;
+    width: 70px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    z-index: 2;
+    transition: color 0.4s ease;
+    border-radius: var(--border-radius-buttons);
+    font-size: 14px;
+    font-family: var(--font-family-button);
+    font-weight: var(--font-weight-button);
+    text-transform: var(--text-transform-button);
+}
+
+.gh-membership-toggle-value--montly {
+    color: #FFF;
+}
+
+.gh-membership-toggle-value--yearly {
+    color: var(--color-main);
+}
+
+.gh-membership-page.yearly .gh-membership-toggle-value--montly {
+    color: var(--color-main);
+}
+
+.gh-membership-page.yearly .gh-membership-toggle-value--yearly {
+    color: #FFF;
+}
+
+/* Tiers Cards Styles */
+/* ------------------------------------------------------------------------------------------- */
+
+.gh-tiers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.128%;
+    row-gap: 56px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.gh-tier-card {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    background-color: var(--membership-card-bg-color);
+    width: 31.915%;
+    padding: 40px;
+    border-radius: var(--border-radius-containers);
+    position: relative;
+}
+
+.gh-tier-card__name {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    letter-spacing: var(--letter-spacing-site-title-1);
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: var(--ghost-accent-color);
+}
+
+.gh-tier-card__trial-days {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 12px;
+    background-color: var(--color-bg-main);
+    border-radius: 2px;
+}
+
+.gh-tier-card__trial-days-span {
+    color: var(--color-main);
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.gh-tier-card__price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.gh-tier-card__price-value {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 112%;
+    animation: fadeInAnimation 0.4s ease-in-out;
+}
+
+.gh-tier-card__price-per {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    animation: fadeInAnimation 0.4s ease-in-out;
+}
+
+.gh-tier-card__price-value.yearly {
+    display: none;
+}
+
+.gh-tier-card__price-per.yearly {
+    display: none;
+}
+
+.gh-membership-page.yearly .gh-tier-card__price-value.monthly {
+    display: none;
+}
+
+.gh-membership-page.yearly .gh-tier-card__price-per.monthly {
+    display: none;
+}
+
+.gh-membership-page.yearly .gh-tier-card__price-value.yearly {
+    display: block;
+}
+
+.gh-membership-page.yearly .gh-tier-card__price-per.yearly {
+    display: block;
+}
+
+.gh-tier-card__desc {
+    opacity: 0.7;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 24px;
+}
+
+.gh-tier-card-benefits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--tier-card-hr);
+    gap: 16px;
+}
+
+.gh-tier-card-benefit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.gh-tier-card-benefit svg path {
+    stroke: var(--color-main);
+}
+
+.gh-tier-card-btn-wrapper {
+    display: flex;
+    margin-top: 40px;
+}
+
+.gh-tier-card-signup {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    color: #FFF;
+    background-color: var(--membership-signup-bg-color);
+    border-radius: var(--border-radius-buttons);
+    font-family: var(--font-family-button);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-button);
+    line-height: var(--line-height-button-2);
+    text-transform: var(--text-transform-button);
+    transition: background-color var(--transition-time) ease;
+}
+
+.gh-tier-card-signup:hover {
+    background-color: var(--membership-signup-bg-color--hover);
+}
+
+.gh-tier-card-signup:hover span {
+    background-position: 100% 50%;
+}
+
+.gh-tier-card-signup.yearly {
+    display: none;
+}
+
+.gh-membership-page.yearly .gh-tier-card-signup.monthly {
+    display: none;
+}
+
+.gh-membership-page.yearly .gh-tier-card-signup.yearly {
+    display: flex;
+}
+
+.gh-membership-page__sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    color: #A5A5A5;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-membership-page__sign-in-link {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: var(--color-main);
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.gh-membership-page__sign-in-link svg {
+    transition: transform 0.3s ease;
+}
+
+.gh-membership-page__sign-in-link svg path {
+    stroke: var(--color-main);
+    transition: stroke 0.3s ease;
+}
+
+.gh-membership-page__sign-in-link:hover {
+    color: var(--ghost-accent-color);
+}
+
+.gh-membership-page__sign-in-link:hover svg {
+    transform: rotate(-45deg);
+}
+
+.gh-membership-page__sign-in-link:hover svg path {
+    stroke: var(--ghost-accent-color);
+}
+
+/* Content Styles */
+/* ------------------------------------------------------------------------------------------- */
+
+.gh-membership-page-content {
+    margin-top: 104px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Media Quieries */
+/* ------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1400px) {
+    .gh-membership-page-desc {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1350px) {
+    .gh-tier-card__price-value {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .gh-tier-card__price-value {
+        font-size: 42px;
+    }
+
+    .gh-tier-card__price-per {
+        font-size: 16px;
+    }
+
+    .gh-tier-card__desc {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .gh-tiers-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .gh-tier-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gh-tier-card__desc {
+        font-size: 18px;
+        max-width: 80%;
+    }
+
+    .gh-tier-card__price-value {
+        font-size: 48px;
+    }
+
+    .gh-tier-card__price-per {
+        font-size: 18px;
+    }
+
+    .gh-tier-card-signup {
+        padding: 20px 24px;
+        width: max-content;
+    }
+}
+
+@media (max-width: 900px) {
+    .gh-membership-page {
+        padding-bottom: 64px;
+    }
+
+    .gh-membership-page-title {
+        font-size: 36px;
+    }
+
+    .gh-membership-page-content {
+        margin-top: 64px;
+    }
+
+    .gh-membership-page-desc {
+        max-width: 75%;
+    }
+
+    .gh-membership-page__sign-in-link:hover {
+        color: var(--color-main);
+    }
+    
+    .gh-membership-page__sign-in-link:hover svg {
+        transform: none;
+    }
+    
+    .gh-membership-page__sign-in-link:hover svg path {
+        stroke: var(--color-main);
+    }
+
+    .gh-tier-card-signup:hover {
+        background-color: var(--membership-signup-bg-color);
+    }
+
+    .gh-membership-toggle-btn:hover {
+        background-color: var(--membership-toggle-bg-color);
+    }
+}
+
+@media (max-width: 550px) {
+    .gh-membership-page-title {
+        font-size: 32px;
+    }
+
+    .gh-membership-page-header {
+        padding-bottom: 28px;
+    }
+
+    .gh-membership-toggle-btn {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .gh-membership-page-desc {
+        margin-top: 14px;
+        max-width: 100%;
+    }
+
+    .gh-tier-card {
+        padding: 32px 20px 20px;
+    }
+
+    .gh-tier-card__trial-days {
+        padding: 4px 10px;
+    }
+
+    .gh-tier-card__trial-days-span {
+        font-size: 14px;
+    }
+
+    .gh-tier-card__name {
+        margin-bottom: 10px;
+    }
+
+    .gh-tier-card__desc {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .gh-tier-card-signup {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .gh-tier-card-benefits-list {
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .gh-tier-card__price-value {
+        font-size: 40px;
+    }
+
+    .gh-tier-card__price-per {
+        font-size: 16px;
+    }
+
+    .gh-membership-page__sign-in,
+    .gh-membership-page__sign-in-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    .gh-tier-card__price-value {
+        font-size: 32px;
+    }
+}

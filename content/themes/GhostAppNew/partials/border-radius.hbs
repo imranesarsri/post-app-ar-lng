@@ -1,0 +1,29 @@
+{{#match @custom.border_radius "Rounded"}}
+    <style>
+        :root {
+            --border-radius-buttons: 100px;
+            --border-radius-images: 8px;
+            --border-radius-elements: 8px;
+        }
+    </style>
+{{/match}}
+
+{{#match @custom.border_radius "Slightly rounded"}}
+    <style>
+        :root {
+            --border-radius-buttons: 2px;
+            --border-radius-images: 0;
+            --border-radius-elements: 2px;
+        }
+    </style>
+{{/match}}
+
+{{#match @custom.border_radius "Squared"}}
+    <style>
+        :root {
+            --border-radius-buttons: 0;
+            --border-radius-images: 0;
+            --border-radius-elements: 0;
+        }
+    </style>
+{{/match}}

@@ -1,0 +1,121 @@
+{{!< default}}
+
+<main class="gh-archive-page gh-author-page gh-container">
+    {{#author}}
+    <div class="gh-author-page-header{{#if cover_image}} with-image{{/if}}">
+        <div class="gh-author-page-header-main">
+            <div class="gh-author-page-photo-name-wrapper">
+                {{#if profile_image}}
+                <div class="gh-author-page-profile-image-wrapper">
+                    <picture>
+                        <source srcset="{{img_url profile_image size="300" format="webp" }} 300w, {{img_url profile_image size="200"
+                            format="webp" }} 200w, {{img_url profile_image size="100" format="webp" }} 100w"
+                            sizes="(max-width: 550px) 80px, (max-width: 900px) 100px, (min-width: 901px) 120px"
+                            type="image/webp">
+                        <img class="gh-author-page-profile-image" srcset="{{img_url profile_image size="300"}} 300w, {{img_url
+                            profile_image size="200" }} 200w, {{img_url profile_image size="100" }} 100w"
+                            sizes="(max-width: 550px) 80px, (max-width: 900px) 100px, (min-width: 901px) 120px"
+                            src="{{img_url profile_image size="300"}}" alt="{{name}} {{t "profile image"}}">
+                    </picture>
+                </div>
+                {{/if}}
+                <h1 class="gh-author-page-name">{{name}}</h1>
+            </div>
+            {{#if bio}}
+            <p class="gh-author-page-bio">{{bio}}</p>
+            {{/if}}
+            <div class="gh-author-page-socials">
+                {{#if facebook}}
+                <a class="gh-author-page-social-link" href="{{facebook_url}}" target="_blank" rel="noopener"
+                    aria-label="{{name}}'s {{t "facebook link"}}">
+                    {{>icons/facebook}}
+                </a>
+                {{/if}}
+                {{#if twitter}}
+                <a class="gh-author-page-social-link" href="{{twitter_url}}" target="_blank" rel="noopener"
+                    aria-label="{{name}}'s {{t "twitter link"}}">
+                    {{>icons/twitter}}
+                </a>
+                {{/if}}
+                {{#if website}}
+                <a class="gh-author-page-social-link" href="{{website}}" target="_blank" rel="noopener"
+                    aria-label="{{name}}'s {{t "website link"}}">
+                    {{>icons/globe-icon}}
+                </a>
+                {{/if}}
+            </div>
+            <div class="gh-author-page-meta">
+                <p class="gh-author-page-posts-count">
+                   {{plural ../pagination.total empty=(t "No Posts") singular=(t "% Post") plural=(t "% Posts")}}
+                </p>
+                <div class="gh-author-page-location">
+                    {{>icons/location-icon}}
+                    <span>{{location}}</span>
+                </div>
+            </div>
+        </div>
+        {{#if cover_image}}
+        <div class="gh-author-page-feature-image-wrapper">
+            <picture>
+                <source srcset="{{img_url cover_image size="1600" format="webp" }} 1600w, {{img_url cover_image size="1000"
+                    format="webp" }} 1000w, {{img_url cover_image size="800" format="webp" }} 800w, {{img_url cover_image size="600"
+                    format="webp" }} 600w, {{img_url cover_image size="500" format="webp" }} 500w"
+                    sizes="(max-width: 1250px) 33vw, (max-width: 1480px) 42vw, (min-width: 1481px) 613px" type="image/webp">
+                <img class="gh-author-page-feature-image" srcset="{{img_url cover_image size="1600" }} 1600w, {{img_url cover_image
+                    size="1000" }} 1000w, {{img_url cover_image size="800" }} 800w, {{img_url cover_image size="600" }} 600w,
+                    {{img_url cover_image size="500" }} 500w"
+                    sizes="(max-width: 1250px) 33vw, (max-width: 1480px) 42vw, (min-width: 1481px) 613px"
+                    src="{{img_url cover_image size="1600"}}" alt="{{name}} {{t "cover image"}}">
+            </picture>
+        </div>
+        {{/if}}
+    </div>
+    {{/author}}
+    <div class="gh-archive-page-posts-feed-wrapper gh-archive-feed-wrapper">
+        <div class="gh-archive-page-posts-feed gh-posts-feed">
+            {{#foreach posts}}
+            <div class="gh-archive-page-post gh-posts-feed-post{{^if tags}} no-tags{{/if}}">
+                <a href={{url}} class="gh-archive-page-post-image-wrapper-link">
+                    {{#if feature_image}}
+                    <picture>
+                        <source srcset="{{img_url feature_image size="1000" format="webp" }} 1000w, {{img_url feature_image size="800"
+                            format="webp" }} 800w, {{img_url feature_image size="600" format="webp" }} 600w, {{img_url feature_image
+                            size="500" format="webp" }} 500w"
+                            sizes="(max-width: 550px) 100vw, (max-width: 900px) 48vw, (max-width: 1250px) 31vw, (max-width: 1480px) 22vw, (min-width: 1481px) 332px"
+                            type="image/webp">
+                        <img class="gh-archive-page-post-image" srcset="{{img_url feature_image size="1000"}} 1000w, {{img_url
+                            feature_image size="800" }} 800w, {{img_url feature_image size="600" }} 600w, {{img_url feature_image size="500"
+                            }} 500w"
+                            sizes="(max-width: 550px) 100vw, (max-width: 900px) 48vw, (max-width: 1250px) 31vw, (max-width: 1480px) 22vw, (min-width: 1481px) 332px"
+                            src="{{img_url feature_image size="1000"}}" alt="{{title}} {{t "post image"}}" />
+                    </picture>
+                    {{else}}
+                    <div class="gh-archive-page-post-image-plug">
+                        {{#if @site.logo}}
+                        {{#if @custom.dark_mode_logo}}
+                        <img src="{{img_url @custom.dark_mode_logo}}" alt="{{@site.title}} {{t "icon"}}" class="gh-archive-page-post-image-plug-logo-dark-mode">
+                        {{/if}}
+                        <img src="{{img_url @site.logo}}" alt="{{@site.title}} {{t "icon"}}" class="gh-archive-page-post-image-plug-logo">
+                        {{else}}
+                        <span class="gh-archive-page-post-image-plug-title">{{@site.title}}</span>
+                        {{/if}}
+                    </div>
+                    {{/if}}
+                </a>
+                <div class="gh-archive-page-post-content">
+                    {{>post-tags}}
+                    <div class="gh-archive-page-post-content-main">
+                        <h2 class="gh-archive-page-post-title">
+                            <a class="gh-archive-page-post-title-link" href="{{url}}" aria-label="{{t "post title"}}">
+                                {{title}}
+                            </a>
+                        </h2>
+                        {{>post-info}}
+                    </div>
+                </div>
+            </div>
+            {{/foreach}}
+        </div>
+        {{>load-more-button}}
+    </div>
+</main>

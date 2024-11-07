@@ -1,0 +1,95 @@
+<section class="gh-container--section{{#match themeSection "light-gray"}} gh-section--theme-light-gray{{/match}}{{#match themeSection "black"}} gh-section--theme-black{{/match}}">
+    <div class="gh-container">
+        {{#if tagName}}
+            {{#get "tags" filter="slug:{{tagName}}"}}
+                {{#foreach tags}}
+                    <h2 class="gh-posts-section__title">
+                        <a href="{{url}}" class="gh-posts-section__title-link">{{name}}</a>
+                    </h2>
+                {{/foreach}}
+            {{/get}}
+        {{/if}}
+
+        <div class="gh-hero-wrapper--grid gh-hero-wrapper--featured-type-12">
+            {{#if tagName}}
+                {{#get "posts" limit='12' include="authors,tags" filter="tag:{{tagName}}"}}
+                    {{#match posts.length "=" 12}}
+                        {{#foreach posts}}
+
+                            {{#match @number "=" 1}}
+                                {{>featured-main-post type="6" lazy="true" classNames="gh-featured-main-post--one-column gh-featured-main-post--no-feat gh-align-info"}}
+                            {{/match}}
+
+                            {{#match @number  "=" 2}}
+                                {{>featured-post type="6" lazy="true" classNames="gh-featured-post--row gh-featured-post--row-reverse"}}
+                            {{/match}}
+
+                            {{#match @number  "=" 3}}
+                                <div class="gh-featured-post--col-1-type-12">
+                            {{/match}}
+
+                            {{#has number="3, 4, 5, 6, 7"}}
+                                {{>featured-post classNames="gh-featured-post--row gh-featured-post--title-fs" hideImg='true'}}
+                            {{/has}}
+
+                            {{#match @number  "=" 8}}
+                                </div>
+                                <div class="gh-featured-post--col-2-type-12">
+                            {{/match}}
+
+                            {{#match @number  ">" 7}}
+                                {{>featured-post classNames="gh-featured-post--row gh-featured-post--title-fs" hideImg='true'}}
+                            {{/match}}
+
+                            {{#if @last}}
+                                </div>
+                            {{/if}}
+                            
+                        {{/foreach}}
+                    {{else}}
+                        <div class="gh-posts--not-enought">{{t "not enough posts"}}</div>
+                    {{/match}}
+                {{/get}}
+            {{else}}
+                {{#get "posts" limit='12' include="authors,tags" filter="featured:true" as |featuredPosts|}}
+                    {{#match featuredPosts.length "=" 12}}
+                        {{#foreach featuredPosts}}
+
+                            {{#match @number "=" 1}}
+                                {{>featured-main-post type="6" classNames="gh-featured-main-post--one-column"}}
+                            {{/match}}
+
+                            {{#match @number  "=" 2}}
+                                {{>featured-post type="6" classNames="gh-featured-post--row gh-featured-post--row-reverse"}}
+                            {{/match}}
+
+                            {{#match @number  "=" 3}}
+                                <div class="gh-featured-post--col-1-type-12">
+                            {{/match}}
+
+                            {{#has number="3, 4, 5, 6, 7"}}
+                                {{>featured-post classNames="gh-featured-post--row gh-featured-post--title-fs" hideImg='true'}}
+                            {{/has}}
+
+                            {{#match @number  "=" 8}}
+                                </div>
+                                <div class="gh-featured-post--col-2-type-12">
+                            {{/match}}
+
+                            {{#match @number  ">" 7}}
+                                {{>featured-post classNames="gh-featured-post--row gh-featured-post--title-fs" hideImg='true'}}
+                            {{/match}}
+
+                            {{#if @last}}
+                                </div>
+                            {{/if}}
+                            
+                        {{/foreach}}
+                    {{else}}
+                        <div class="gh-posts--not-enought">{{t "not enough posts"}}</div>
+                    {{/match}}
+                {{/get}}
+            {{/if}}  
+        </div>
+    </div>
+</section>

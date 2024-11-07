@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}" data-theme="light">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <title>{{meta_title}}</title>
+        <link rel="stylesheet" href="{{asset 'built/index.css'}}" />
+        {{>font-pairings}}
+        {{>border-radius}}
+
+        <style>
+            :root {
+                --accent-color: {{@site.accent_color}};
+                {{#match @custom.header_type "=" "Header type 2"}}
+                    {{#if @custom.header_height}}
+                        --header-height: -{{@custom.header_height}};
+                        {{else}}
+                        --header-height: -50px;
+                    {{/if}}
+                {{else}}
+                    {{#if @custom.header_height}}
+                        --header-height: -{{@custom.header_height}};
+                        {{else}}
+                        --header-height: -40px;
+                    {{/if}}
+                {{/match}}
+                {{#if @custom.header_navigation_font_size}}
+                    --header-navigation-font-size: {{@custom.header_navigation_font_size}};
+                {{/if}}
+                
+            }
+            :root[data-theme='light']{
+                --color-social-bg-icon: {{@site.accent_color}};
+            }
+            :root[data-theme='dark']{
+                --color-social-bg-icon: #fff;
+            }
+        </style>
+
+        <script>
+            const rootElem = document.querySelector("html[data-theme]");
+
+            const detectSystemTheme = () => {
+                if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                    rootElem.setAttribute("data-theme", "dark");
+                } else {
+                    rootElem.setAttribute("data-theme", "light");
+                }
+            };
+
+            const initTheme = () => {
+                const localStoragePref = localStorage.getItem("data-theme");
+
+                if (localStoragePref) {
+                    rootElem.setAttribute("data-theme", localStoragePref);
+                } else {
+                    detectSystemTheme();
+                }
+            };
+
+            initTheme();
+
+            window
+                .matchMedia("(prefers-color-scheme: dark)")
+                .addEventListener("change", () => {
+                    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                        rootElem.setAttribute("data-theme", "dark");
+                    } else {
+                        rootElem.setAttribute("data-theme", "light");
+                    }
+                });
+        </script>
+
+        <script src="{{asset 'built/index.js'}}" defer></script>
+        
+        {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
+        it should always be the last tag before the closing head tag --}}
+        {{ghost_head}}
+
+    </head>
+    <body class="{{body_class}}">
+        <div class="gh-viewport">
+            {{! Website's Header }}
+            {{>header}}
+            
+            {{! All content gets inserted here, index.hbs, post.hbs, etc }}
+            {{{body}}}
+
+            {{! Website's Footer }}
+            {{>footer-with-posts}}
+            {{!-- {{>footer-with-subcategories}} --}}
+
+        </div>
+
+        {{! Scroll to top btn }}
+        <button class="gh-scroll-top-btn" type="button" title="Scroll page to the top button" aria-label="Scroll page to the top button">
+            <svg class="gh-scroll-top-arrow" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                fill="none">
+                <path d="M9.59998 19.2L16 12.8L22.4 19.2" stroke="#000" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <svg class="gh-scroll-top-progress" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </button>
+
+        {{!-- Ghost outputs required functional scripts with this tag - it should always be the last thing before the closing body tag --}}
+        {{ghost_foot}}
+    </body>
+</html>

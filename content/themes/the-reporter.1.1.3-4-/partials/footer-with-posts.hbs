@@ -1,0 +1,112 @@
+{{#if @custom.footer_categories}}
+    <footer class="gh-footer{{#match @custom.footer_type 'Black'}} gh-footer--default-bg{{else}} gh-footer--light-bg{{/match}}">
+        <div class="gh-container">
+            <div class="gh-footer-top">
+                {{#get 'tags' filter='slug:[{{@custom.footer_categories}}]'}}
+                    {{#foreach tags}}
+                        <div class="gh-footer__category-wrapper">
+                            <a href="{{url}}" class="gh-footer__category-title-link gh-footer__category-title-link--hover-default" aria-label="{{name}}">{{name}}</a>
+                            
+                            {{#get "posts" limit='5' include="tags" filter="tag:{{slug}}"}}
+                                {{#foreach posts}}
+                                    {{#if @first}}
+                                        <ol class="gh-footer__category-list">
+                                    {{/if}}
+
+                                        <li class="gh-footer__category-item">
+                                            <a class="gh-footer__category-link" href="{{url}}" aria-label="{{title}}">{{title}}</a>
+                                        </li>
+
+                                    {{#if @last}}
+                                        </ol>
+                                    {{/if}}
+
+                                {{/foreach}}
+                            {{/get}}
+
+                        </div>
+                    {{/foreach}}
+                {{/get}}
+            </div>
+
+            <div class="gh-footer-bottom">
+                {{#match @custom.footer_type 'Black'}}
+                <a class="gh-site-logo {{#if @custom.dark_mode_logo}}gh-site-logo-has-DM-logo{{/if}}" href="{{@site.url}}"
+                    aria-label="{{t "{blogtitle} logo and home page link" blogtitle=@site.title}}">
+                    {{#if @custom.dark_mode_logo}}
+                    <img src="{{img_url @custom.dark_mode_logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img-dark-mode">
+                    {{else}}
+                    <h1 class="gh-site-title">{{@site.title}}</h1>
+                    {{/if}}
+                </a>
+                {{else}}
+                <a class="gh-site-logo {{#if @custom.dark_mode_logo}}gh-site-logo-has-DM-logo{{/if}}" href="{{@site.url}}" aria-label="{{t "{blogtitle} logo and home page link" blogtitle=@site.title}}">
+                    {{#if @site.logo}}
+                        {{#if @custom.dark_mode_logo}}
+                        <img src="{{img_url @custom.dark_mode_logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img-dark-mode">
+                        {{/if}}
+                        <img src="{{img_url @site.logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img">
+                        {{else}}
+                        <h1 class="gh-site-title">{{@site.title}}</h1>
+                    {{/if}}
+                </a>
+                {{/match}}
+                <div class="gh-footer-bottom__legal">
+                    {{{t "Copyright © 2024 {blogtitle}. Published with {ghostlink} and" blogtitle=@site.title ghostlink="<a href=\"https://ghost.org\" target=\"_blank\" rel=\"noopener\" aria-label=\"Ghost CMS official website link\">Ghost</a>"}}}
+                    <a href="{{@site.url}}" aria-label="{{@site.title}}">{{@site.title}}</a>.
+                </div>
+                {{navigation type="secondary"}}
+                <div class="gh-footer-bottom__wrapper">
+                    {{#if @site.members_enabled}}
+                    {{#unless @member}}
+                    <a class="gh-subscribe-button gh-subscribe-button--footer" href="{{@site.url}}/subscribe"
+                        aria-label="{{t "Subscribe"}}"><span>{{t "Subscribe"}}</span></a>
+                    {{/unless}}
+                    {{/if}}
+                    {{>socials}}
+                </div>
+            </div>
+        </div>
+    </footer>
+{{else}}
+    <footer class="gh-footer{{#match @custom.footer_type 'Black'}} gh-footer--default-bg{{else}} gh-footer--light-bg{{/match}}">
+        <div class="gh-container">
+            <div class="gh-footer-bottom">
+                {{#match @custom.footer_type 'Black'}}
+                <a class="gh-site-logo {{#if @custom.dark_mode_logo}}gh-site-logo-has-DM-logo{{/if}}" href="{{@site.url}}"
+                    aria-label="{{t "{blogtitle} logo and home page link" blogtitle=@site.title}}">
+                    {{#if @custom.dark_mode_logo}}
+                    <img src="{{img_url @custom.dark_mode_logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img-dark-mode">
+                    {{else}}
+                    <h1 class="gh-site-title">{{@site.title}}</h1>
+                    {{/if}}
+                </a>
+                {{else}}
+                <a class="gh-site-logo {{#if @custom.dark_mode_logo}}gh-site-logo-has-DM-logo{{/if}}" href="{{@site.url}}" aria-label="{{t "{blogtitle} logo and home page link" blogtitle=@site.title}}">
+                    {{#if @site.logo}}
+                        {{#if @custom.dark_mode_logo}}
+                        <img src="{{img_url @custom.dark_mode_logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img-dark-mode">
+                        {{/if}}
+                        <img src="{{img_url @site.logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img">
+                        {{else}}
+                        <h1 class="gh-site-title">{{@site.title}}</h1>
+                    {{/if}}
+                </a>
+                {{/match}}
+                <div class="gh-footer-bottom__legal">
+                    {{{t "Copyright © 2023 {blogtitle}. Published with {ghostlink} and" blogtitle=@site.title ghostlink="<a href=\"https://ghost.org\" target=\"_blank\" rel=\"noopener\" aria-label=\"Ghost CMS official website link\">Ghost</a>"}}}
+                    <a href="{{@site.url}}" aria-label="{{@site.title}}">{{@site.title}}</a>.
+                </div>
+                {{navigation type="secondary"}}
+                <div class="gh-footer-bottom__wrapper">
+                    {{#if @site.members_enabled}}
+                    {{#unless @member}}
+                    <a class="gh-subscribe-button gh-subscribe-button--footer" href="{{@site.url}}/subscribe" aria-label="{{t "Subscribe"}}"><span>{{t "Subscribe"}}</span></a>
+                    {{/unless}}
+                    {{/if}}
+                    {{>socials}}
+                </div>
+            </div>
+        </div>
+    </footer>
+{{/if}}

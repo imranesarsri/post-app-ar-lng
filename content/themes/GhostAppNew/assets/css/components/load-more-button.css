@@ -1,0 +1,23 @@
+.gh-load-more-button {
+    padding: 10px 14px;
+    font-family: var(--font-family-button);
+    font-weight: var(--font-weight-button);
+    font-size: var(--font-size-button);
+    line-height: var(--line-height-button-1);
+    letter-spacing: var(--letter-spacing-button);
+    text-transform: var(--text-transform-button);
+    border-radius: var(--border-radius-buttons);
+    color: #FFF;
+    background-color: var(--color-bg-secondary-buttons);
+    transition: background-color var(--transition-time) ease;
+}
+
+.gh-load-more-button:hover {
+    background-color: var(--color-bg-secondary-buttons--hover);
+}
+
+@media (max-width: 900px) {
+    .gh-load-more-button:hover {
+        background-color: var(--color-bg-secondary-buttons);
+    }
+}

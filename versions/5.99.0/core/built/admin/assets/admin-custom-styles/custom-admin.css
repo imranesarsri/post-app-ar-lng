@@ -161,3 +161,7 @@ div .w-80 {
     left: 10px !important;
     right: auto !important;
 }
+
+.admin-x-settings .right-\[14px\] {
+    left: 14px;
+}

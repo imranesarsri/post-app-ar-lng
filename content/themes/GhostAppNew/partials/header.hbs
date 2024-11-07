@@ -1,0 +1,82 @@
+{{#match @custom.header_type "=" "Header type 2"}}
+    <header class="gh-header gh-header--type-2">
+        
+        <div class="gh-container gh-header-container gh-header--top">
+            <button class="gh-burger-btn" aria-label="{{t "open mobile menu button"}}" id="open-mobile-menu">
+                {{> "icons/burger-open"}}
+            </button>
+
+            <a class="gh-site-logo {{#if @custom.dark_mode_logo}}gh-site-logo-has-DM-logo{{/if}}" href="{{@site.url}}" aria-label="{{t "{blogtitle} logo and home page link" blogtitle=@site.title}}">
+                {{#if @site.logo}}
+                    {{#if @custom.dark_mode_logo}}
+                        <img src="{{img_url @custom.dark_mode_logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img-dark-mode">
+                    {{/if}}
+                        <img src="{{img_url @site.logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img">
+                    {{else}}
+                        <h1 class="gh-site-title">{{@site.title}}</h1>
+                {{/if}}
+            </a>
+
+            <div class="gh-header__options">
+                <button class="gh-search" title="Search button" aria-label="{{t "Search button"}}" data-ghost-search>{{> "icons/search"}}</button>
+                <button class="gh-switch-btn" aria-label="{{t "Switch theme button"}}" type="button">
+                    {{>"icons/moon"}}
+                    {{>"icons/sun"}}
+                </button>
+                {{#if @site.members_enabled}}
+                    {{#if @member}}
+                        <a class="gh-subscribe-button gh-subscribe-button--type-2 gh-accent-button" href="{{@site.url}}/account" aria-label="{{t "My Account"}}"><span>{{t "My Account"}}</span></a>
+                    {{else}}
+                        <a class="gh-nav-menu-item gh-sign-in-btn" href="{{@site.url}}/signin" aria-label="{{t "Sign in"}}">{{t "Sign in"}}</a>
+                        <a class="gh-subscribe-button gh-subscribe-button--type-2 gh-accent-button" href="{{@site.url}}/subscribe" aria-label="{{t "Subscribe"}}"><span>{{t "Subscribe"}}</span></a>
+                    {{/if}}
+                {{/if}}
+            </div>
+        </div>
+
+        <div class="gh-header-container gh-header--bottom" {{#if @custom.header_height}}style="height:{{@custom.header_height}}"{{/if}}>
+            {{navigation fontSize="true"}}
+        </div>
+
+        {{>mobile-menu}}
+
+    </header>
+{{else}}
+    <header class="gh-header gh-header--type-1{{#match @custom.header_type "=" "Header type 1 grey"}} gh-header--gray{{/match}}{{#match @custom.header_type "=" "Header type 1 black"}} gh-header--black{{/match}}" {{#if @custom.header_height}}style="height:{{@custom.header_height}}"{{/if}}>
+        <div class="gh-container gh-header-container">
+            <button class="gh-burger-btn gh-burger-btn--type-1" aria-label="{{t "open mobile menu button"}}" id="open-mobile-menu">
+                {{> "icons/burger-open"}}
+            </button>
+            
+            <a class="gh-site-logo {{#if @custom.dark_mode_logo}}gh-site-logo-has-DM-logo{{/if}}" href="{{@site.url}}" aria-label="{{t "{blogtitle} logo and home page link" blogtitle=@site.title}}">
+                {{#if @site.logo}}
+                    {{#if @custom.dark_mode_logo}}
+                        <img src="{{img_url @custom.dark_mode_logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img-dark-mode">
+                    {{/if}}
+                        <img src="{{img_url @site.logo}}" alt="{{@site.title}} icon" class="gh-site-logo-img">
+                    {{else}}
+                        <h1 class="gh-site-title">{{@site.title}}</h1>
+                {{/if}}
+            </a>
+            {{navigation fontSize="true"}}
+
+            <div class="gh-header__options">
+                <button class="gh-search" title="Search button" aria-label="{{t "Search button"}}" data-ghost-search>{{> "icons/search"}}</button>
+                <button class="gh-switch-btn" aria-label="{{t "Switch theme button"}}" type="button">
+                    {{>"icons/moon"}}
+                    {{>"icons/sun"}}
+                </button>
+                {{#if @site.members_enabled}}
+                    {{#if @member}}
+                        <a class="gh-subscribe-button gh-accent-button" href="{{@site.url}}/account" aria-label="{{t "My Account"}}"><span>{{t "My Account"}}</span></a>
+                    {{else}}
+                        <a class="gh-nav-menu-item gh-sign-in-btn" href="{{@site.url}}/signin" aria-label="{{t "Sign in"}}">{{t "Sign in"}}</a>
+                        <a class="gh-subscribe-button gh-accent-button" href="{{@site.url}}/subscribe" aria-label="{{t "Subscribe"}}"><span>{{t "Subscribe"}}</span></a>
+                    {{/if}}
+                {{/if}}
+            </div>
+
+        </div>
+        {{>mobile-menu}}
+    </header>
+{{/match}}

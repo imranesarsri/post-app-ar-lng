@@ -1,0 +1,377 @@
+/* Account Page */
+/* ---------------------------------------------------------- */
+
+.gh-account-page {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.gh-account-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gh-account-page-inner {
+    display: flex;
+    flex-direction: column;
+    background: var(--account-page-bg-color);
+    border-radius: var(--border-radius-elements);
+    width: 100%;
+    max-width: 1056px;
+    padding: 64px;
+    position: relative;
+}
+
+.gh-account-page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-border);
+    width: 100%;
+}
+
+.gh-account-page__image {
+    width: 148px;
+    height: 148px;
+    border-radius: 100%;
+    margin-bottom: 24px;
+}
+
+.gh-account-page__image--default {
+    background-color: var(--color-bg-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gh-account-page__image--default svg {
+    height: 36px;
+    width: 36px;
+}
+
+.gh-account-page__name {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    letter-spacing: var(--letter-spacing-site-title-1);
+}
+
+.gh-account-page__desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: var(--letter-spacing-small);
+    margin-bottom: 24px;
+    max-width: 75%;
+}
+
+.gh-account-page-billing-info {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.gh-account-page-billing-row {
+    display: flex;
+    gap: 4%;
+    width: 100%;
+}
+
+.gh-account-page-billing-item {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gh-account-page-billing-item__name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #A5A5A5;
+}
+
+.gh-account-page-billing-item__value {
+    display: flex;
+    word-break: break-all;
+    gap: 12px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.gh-account-page-billing-item__value svg circle {
+    fill: var(--color-main);
+}
+
+.gh-account-page-buttons {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.gh-account-page-settings-btn,
+.gh-logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gh-logout-btn {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.gh-account-page-settings-btn span,
+.gh-logout-btn span {
+    color: #8E8E8F;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.gh-account-page-settings-btn:hover span,
+.gh-logout-btn:hover span {
+    color: var(--ghost-accent-color);
+}
+
+.gh-account-page-settings-btn svg path,
+.gh-logout-btn svg path {
+    transition: stroke 0.3s ease;
+}
+
+.gh-account-page-settings-btn:hover svg path,
+.gh-logout-btn:hover svg path {
+    stroke: var(--ghost-accent-color);
+}
+
+.gh-account-page-cancel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--color-bg-secondary-buttons);
+    font-family: var(--font-family-button);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-button);
+    line-height: var(--line-height-button-2);
+    text-transform: var(--text-transform-button);
+    padding: 10px 14px;
+    border-radius: var(--border-radius-buttons);
+    transition: background-color var(--transition-time) ease;
+}
+
+.gh-account-page-cancel-btn:hover {
+    background-color: var(--color-bg-secondary-buttons--hover);
+}
+
+.gh-account-page-cancel-btn.loading {
+    pointer-events: none;
+    position: relative;
+}
+
+.gh-account-page-cancel-btn.loading::after {
+    content: 'Processing...';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: var(--color-bg-secondary-buttons--hover);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-button);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-button);
+    line-height: var(--line-height-button-2);
+    text-transform: var(--text-transform-button);
+}
+
+.gh-error {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    color: #F0626B;
+    font-weight: 600;
+}
+
+.gh-card-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-background-main);
+    margin-right: 4px;
+}
+
+.gh-account-page-edit-btn {
+    border-radius: var(--border-radius-buttons);
+    padding: 10px 14px;
+    color: #FFF;
+    font-family: var(--font-family-button);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-button);
+    line-height: var(--line-height-button-2);
+    text-transform: var(--text-transform-button);
+    position: relative;
+    background-color: var(--ghost-accent-color);
+}
+
+.gh-account-page-edit-btn span {
+    position: relative;
+    z-index: 5;
+}
+
+.gh-account-page-edit-btn::after {
+    content: '';
+    border-radius: var(--border-radius-buttons);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color .25s ease;
+    z-index: 0;
+}
+
+.gh-account-page-edit-btn:hover::after {
+    background-color: rgba(0, 0, 0, 0.150);
+}
+
+.gh-account-page-edit-btn svg {
+    position: relative;
+    display: none;
+}
+
+.gh-account-page-edit-btn.loading {
+    padding: var(--edit-billing-btn-padding--loading);
+}
+
+.gh-account-page-edit-btn.loading span {
+    display: none;
+}
+
+.gh-account-page-edit-btn.loading svg {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .gh-account-page__name {
+        font-size: 36px;
+    }
+
+    .gh-account-page__image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .gh-account-page__desc {
+        max-width: 100%;
+    }
+
+    .gh-account-page-cancel-btn:hover {
+        background-color: var(--color-bg-secondary-buttons);
+    }
+
+    .gh-account-page-edit-btn:after {
+        display: none;
+    }
+
+    .gh-account-page-settings-btn:hover span,
+    .gh-logout-btn:hover span {
+        color: #8e8e8f;
+    }
+
+    .gh-account-page-settings-btn:hover svg path,
+    .gh-logout-btn:hover svg path {
+        stroke: #8e8e8f;
+    }
+}
+
+@media (max-width: 750px) {
+    .gh-account-page-inner {
+        padding: 40px;
+    }
+
+    .gh-logout-btn {
+        right: 40px;
+        top: 40px;
+    }
+
+    .gh-account-page-billing-info {
+        gap: 20px;
+    }
+
+    .gh-account-page-billing-row {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gh-account-page-billing-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .gh-account-page {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .gh-account-page-inner {
+        padding: 20px;
+    }
+
+    .gh-account-page-header {
+        padding-bottom: 24px;
+    }
+
+    .gh-account-page-billing-info {
+        padding: 24px 0;
+    }
+
+    .gh-logout-btn {
+        right: 20px;
+        top: 20px;
+    }
+
+    .gh-account-page__name {
+        font-size: 28px;
+    }
+
+    .gh-account-page__image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .gh-account-page-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-top: 24px;
+    }
+
+    .gh-account-page-edit-btn,
+    .gh-account-page-cancel-btn {
+        width: 100%;
+    }
+}

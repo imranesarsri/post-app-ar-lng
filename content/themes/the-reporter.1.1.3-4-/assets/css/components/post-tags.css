@@ -1,0 +1,40 @@
+.gh-tags-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.gh-tags-wrapper svg{
+    fill: var(--color-main);
+}
+
+.gh-tag-link{
+    text-transform: var(--text-transform-tags);
+
+    font-family: var(--font-family-post-tag);
+    font-size: var(--font-size-tag);
+    font-weight: var(--font-weight-tag);
+    line-height: var(--line-height-tag); 
+    letter-spacing: var(--letter-spacing-tag);
+
+    color: var(--color-tag);
+    transition: opacity var(--transition-time) ease;
+}
+
+[data-theme='dark'] .gh-tag-link{
+    color: var(--color-text) !important;
+}
+
+.gh-section--theme-black .gh-tag-link{
+    color: #A2A2A2 !important;
+}
+
+.gh-tag-link:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+    .gh-tag-link:hover{
+        opacity: 1;
+    }
+}

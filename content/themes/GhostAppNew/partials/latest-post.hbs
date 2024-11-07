@@ -1,0 +1,101 @@
+{{!--
+Re-usable card for linking to posts
+--}}
+
+<article class="gh-latest-post {{post_class}} {{classNames}}">
+    {{#unless hideImg}}
+      <div class="gh-card-image-wrapper">
+        {{#if feature_image}}
+          <a class="gh-card-image-link-wrapper" href="{{url}}" aria-label="{{t "post image"}}">
+            <picture class="gh-card-picture">
+              {{#match type "1-first"}}
+                <source 
+                    srcset="
+                    {{img_url feature_image size="300" format="webp"}} 300w,
+                    {{img_url feature_image size="500" format="webp"}} 500w,
+                    {{img_url feature_image size="600" format="webp"}} 600w,
+                    {{img_url feature_image size="800" format="webp"}} 800w"
+                    sizes="(max-width: 750px) 94vw, (min-width: 1101px) 332px, (min-width: 1101px) 245px, (min-width: 1401px) 275px, (min-width: 1481px) 307px"
+                    type="image/webp"
+                  >
+                  <img
+                    srcset="
+                    {{img_url feature_image size="300"}} 300w,
+                    {{img_url feature_image size="500"}} 500w,
+                    {{img_url feature_image size="600"}} 600w,
+                    {{img_url feature_image size="800"}} 800w"
+                    sizes="(max-width: 750px) 94vw, (min-width: 1101px) 332px, (min-width: 1101px) 245px, (min-width: 1401px) 275px, (min-width: 1481px) 307px"
+                    src="{{img_url feature_image size="800"}}"
+                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}} {{t "post image"}}{{/if}}"
+                    class="gh-card-image"
+                    {{#match lazy "=" "true"}}loading="lazy"{{/match}}
+                  >
+              {{else match type '14-first'}}
+                  <source 
+                    srcset="
+                    {{img_url feature_image size="100" format="webp"}} 100w,
+                    {{img_url feature_image size="200" format="webp"}} 200w,
+                    {{img_url feature_image size="300" format="webp"}} 300w,
+                    {{img_url feature_image size="500" format="webp"}} 500w,
+                    {{img_url feature_image size="600" format="webp"}} 600w,
+                    {{img_url feature_image size="800" format="webp"}} 800w"
+                    sizes="(max-width: 600px) 90px, (max-width: 750px) 233px, (max-width: 1000px) 28vw, (min-width: 1000px) 225px, (min-width: 1101px) 245px, (min-width: 1250px) 275px, (min-width: 1481px) 307px"
+                    type="image/webp"
+                  >
+                  <img
+                    srcset="
+                    {{img_url feature_image size="100"}} 100w,
+                    {{img_url feature_image size="200"}} 200w,
+                    {{img_url feature_image size="300"}} 300w,
+                    {{img_url feature_image size="500"}} 500w,
+                    {{img_url feature_image size="600"}} 600w,
+                    {{img_url feature_image size="800"}} 800w"
+                    sizes="(max-width: 600px) 90px, (max-width: 750px) 233px, (max-width: 1000px) 28vw, (min-width: 1000px) 225px, (min-width: 1101px) 245px, (min-width: 1250px) 275px, (min-width: 1481px) 307px"
+                    src="{{img_url feature_image size="800"}}"
+                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}} {{t "post image"}}{{/if}}"
+                    class="gh-card-image"
+                    {{#match lazy "=" "true"}}loading="lazy"{{/match}}
+                  >
+              {{else match type '1'}}
+                  <source 
+                    srcset="
+                    {{img_url feature_image size="100" format="webp"}} 100w,
+                    {{img_url feature_image size="200" format="webp"}} 200w"
+                    sizes="(max-width: 100vw) 90px"
+                    type="image/webp"
+                  >
+                  <img
+                    srcset="
+                    {{img_url feature_image size="100" format="webp"}} 100w,
+                    {{img_url feature_image size="200" format="webp"}} 200w"
+                    sizes="(max-width: 100vw) 90px"
+                    src="{{img_url feature_image size="200"}}"
+                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}} {{t "post image"}}{{/if}}"
+                    class="gh-card-image"
+                    {{#match lazy "=" "true"}}loading="lazy"{{/match}}
+                  >
+              {{else}}
+              {{/match}}
+            </picture>
+          </a>
+          {{else}}
+              <a class="gh-card-image-wrapper-link--noImage" href="{{url}}" aria-label="{{title}} {{t "post image"}}">
+                  {{#if @site.icon}}
+                      <img src="{{img_url @site.icon}}" alt="{{@site.title}} icon" {{#match lazy "=" "true"}}loading="lazy"{{/match}} class="gh-card-image-wrapper-link--noImage-logo">
+                  {{else}}
+                      <span class="gh-card-image-wrapper-link--noImage-name">{{@site.title}}</span>
+                  {{/if}}
+              </a>
+        {{/if}}
+      </div>
+    {{/unless}}
+    <div class="{{#if hideImg}}gh-latest-post__content{{else}}gh-latest-post__content--max-width{{/if}}">
+        {{>post-tags}}
+        <a href="{{url}}" class="gh-card-title-link" aria-label="{{title}}">
+          <h2 class="gh-latest-post__title">{{title}}</h2>
+        </a>
+        {{>post-info}}
+    </div>
+</article>
+
+
