@@ -1,0 +1,242 @@
+{
+    "name": "the-reporter",
+    "description": "The Reporter delivers news with clarity, showcased in a sleek magazine format.",
+    "demo": "https://reporter-news.highfivethemes.com/",
+    "version": "1.1.3",
+    "engines": {
+        "ghost": ">=5.0.0"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.webp",
+        "mobile": "assets/screenshot-mobile.webp"
+    },
+    "scripts": {
+        "dev": "rollup -c --environment BUILD:development -w",
+        "build": "rollup -c --environment BUILD:production",
+        "zip": "npm run build && bestzip $npm_package_name.zip assets/* locales/* partials/* members/* *.hbs package.json rollup.config.js README.md",
+        "test": "npx gscan .",
+        "pretest": "npm run build"
+    },
+    "author": {
+        "name": "HighFiveThemes",
+        "email": "hello@highfivethemes.com",
+        "url": "https://highfivethemes.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "News",
+            "Newsletter",
+            "Magazine"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.21.0",
+        "@babel/preset-env": "^7.20.2",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-commonjs": "^25.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-terser": "^0.4.0",
+        "bestzip": "^2.2.1",
+        "postcss": "^8.4.24",
+        "postcss-import": "^15.1.0",
+        "postcss-preset-env": "^8.0.1",
+        "rollup": "^3.18.0",
+        "rollup-plugin-livereload": "^2.0.5",
+        "rollup-plugin-postcss": "^4.0.2"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "config": {
+        "card_assets": true,
+        "posts_per_page": 12,
+        "image_sizes": {
+            "100": {
+                "width": 100
+            },
+            "200": {
+                "width": 200
+            },
+            "300": {
+                "width": 300
+            },
+            "400": {
+                "width": 400
+            },
+            "500": {
+                "width": 500
+            },
+            "600": {
+                "width": 600
+            },
+            "800": {
+                "width": 800
+            },
+            "1000": {
+                "width": 1000
+            },
+            "1200": {
+                "width": 1200
+            },
+            "1600": {
+                "width": 1600
+            },
+            "2000": {
+                "width": 2000
+            },
+            "2400": {
+                "width": 2400
+            },
+            "3000": {
+                "width": 3000
+            }
+        },
+        "custom": {
+            "homepage_featured_posts": {
+                "type": "select",
+                "group": "homepage",
+                "description": "Select the layout type for the featured posts section.",
+                "options": [
+                    "Featured Type 1",
+                    "Featured Type 2",
+                    "Featured Type 3",
+                    "Featured Type 4",
+                    "Featured Type 5",
+                    "Featured Type 6",
+                    "Featured Type 7",
+                    "Featured Type 8",
+                    "Featured Type 9 (four columns)",
+                    "Featured Type 9 (three columns)",
+                    "Featured Type 10 (two columns)",
+                    "Featured Type 10 (three columns)",
+                    "Featured Type 10 (four columns)",
+                    "Featured Type 10 (six columns)",
+                    "Featured Type 11",
+                    "Featured Type 12",
+                    "Featured Type 13",
+                    "Featured Type 14",
+                    "Featured Type 15",
+                    "Featured Type 16",
+                    "Featured Type 17 (without image)",
+                    "Featured Type 17 (with image)",
+                    "Featured Type 18 (without image)",
+                    "Featured Type 18 (with image)"
+                ],
+                "default": "Featured Type 1"
+            },
+            "html_widget": {
+                "type": "text"
+            },
+            "homepage_tags": {
+                "type": "text",
+                "description": "Enter the tags, separated by a comma, that will be displayed on the home page.",
+                "default": "",
+                "group": "homepage"
+            },
+            "homepage_section_layout": {
+                "type": "select",
+                "group": "homepage",
+                "description": "Select the layout type for the homepage posts sections.",
+                "options": [
+                    "Posts Type 1",
+                    "Posts Type 2",
+                    "Posts Type 3",
+                    "Posts Type 4 (four columns)",
+                    "Posts Type 4 (three columns)",
+                    "Posts Type 5 (two columns)",
+                    "Posts Type 5 (three columns)",
+                    "Posts Type 5 (four columns)",
+                    "Posts Type 5 (six columns)",
+                    "Posts Type 6",
+                    "Posts Type 7",
+                    "Posts Type 8",
+                    "Posts Type 9",
+                    "Posts Type 10",
+                    "Posts Type 11",
+                    "Posts Type 12 (without image)",
+                    "Posts Type 12 (with image)",
+                    "Posts Type 13 (without image)",
+                    "Posts Type 13 (with image)"
+                ],
+                "default": "Posts Type 1"
+            },
+            "header_type": {
+                "type": "select",
+                "description": "Select the header type.",
+                "options": [
+                    "Header type 1 grey",
+                    "Header type 1 black",
+                    "Header type 2"
+                ],
+                "default": "Header type 1 grey"
+            },
+            "header_height": {
+                "type": "text"
+            },
+            "header_navigation_font_size": {
+                "type": "text"
+            },
+            "footer_categories": {
+                "type": "text",
+                "description": "Enter the tags, separated by a comma, that will be displayed in your website's footer menu.",
+                "default": ""
+            },
+            "footer_type": {
+                "type": "select",
+                "description": "Select the footer type.",
+                "options": [
+                    "Light gray",
+                    "Black"
+                ],
+                "default": "Black"
+            },
+            "dark_mode_logo": {
+                "type": "image",
+                "description": "Add a logo that will appear in dark theme mode."
+            },
+            "typography": {
+                "type": "select",
+                "description": "Select your preferred fonts.",
+                "options": [
+                    "DM Serif Display/DM Sans",
+                    "Inter",
+                    "Outfit",
+                    "Plus Jakarta Sans/DM Sans",
+                    "IBM Plex Sans/Manrope",
+                    "Merriweather/DM Sans",
+                    "Sora/DM Sans"
+                ],
+                "default": "DM Serif Display/DM Sans"
+            },
+            "border_radius": {
+                "type": "select",
+                "description": "Select border radius setting that will be applied to the images, buttons and blocks.",
+                "options": [
+                    "Slightly rounded",
+                    "Rounded",
+                    "Squared"
+                ],
+                "default": "Slightly rounded"
+            },
+            "cta_text_for_subscription_section": {
+                "type": "text",
+                "description": "Enter the main text that will be displayed in the call-to-action sections.",
+                "default": "Subscribe to New Posts"
+            },
+            "cta_subtext_for_subscription_section": {
+                "type": "text",
+                "description": "Enter the text that will be displayed in the call-to-action sections under main text.",
+                "default": "Lorem ultrices malesuada sapien amet pulvinar quis. Feugiat etiam ullamcorper pharetra vitae nibh enim vel."
+            }
+        }
+    },
+    "type": "module"
+}

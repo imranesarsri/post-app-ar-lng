@@ -1,0 +1,367 @@
+/* Sing In/Create account (Sign Up)/Subscribe Pages */
+/* ---------------------------------------------------------- */
+
+.gh-form-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.gh-form-page-image {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+:root[data-theme="dark"] .gh-form-page-image {
+    filter: brightness(60%);
+}
+
+.gh-form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.gh-form-page-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-bg-main);
+    padding: 64px;
+    border-radius: var(--border-radius-elements);
+    z-index: 1;
+    animation: fadeInAnimation 0.4s ease-in;
+    box-shadow: 0 0 24px 0 rgba(63, 63, 63, 0.05);
+}
+
+:root[data-theme="dark"] .gh-form-page-form {
+    box-shadow: 0 0 24px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gh-form-site-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.gh-form-site-logo-img,
+.gh-form-site-logo-img--dark-mode {
+    height: 40px;
+    transition: opacity var(--transition-time) ease;
+}
+
+.gh-form-site-logo:hover .gh-form-site-logo-img,
+.gh-form-site-logo:hover .gh-form-site-logo-img--dark-mode {
+    opacity: 0.8;
+}
+
+.gh-form-site-logo.has-DM-logo .gh-form-site-logo-img--dark-mode {
+    display: none;
+}
+
+:root[data-theme="dark"] .gh-form-site-logo.has-DM-logo .gh-form-site-logo-img {
+    display: none;
+}
+
+:root[data-theme="dark"] .gh-form-site-logo.has-DM-logo .gh-form-site-logo-img--dark-mode {
+    display: block;
+}
+
+.gh-form-page__title {
+    display: block;
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 32px;
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    line-height: 1.2;
+    letter-spacing: var(--letter-spacing-site-title-1);
+}
+
+.gh-form-page__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    width: 100%;
+    gap: 12px;
+    height: 100%;
+}
+
+.gh-form-page__input-label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.gh-form-page-input {
+    color: var(--color-main);
+    width: 368px;
+    padding: 14px 20px;
+    background-color: var(--form-page-input-bg-color);
+    border-radius: var(--border-radius-buttons);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: border 0.25s ease, background-color 0.25s ease;
+}
+
+.gh-form-page-input:focus {
+    background-color: var(--form-page-input-focus-color);
+}
+
+.gh-form-page-input::placeholder {
+    opacity: 0.7;
+}
+
+.gh-form-page__submit-button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    background-color: var(--form-page-submit-btn-bg-color);
+    border-radius: var(--border-radius-buttons);
+    font-family: var(--font-family-button);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-button);
+    line-height: var(--line-height-button-2);
+    text-transform: var(--text-transform-button);
+    transition: background-color var(--transition-time) ease;
+}
+
+.gh-form-page__submit-button:hover {
+    background-color: var(--form-page-submit-btn-bg-color--hover);
+}
+
+.gh-form-page__submit-button svg {
+    display: none;
+}
+
+.gh-form-page-form.loading .gh-form-page__submit-button {
+    pointer-events: none;
+}
+
+.gh-form-page-form.loading .gh-form-page__submit-button span {
+    display: none;
+}
+
+.gh-form-page-form.loading .gh-form-page__submit-button svg {
+    display: block;
+}
+
+/* Form Question Styles */
+/* ----------------------------------------------------------------------------- */
+
+.gh-form-page-question {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.gh-form-page-question__span {
+    color: #A5A5A5;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.gh-form-page-question__link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.gh-form-page-question__link:hover {
+    color: var(--ghost-accent-color);
+}
+
+.gh-form-page-question__link svg {
+    transition: transform 0.3s ease;
+}
+
+.gh-form-page-question__link svg path {
+    stroke: var(--color-main);
+    transition: stroke 0.3s ease;
+}
+
+.gh-form-page-question__link:hover svg {
+    transform: rotate(-45deg);
+}
+
+.gh-form-page-question__link:hover svg path {
+    stroke: var(--ghost-accent-color);
+}
+
+/* Form Error Styles */
+/* ----------------------------------------------------------------------------- */
+
+.gh-form-page__error {
+    color: #d20101;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 16px;
+    display: none;
+    max-width: 240px;
+    align-self: center;
+    transition: opacity 0.5s ease;
+}
+
+.gh-form-page-form.error .gh-form-page__error {
+    display: block;
+    animation: errorFadeIn 0.5s ease;
+}
+
+.gh-form-page-form.error .gh-form-page-question {
+    margin-top: 16px;
+}
+
+/* Form Success Styles */
+/* ----------------------------------------------------------------------------- */
+
+.gh-form-page__success {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 368px;
+}
+
+.gh-form-page-form.success {
+    align-items: center;
+}
+
+.gh-form-page-form.success .gh-form-page__success {
+    display: flex;
+    animation: fadeInAnimation 0.4s ease-in;
+}
+
+.gh-form-page-form.success .gh-form-page__title,
+.gh-form-page-form.success .gh-form-page__input-wrapper,
+.gh-form-page-form.success .gh-form-page__submit-button,
+.gh-form-page-form.success .gh-form-page-question,
+.gh-form-page-form.success .gh-form-site-logo {
+    display: none;
+}
+
+.gh-form-page__success-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.gh-form-page__success-text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    opacity: 0.7;
+}
+
+.gh-form-page__success-button {
+    padding: 10px 14px;
+    color: #FFF;
+    background-color: var(--form-page-submit-btn-bg-color);
+    border-radius: var(--border-radius-buttons);
+    font-family: var(--font-family-button);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-button);
+    line-height: var(--line-height-button-2);
+    text-transform: var(--text-transform-button);
+    transition: background-color var(--transition-time) ease;
+}
+
+.gh-form-page__success-button:hover {
+    background-color: var(--form-page-submit-btn-bg-color--hover);
+}
+
+/* Media Quieries */
+/* ----------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+    .gh-form-page__submit-button:hover {
+        background-color: var(--form-page-submit-btn-bg-color);
+    }
+
+    .gh-form-page-question__link:hover {
+        color: var(--color-main);
+    }
+
+    .gh-form-page-question__link:hover svg {
+        transform: none;
+    }
+
+    .gh-form-page-question__link:hover svg path {
+        stroke: var(--color-main);
+    }
+
+    .gh-form-site-logo:hover .gh-form-site-logo-img,
+    .gh-form-site-logo:hover .gh-form-site-logo-img--dark-mode {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 550px) {
+    .gh-form-page-form {
+        padding: 40px;
+    }
+
+    .gh-form-page__success {
+        padding: 40px;
+    }
+
+    .gh-form-page__title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+    .gh-form-page-form {
+        width: 100%;
+        padding: 40px 24px;
+        box-shadow: none;
+    }
+
+    :root[data-theme="dark"] .gh-form-page-form {
+        box-shadow: none;
+    }
+
+    .gh-form-page__success {
+        padding: 40px 24px;
+        width: 100%;
+    }
+
+    .gh-form-page__success-title {
+        font-size: 24px;
+    }
+
+    .gh-form-page-input {
+        width: 100%;
+    }
+
+    .gh-form-page__title {
+        font-size: 28px;
+    }
+}

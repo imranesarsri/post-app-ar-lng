@@ -1,0 +1,47 @@
+#announcement-bar-root .gh-announcement-bar {
+    font-weight: 500;
+}
+
+#announcement-bar-root .gh-announcement-bar a:hover {
+    text-decoration: none;
+}
+
+#announcement-bar-root .gh-announcement-bar.dark a {
+    color: var(--ghost-accent-color);
+}
+
+#announcement-bar-root .gh-announcement-bar.dark {
+    background-color: var(--announcment-bar-dark-bg-color);
+}
+
+#announcement-bar-root .gh-announcement-bar.light {
+    color: var(--color-main);
+    background-color: var(--announcment-bar-light-bg-color);
+}
+
+#announcement-bar-root .gh-announcement-bar button {
+    transition: opacity var(--transition-time) ease;
+}
+
+:root[data-theme="dark"]
+    #announcement-bar-root
+    .gh-announcement-bar
+    button
+    svg
+    path {
+    fill: #fff;
+}
+
+#announcement-bar-root .gh-announcement-bar button:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 550px) {
+    #announcement-bar-root .gh-announcement-bar .gh-announcement-bar-content {
+        font-size: 14px;
+    }
+
+    #announcement-bar-root .gh-announcement-bar {
+        padding: 10px 40px;
+    }
+}

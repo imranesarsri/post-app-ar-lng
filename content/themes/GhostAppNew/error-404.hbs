@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}" data-theme="light">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <title>{{meta_title}}</title>
+        <link rel="stylesheet" href="{{asset 'built/index.css'}}" />
+        {{>font-pairings}}
+        {{>border-radius}}
+
+        <style>
+            :root {
+                --accent-color: {{@site.accent_color}};
+            }
+            :root[data-theme='light']{
+                --color-social-bg-icon: {{@site.accent_color}};
+            }
+            :root[data-theme='dark']{
+                --color-social-bg-icon: #fff;
+            }
+
+            #announcement-bar-root {
+                display: none;
+            }
+        </style>
+
+        <script>
+            const rootElem = document.querySelector("html[data-theme]");
+
+            const detectSystemTheme = () => {
+                if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                    rootElem.setAttribute("data-theme", "dark");
+                } else {
+                    rootElem.setAttribute("data-theme", "light");
+                }
+            };
+
+            const initTheme = () => {
+                const localStoragePref = localStorage.getItem("data-theme");
+
+                if (localStoragePref) {
+                    rootElem.setAttribute("data-theme", localStoragePref);
+                } else {
+                    detectSystemTheme();
+                }
+            };
+
+            initTheme();
+
+            window
+                .matchMedia("(prefers-color-scheme: dark)")
+                .addEventListener("change", () => {
+                    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                        rootElem.setAttribute("data-theme", "dark");
+                    } else {
+                        rootElem.setAttribute("data-theme", "light");
+                    }
+                });
+        </script>
+        
+        <script src="{{asset 'built/index.js'}}" defer></script>
+        
+        {{ghost_head}}
+        {{! Outputs important meta data and settings, should always be in <head> }}
+
+    </head>
+    
+    <body class="{{body_class}}">
+        <div class="gh-viewport">
+            <main class="gh-main gh-container gh-error-404-page">
+                <div class="gh-404-error">
+                    <h1 class="gh-404-error-title">{{t "Page Not Found"}}</h1>
+                    <p class="gh-404-error-description">
+                        {{t "Uh oh! The page you are looking for doesn't exist or has been moved. Try retracing your steps or going back home."}}
+                    </p>
+                    <a class="gh-main-button gh-404-error-home-btn" href="{{@site.url}}"
+                        aria-label="{{t "Back To Home Page"}}">{{t "Back To Home Page"}}</a>
+                </div>
+            </main>
+        </div>
+    
+        {{! <foot> }}
+            {{ghost_foot}}
+            {{! Outputs important scripts - should always be included before closing body tag }}
+    </body>
+    
+    </html>
+

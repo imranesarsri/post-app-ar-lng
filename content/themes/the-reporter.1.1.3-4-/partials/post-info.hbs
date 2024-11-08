@@ -1,0 +1,50 @@
+<div class="gh-post-info">
+    {{#has tag="#video"}}
+    <div class="gh-post-info-tag-icon gh-post-info-tag-icon--video" tabindex="0">
+        {{>icons/video}}
+        <div class="post-tag-icon__tooltip">
+            <div class="post-tag-icon__tooltip-bg"></div>
+            <span class="post-tag-icon__tooltip-span">{{t "Has Video Content"}}</span>
+        </div>
+    </div>
+    {{/has}}
+    {{#if featured}}
+    <div class="gh-post-info-tag-icon gh-post-info-tag-icon--featured" tabindex="0">
+        {{>icons/lightning-icon}}
+        <div class="post-tag-icon__tooltip">
+            <div class="post-tag-icon__tooltip-bg"></div>
+            <span class="post-tag-icon__tooltip-span">{{t "Featured post"}}</span>
+        </div>
+    </div>
+    {{/if}}
+    {{^match visibility "=" 'public'}}
+        <div class="gh-post-info-tag-icon gh-post-info-tag-icon--private-tag" role="note" aria-label="{{t "For members only tag"}}">
+            {{>icons/lock-icon}}
+            <div class="post-tag-icon__tooltip">
+                <div class="post-tag-icon__tooltip-bg"></div>
+                <span class="post-tag-icon__tooltip-span">
+                    {{#match visibility "=" "members"}}
+                        {{t "Only for members"}}
+                    {{/match}}
+                    {{#match visibility "=" "paid"}}
+                        {{t "Only for paid members"}}
+                    {{/match}}
+                    {{#match visibility "=" "tiers"}}
+                       {{t "For specific tier(s) members"}}
+                    {{/match}}
+                </span>
+            </div>
+        </div>
+    {{/match}}
+
+    <div class="gh-post-info__author-wrapper">
+        <span class="gh-post-info__author-start{{#has tag=" video"}} gh-post-info--video{{/has}}">{{t "by"}}</span>
+        {{#primary_author}}
+        <a href="{{url}}" class="gh-post-info__author-link">{{name}}</a>
+        {{/primary_author}}
+    </div>
+
+    <time class="gh-post-info__date" datetime="{{date format='YYYY-MM-DD'}}">
+        {{date format="MMMM DD, YYYY"}}
+    </time>
+</div>

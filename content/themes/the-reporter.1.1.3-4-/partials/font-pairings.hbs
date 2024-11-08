@@ -1,0 +1,570 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{{#match @custom.typography "DM Serif Display/DM Sans" }}
+{{!-- DM Serif Display --}}
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+{{!-- DM sans --}}
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --font-family-navigation: 'DM Sans', sans-serif;
+        --font-family-body: 'DM Sans', sans-serif;
+        --font-family-title: 'DM Serif Display', serif;
+        --font-family-section-title: 'DM Sans', sans-serif;
+        --font-family-post-tag: 'DM Sans', sans-serif;
+        --font-family-post-excerpt: 'DM Sans', sans-serif;
+        --font-family-post-info: 'DM Sans', sans-serif;
+        --font-family-button: 'DM Sans', sans-serif;
+        --font-family-number: 'DM Serif Display', serif;    
+        
+        --font-weight-title: 400;
+        --font-weight-tag: 700;
+        --font-weight-post-excerpt: 400;
+        --font-weight-post-info: 400;
+        --font-weight-navigation: 700;
+        --font-weight-button: 700;
+        --font-weight-section-title: 700;
+        --font-weight-footer-secondary: 400;
+        --font-weight-number: 400;
+
+        --font-size-site-title-1: 30px;
+        --font-size-site-title-2: 48px;
+        --font-size-navigation-1: 14px;
+        --font-size-navigation-2: 16px;
+        --font-size-button: 12px;
+        --font-size-section-title: 12px;
+        --font-size-tag: 9px;
+        --font-size-post-title: 24px;
+        --font-size-post-title-no-img: 18px;
+        --font-size-main-post-title: 36px;
+        --font-size-main-post-title-no-feat: 32px;
+        --font-size-main-post-excerpt: 20px;
+        --font-size-latest-post-title: 18px;
+        --font-size-post-info: 12px;
+        --font-size-number: 50px;
+        --font-size-cta-text: 16px;
+        --font-size-post-page-title: 46px;
+        --font-size-post-page-excerpt: 20px;
+
+        --line-height-site-title-1: 100%;
+        --line-height-site-title-2: 100%;
+        --line-height-navigation-1: 100%;
+        --line-height-navigation-2: 110%;
+        --line-height-button-1: 110%;
+        --line-height-button-2: 120%;
+        --line-height-tag: 100%;
+        --line-height-post-title: 110%;
+        --line-height-main-post-title: 110%;
+        --line-height-main-post-excerpt: 140%;
+        --line-height-latest-post-title: 110%;
+        --line-height-post-info: 110%;
+        --line-height-section-title: 120%;
+        --line-height-number: 90%;
+        --line-height-cta-text: 130%;
+
+        --letter-spacing-title: 0;
+        --letter-spacing-button: -0.02em; 
+        --letter-spacing-tag: 0.02em; 
+        --letter-spacing-section-title: 0.02em;
+        --letter-spacing-number: -0.04em;
+
+        --text-transform-navigation: unset;
+        --text-transform-tags: uppercase;
+        --text-transform-button: uppercase;
+        --text-transform-section-title: uppercase;
+        --text-transform-footer-link: uppercase;
+
+        --edit-billing-btn-padding--loading: 4.5px 54.5px;
+    }
+</style>
+{{/match}}
+
+{{#match @custom.typography "Inter" }}
+
+{{!-- Inter --}}
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+<style>
+    :root {
+        --font-family-navigation: 'Inter', sans-serif;
+        --font-family-body: 'Inter', sans-serif;
+        --font-family-title: 'Inter', sans-serif;
+        --font-family-section-title: 'Inter', sans-serif;
+        --font-family-post-tag: 'Inter', sans-serif;
+        --font-family-post-excerpt: 'Inter', sans-serif;
+        --font-family-post-info: 'Inter', sans-serif;
+        --font-family-button: 'Inter', sans-serif;
+        --font-family-number: 'Inter', sans-serif;    
+        
+        --font-weight-title: 800;
+        --font-weight-tag: 700;
+        --font-weight-post-excerpt: 400;
+        --font-weight-post-info: 400;
+        --font-weight-navigation: 700;
+        --font-weight-button: 700;
+        --font-weight-section-title: 700;
+        --font-weight-footer-secondary: 700;
+        --font-weight-number: 800;
+
+        --font-size-site-title-1: 30px;
+        --font-size-site-title-2: 46px;
+        --font-size-navigation-1: 12px;
+        --font-size-navigation-2: 14px;
+        --font-size-button: 12px;
+        --font-size-section-title: 12px;
+        --font-size-tag: 9px;
+        --font-size-post-title: 24px;
+        --font-size-post-title-no-img: 18px;
+        --font-size-main-post-title: 36px;
+        --font-size-main-post-title-no-feat: 32px;
+        --font-size-main-post-excerpt: 18px;
+        --font-size-latest-post-title: 18px;
+        --font-size-post-info: 12px;
+        --font-size-number: 48px;
+        --font-size-cta-text: 16px;
+        --font-size-post-page-title: 46px;
+        --font-size-post-page-excerpt: 20px;
+
+        --line-height-site-title-1: 100%;
+        --line-height-site-title-2: 100%;
+        --line-height-navigation-1: 130%;
+        --line-height-navigation-2: 150%;
+        --line-height-button-1: 120%; 
+        --line-height-button-2: 120%; 
+        --line-height-tag: 110%;
+        --line-height-post-title: 110%;
+        --line-height-main-post-title: 110%;
+        --line-height-main-post-excerpt: 140%;
+        --line-height-latest-post-title: 110%;
+        --line-height-post-info: 110%;
+        --line-height-section-title: 120%;
+        --line-height-number: 90%;
+        --line-height-cta-text: 130%;
+
+        --letter-spacing-title: -0.03em;
+        --letter-spacing-button: 0; 
+        --letter-spacing-tag: 0.02em; 
+        --letter-spacing-section-title: -0.02em;
+        --letter-spacing-number: -0.04em;
+
+        --text-transform-navigation: unset;
+        --text-transform-tags: uppercase;
+        --text-transform-button: unset;
+        --text-transform-section-title: uppercase;
+        --text-transform-footer-link: uppercase;
+
+        --edit-billing-btn-padding--loading: 4.5px 45px;
+    }
+</style>
+{{/match}}
+
+{{#match @custom.typography "Outfit" }}
+
+{{!-- Outfit --}}
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+<style>
+    :root {
+        --font-family-navigation: 'Outfit', sans-serif;
+        --font-family-body: 'Inter', sans-serif;
+        --font-family-title: 'Outfit', sans-serif;
+        --font-family-section-title: 'Outfit', sans-serif;
+        --font-family-post-tag: 'Outfit', sans-serif;
+        --font-family-post-excerpt: 'Outfit', sans-serif;
+        --font-family-post-info: 'Outfit', sans-serif;
+        --font-family-button: 'Outfit', sans-serif;
+        --font-family-number: 'Outfit', sans-serif;    
+        
+        --font-weight-title: 600;
+        --font-weight-tag: 700;
+        --font-weight-post-excerpt: 400;
+        --font-weight-post-info: 400;
+        --font-weight-navigation: 600;
+        --font-weight-button: 600;
+        --font-weight-section-title: 600;
+        --font-weight-footer-secondary: 400;
+        --font-weight-number: 500;
+
+        --font-size-site-title-1: 30px;
+        --font-size-site-title-2: 38px;
+        --font-size-navigation-1: 12px;
+        --font-size-navigation-2: 14px;
+        --font-size-button: 12px;
+        --font-size-section-title: 12px;
+        --font-size-tag: 9px;
+        --font-size-post-title: 24px;
+        --font-size-post-title-no-img: 18px;
+        --font-size-main-post-title: 36px;
+        --font-size-main-post-title-no-feat: 32px;
+        --font-size-main-post-excerpt: 20px;
+        --font-size-latest-post-title: 18px;
+        --font-size-post-info: 12px;
+        --font-size-number: 50px;
+        --font-size-cta-text: 18px;
+        --font-size-post-page-title: 46px;
+        --font-size-post-page-excerpt: 20px;
+
+        --line-height-site-title-1: 140%;
+        --line-height-site-title-2: 100%;
+        --line-height-navigation-1: 130%;
+        --line-height-navigation-2: 150%;
+        --line-height-button-1: 130%; 
+        --line-height-button-2: 130%; 
+        --line-height-tag: 110%;
+        --line-height-post-title: 110%;
+        --line-height-main-post-title: 110%;
+        --line-height-main-post-excerpt: 140%;
+        --line-height-latest-post-title: 110%;
+        --line-height-post-info: 110%;
+        --line-height-section-title: 130%;
+        --line-height-number: 90%;
+        --line-height-cta-text: 130%;
+
+        --letter-spacing-title: -0.04em;
+        --letter-spacing-button: 0; 
+        --letter-spacing-tag: 0.02em; 
+        --letter-spacing-section-title: 0;
+        --letter-spacing-number: -0.04em;
+
+        --text-transform-navigation: uppercase;
+        --text-transform-tags: uppercase;
+        --text-transform-button: uppercase;
+        --text-transform-section-title: uppercase;
+        --text-transform-footer-link: uppercase;
+
+        --edit-billing-btn-padding--loading: 5px 54.5px;
+    }
+</style>
+{{/match}}
+
+{{#match @custom.typography "Plus Jakarta Sans/DM Sans" }}
+
+{{!-- Plus Jakarta Sans --}}
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+
+{{!-- DM Sans --}}
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&display=swap" rel="stylesheet">
+    
+<style>
+    :root {
+        --font-family-navigation: 'DM Sans', sans-serif;
+        --font-family-body: 'DM Sans', sans-serif;
+        --font-family-title: 'Plus Jakarta Sans', sans-serif;
+        --font-family-section-title: 'DM Sans', sans-serif;
+        --font-family-post-tag: 'DM Sans', sans-serif;
+        --font-family-post-excerpt: 'DM Sans', sans-serif;
+        --font-family-post-info: 'DM Sans', sans-serif;
+        --font-family-button: 'DM Sans', sans-serif;
+        --font-family-number: 'Plus Jakarta Sans', sans-serif;   
+        
+        --font-weight-title: 700;
+        --font-weight-tag: 700;
+        --font-weight-post-excerpt: 400;
+        --font-weight-post-info: 400;
+        --font-weight-navigation: 700;
+        --font-weight-button: 700;
+        --font-weight-section-title: 700;
+        --font-weight-footer-secondary: 400;
+        --font-weight-number: 500;
+
+        --font-size-site-title-1: 30px;
+        --font-size-site-title-2: 40px;
+        --font-size-navigation-1: 14px;
+        --font-size-navigation-2: 16px;
+        --font-size-button: 12px;
+        --font-size-section-title: 12px;
+        --font-size-tag: 9px;
+        --font-size-post-title: 24px;
+        --font-size-post-title-no-img: 18px;
+        --font-size-main-post-title: 36px;
+        --font-size-main-post-title-no-feat: 32px;
+        --font-size-main-post-excerpt: 20px;
+        --font-size-latest-post-title: 18px;
+        --font-size-post-info: 12px;
+        --font-size-number: 50px;
+        --font-size-cta-text: 16px;
+        --font-size-post-page-title: 46px;
+        --font-size-post-page-excerpt: 20px;
+
+        --line-height-site-title-1: 140%;
+        --line-height-site-title-2: 100%;
+        --line-height-navigation-1: 130%;
+        --line-height-navigation-2: 150%;
+        --line-height-button-1: 120%; 
+        --line-height-button-2: 120%; 
+        --line-height-tag: 110%;
+        --line-height-post-title: 110%;
+        --line-height-main-post-title: 110%;
+        --line-height-main-post-excerpt: 140%;
+        --line-height-latest-post-title: 110%;
+        --line-height-post-info: 110%;
+        --line-height-section-title: 130%;
+        --line-height-number: 90%;
+        --line-height-cta-text: 130%;
+
+        --letter-spacing-title: -0.04em;
+        --letter-spacing-button: 0; 
+        --letter-spacing-tag: 0.02em; 
+        --letter-spacing-section-title: 0.02em;
+        --letter-spacing-number: -0.04em;
+
+        --text-transform-navigation: unset;
+        --text-transform-tags: uppercase;
+        --text-transform-button: unset;
+        --text-transform-section-title: uppercase;
+        --text-transform-footer-link: uppercase;
+
+        --edit-billing-btn-padding--loading: 4.5px 45px;
+    }
+</style>
+{{/match}}
+
+{{#match @custom.typography "IBM Plex Sans/Manrope" }}
+
+{{!-- IBM Plex Sans --}}
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+
+{{!-- Manrope --}}
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+<style>
+    :root {
+        --font-family-navigation: 'Manrope', sans-serif;
+        --font-family-body: 'Manrope', sans-serif;
+        --font-family-title: 'IBM Plex Sans', sans-serif;
+        --font-family-section-title: 'Manrope', sans-serif;
+        --font-family-post-tag: 'Manrope', sans-serif;
+        --font-family-post-excerpt: 'Manrope', sans-serif;
+        --font-family-post-info: 'Manrope', sans-serif;
+        --font-family-button: 'Manrope', sans-serif;
+        --font-family-number: 'IBM Plex Sans', sans-serif;
+        
+        --font-weight-title: 700;
+        --font-weight-tag: 700;
+        --font-weight-post-excerpt: 400;
+        --font-weight-post-info: 500;
+        --font-weight-navigation: 700;
+        --font-weight-button: 700;
+        --font-weight-section-title: 700;
+        --font-weight-footer-secondary: 500;
+        --font-weight-number: 700;
+
+        --font-size-site-title-1: 28px;
+        --font-size-site-title-2: 32px;
+        --font-size-navigation-1: 14px;
+        --font-size-navigation-2: 16px;
+        --font-size-button: 12px;
+        --font-size-section-title: 12px;
+        --font-size-tag: 9px;
+        --font-size-post-title: 24px;
+        --font-size-post-title-no-img: 18px;
+        --font-size-main-post-title: 36px;
+        --font-size-main-post-title-no-feat: 32px;
+        --font-size-main-post-excerpt: 20px;
+        --font-size-latest-post-title: 18px;
+        --font-size-post-info: 12px;
+        --font-size-number: 50px;
+        --font-size-cta-text: 16px;
+        --font-size-post-page-title: 46px;
+        --font-size-post-page-excerpt: 20px;
+
+        --line-height-site-title-1: 100%;
+        --line-height-site-title-2: 100%;
+        --line-height-navigation-1: 130%;
+        --line-height-navigation-2: 150%;
+        --line-height-button-1: 120%; 
+        --line-height-button-2: 120%; 
+        --line-height-tag: 110%;
+        --line-height-post-title: 110%;
+        --line-height-main-post-title: 110%;
+        --line-height-main-post-excerpt: 140%;
+        --line-height-latest-post-title: 110%;
+        --line-height-post-info: 110%;
+        --line-height-section-title: 120%;
+        --line-height-number: 90%;
+        --line-height-cta-text: 130%;
+
+        --letter-spacing-title: -0.04em;
+        --letter-spacing-button: 0; 
+        --letter-spacing-tag: 0.02em; 
+        --letter-spacing-section-title: -0.02em;
+        --letter-spacing-number: -0.04em;
+
+        --text-transform-navigation: uppercase;
+        --text-transform-tags: uppercase;
+        --text-transform-button: unset;
+        --text-transform-section-title: uppercase;
+        --text-transform-footer-link: uppercase;
+
+        --edit-billing-btn-padding--loading: 4.5px 44.5px;
+    }
+</style>
+{{/match}}
+
+{{#match @custom.typography "Merriweather/DM Sans" }}
+
+{{!-- Merriweather --}}
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+{{!-- DM Sans --}}
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&display=swap" rel="stylesheet">
+    
+<style>
+    :root {
+        --font-family-navigation: 'DM Sans', sans-serif;
+        --font-family-body: 'DM Sans', sans-serif;
+        --font-family-title: 'Merriweather', serif;
+        --font-family-section-title: 'DM Sans', sans-serif;
+        --font-family-post-tag: 'DM Sans', sans-serif;
+        --font-family-post-excerpt: 'DM Sans', sans-serif;
+        --font-family-post-info: 'DM Sans', sans-serif;
+        --font-family-button: 'DM Sans', sans-serif;
+        --font-family-number: 'Merriweather', serif;
+        
+        --font-weight-title: 400;
+        --font-weight-tag: 700;
+        --font-weight-post-excerpt: 400;
+        --font-weight-post-info: 400;
+        --font-weight-navigation: 700;
+        --font-weight-button: 700;
+        --font-weight-section-title: 700;
+        --font-weight-footer-secondary: 400;
+        --font-weight-number: 400;
+
+        --font-size-site-title-1: 20px;
+        --font-size-site-title-2: 32px;
+        --font-size-navigation-1: 14px;
+        --font-size-navigation-2: 16px;
+        --font-size-button: 12px;
+        --font-size-section-title: 12px;
+        --font-size-tag: 9px;
+        --font-size-post-title: 24px;
+        --font-size-post-title-no-img: 18px;
+        --font-size-main-post-title: 36px;
+        --font-size-main-post-title-no-feat: 32px;
+        --font-size-main-post-excerpt: 20px;
+        --font-size-latest-post-title: 18px;
+        --font-size-post-info: 12px;
+        --font-size-number: 50px;
+        --font-size-cta-text: 16px;
+        --font-size-post-page-title: 46px;
+        --font-size-post-page-excerpt: 20px;
+
+        --line-height-site-title-1: 140%;
+        --line-height-site-title-2: 100%;
+        --line-height-navigation-1: 130%;
+        --line-height-navigation-2: 150%;
+        --line-height-button-1: 120%; 
+        --line-height-button-2: 120%; 
+        --line-height-tag: 110%;
+        --line-height-post-title: 110%;
+        --line-height-main-post-title: 110%;
+        --line-height-main-post-excerpt: 140%;
+        --line-height-latest-post-title: 110%;
+        --line-height-post-info: 110%;
+        --line-height-section-title: 130%;
+        --line-height-number: 90%;
+        --line-height-cta-text: 130%;
+
+        --letter-spacing-title: -0.04em;
+        --letter-spacing-button: -0.02em; 
+        --letter-spacing-tag: 0.02em; 
+        --letter-spacing-section-title: -0.02em;
+        --letter-spacing-number: -0.04em;
+
+        --text-transform-navigation: unset;
+        --text-transform-tags: uppercase;
+        --text-transform-button: uppercase;
+        --text-transform-section-title: uppercase;
+        --text-transform-footer-link: uppercase;
+
+        --edit-billing-btn-padding--loading: 4.5px 54.5px;
+    }
+</style>
+{{/match}}
+
+{{#match @custom.typography "Sora/DM Sans" }}
+
+{{!-- Sora --}}
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
+
+{{!-- DM Sans --}}
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&display=swap" rel="stylesheet">
+    
+<style>
+    :root {
+        --font-family-navigation: 'DM Sans', sans-serif;
+        --font-family-body: 'DM Sans', sans-serif;
+        --font-family-title: 'Sora', sans-serif;
+        --font-family-section-title: 'DM Sans', sans-serif;
+        --font-family-post-tag: 'DM Sans', sans-serif;
+        --font-family-post-excerpt: 'DM Sans', sans-serif;
+        --font-family-post-info: 'DM Sans', sans-serif;
+        --font-family-button: 'DM Sans', sans-serif;
+        --font-family-number: 'Sora', sans-serif;
+        
+        --font-weight-title: 600;
+        --font-weight-tag: 700;
+        --font-weight-post-excerpt: 400;
+        --font-weight-post-info: 400;
+        --font-weight-navigation: 700;
+        --font-weight-button: 700;
+        --font-weight-section-title: 700;
+        --font-weight-footer-secondary: 400;
+        --font-weight-number: 600;
+
+        --font-size-site-title-1: 28px;
+        --font-size-site-title-2: 44px;
+        --font-size-navigation-1: 14px;
+        --font-size-navigation-2: 16px;
+        --font-size-button: 12px;
+        --font-size-section-title: 12px;
+        --font-size-tag: 9px;
+        --font-size-post-title: 24px;
+        --font-size-post-title-no-img: 18px;
+        --font-size-main-post-title: 36px;
+        --font-size-main-post-title-no-feat: 32px;
+        --font-size-main-post-excerpt: 20px;
+        --font-size-latest-post-title: 18px;
+        --font-size-post-info: 12px;
+        --font-size-number: 50px;
+        --font-size-cta-text: 16px;
+        --font-size-post-page-title: 46px;
+        --font-size-post-page-excerpt: 20px;
+
+        --line-height-site-title-1: 100%;
+        --line-height-site-title-2: 100%;
+        --line-height-navigation-1: 130%;
+        --line-height-navigation-2: 150%;
+        --line-height-button-1: 120%; 
+        --line-height-button-2: 120%; 
+        --line-height-tag: 110%;
+        --line-height-post-title: 110%;
+        --line-height-main-post-title: 110%;
+        --line-height-main-post-excerpt: 140%;
+        --line-height-latest-post-title: 110%;
+        --line-height-post-info: 110%;
+        --line-height-section-title: 120%;
+        --line-height-number: 90%;
+        --line-height-cta-text: 130%;
+
+        --letter-spacing-title: -0.04em;
+        --letter-spacing-button: 0; 
+        --letter-spacing-tag: 0.02em; 
+        --letter-spacing-section-title: -0.02em;
+        --letter-spacing-number: -0.04em;
+
+        --text-transform-navigation: unset;
+        --text-transform-tags: uppercase;
+        --text-transform-button: unset;
+        --text-transform-section-title: uppercase;
+        --text-transform-footer-link: uppercase;
+
+        --edit-billing-btn-padding--loading: 4.5px 45px;
+    }
+</style>
+{{/match}}

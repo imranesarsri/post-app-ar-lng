@@ -1,0 +1,64 @@
+<section class="gh-container--section{{#match themeSection "light-gray"}} gh-section--theme-light-gray{{/match}}{{#match themeSection "black"}} gh-section--theme-black{{/match}}">
+    <div class="gh-container">
+        <div class="gh-hero-wrapper gh-hero-wrapper--featured-type-4">
+
+            <div class="gh-features-posts--left">
+                {{#get "posts" include="authors,tags" filter="featured:true" as |featuredPosts|}}
+                    {{#match featuredPosts.length ">=" 3}}
+                        {{#foreach featuredPosts from="4" to="6"}}
+                            {{>featured-post type="4-left" classNames="gh-featured-post--column gh-featured-post--bb gh-featured-post--pb-16px"}}
+                        {{/foreach}}
+                    {{else}}
+                        <div class="gh-posts--not-enought">not enough posts</div>
+                    {{/match}}
+                {{/get}}
+            </div>
+
+            <div class="gh-features-posts-grid--one-columns">
+                {{#get "posts" limit="3" include="authors,tags" filter="featured:true" as |featuredPosts|}}
+                    {{#match featuredPosts.length "=" 3}}
+                        {{#foreach featuredPosts}}
+                        {{#if @first}}
+                            {{>featured-main-post type="4" classNames="gh-featured-main-post--one-column"}}
+                        {{else}}
+                            {{>featured-post type="4" classNames="gh-featured-post--row gh-featured-post--row-reverse gh-featured-post--bb gh-featured-post--pb-16px gh-post--justify-content-center"}}
+                        {{/if}}
+                        {{/foreach}}
+                    {{else}}
+                        <div class="gh-posts--not-enought">{{t "not enough posts"}}</div>
+                    {{/match}}
+                {{/get}}
+            </div>
+
+            <div class="gh-latest-posts">
+                <h3 class="gh-latest-title">{{t "Latest Posts"}}</h3>
+                {{#get "posts" limit="6" include="authors,tags" as |latestPosts|}}
+                    {{#match latestPosts.length "=" 6}}
+                        {{#foreach latestPosts}}
+                            {{#if @first}}
+                                <div class="gh-latest-posts__wrapper-outher">
+                                {{>latest-post type="1-first" classNames="gh-latest-post--first"}}
+                                {{else}}
+                                    {{#match @index 1}}
+                                    <div class="gh-latest-posts__wrapper-inner">
+                                    {{/match}}
+
+                                    {{>latest-post type="1" classNames="gh-latest-post--default"}}
+
+                                    {{#if @last}}
+                                        </div>
+                                    {{/if}}
+                            {{/if}}
+                            {{#if @last}}
+                                </div>
+                            {{/if}}
+                        {{/foreach}}
+                    {{else}}
+                        <div class="gh-posts--not-enought">{{t "not enough posts"}}</div>
+                    {{/match}}
+                {{/get}}
+            </div>
+        </div>
+    </div>
+</section>
+

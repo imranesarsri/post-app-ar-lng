@@ -1,0 +1,76 @@
+{{#if isSecondary}}
+    <ul class="gh-sub-nav">
+        {{#foreach navigation}}
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}" class="gh-sub-nav-menu-item" aria-label="{{t "{label} navigation link" label=label}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+{{else}}
+    <nav class="gh-nav">
+        <ul class="gh-nav-menu">
+            {{#match position "=" "mobileMenu"}}
+                {{#foreach navigation}}
+                    {{#match url "=" "#"}}
+                        <li class="gh-mobile-menu__item">
+                            <button class="gh-mobile-menu-button" aria-label="{{t "Open submenu"}} {{label}}">
+                                <span class="gh-mobile-menu-button__text">
+                                    {{label}}
+                                </span>
+                                {{>icons/arrow-menu-icon}}
+                            </button>
+                            <ul class="gh-mobile-submenu">
+                    {{else match label.[0] "=" "-"}}
+                                <li class="gh-mobile-submenu__item">
+                                    <a class="gh-mobile-submenu__item-link" href="{{url absolute="true"}}" aria-label="{{#foreach label as |charLabel|}}{{#match @index '>' '1'}}{{charLabel}}{{/match}}{{/foreach}} {{t "Navigation link"}}">
+                                        {{#foreach label as |charLabel|}}{{#match @index '>' '1'}}{{charLabel}}{{/match}}{{/foreach}}
+                                    </a>
+                                </li>
+                    {{else match label.[0] "=" "+"}}
+                                <li class="gh-mobile-submenu__item">
+                                    <a class="gh-mobile-submenu__item-link" href="{{url absolute="true"}}" aria-label="{{#foreach label as |charLabel|}}{{#match @index '>' '1'}}{{charLabel}}{{/match}}{{/foreach}} {{t "Navigation link"}}">
+                                        {{#foreach label as |charLabel|}}{{#match @index '>' '1'}}{{charLabel}}{{/match}}{{/foreach}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    {{else}}
+                        <li class="gh-mobile-menu__item">
+                            <a href="{{url absolute="true"}}" class="gh-mobile-submenu__item-link" aria-label="{{label}} {{t "Navigation link"}}">
+                                {{label}}
+                            </a>
+                        </li>
+                    {{/match}}
+                {{/foreach}}
+            {{else}}
+                {{#match fontSize "=" "true"}}
+                    {{#foreach navigation}}
+                        {{#match url "=" "#"}}
+                            <li class="gh-nav-list-item gh-nav-list-item--submenu">
+                                <button class="gh-nav-list-item__button" aria-label="{{label}} {{t "Navigation link"}}" {{#if @custom.header_navigation_font_size}}style="font-size:var(--header-navigation-font-size)"{{/if}}>
+                                    {{label}}
+                                </button>
+                                <ul class="gh-nav-list-item-submenu">
+                        {{else match label.[0] "=" "-"}}
+                                    <li class="gh-nav-list-item-submenu__item">
+                                        <a class="gh-nav-list-item-submenu__item-link" href="{{url absolute="true"}}" aria-label="{{label}} {{t "Navigation link"}}">{{#foreach label as |charLabel|}}{{#match @index '>' '1'}}{{charLabel}}{{/match}}{{/foreach}}</a>
+                                    </li>
+                        {{else match label.[0] "=" "+"}}
+                                    <li class="gh-nav-list-item-submenu__item">
+                                        <a class="gh-nav-list-item-submenu__item-link" href="{{url absolute="true"}}" aria-label="{{label}} {{t "Navigation link"}}">{{#foreach label as |charLabel|}}{{#match @index '>' '1'}}{{charLabel}}{{/match}}{{/foreach}}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        {{else}}
+                            <li class="gh-nav-list-item">
+                                <a href="{{url absolute="true"}}" class="gh-nav-list-item__button" aria-label="{{label}} {{t "Navigation link"}}" {{#if @custom.header_navigation_font_size}}style="font-size:var(--header-navigation-font-size)"{{/if}}>
+                                    <span>{{label}}</span>
+                                </a>
+                            </li>
+                        {{/match}}
+                    {{/foreach}}
+                {{/match}}
+            {{/match}}
+        </ul>
+    </nav>
+{{/if}}
+
+

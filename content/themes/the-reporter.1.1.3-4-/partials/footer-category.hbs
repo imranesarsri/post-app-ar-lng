@@ -1,0 +1,23 @@
+<div class="gh-footer__category-wrapper">
+    {{#get "tags" filter="slug:{{category}}"}}
+        {{#foreach tags}}
+            <a href="{{url}}" aria-label="{{name}}" class="gh-footer__category-title-link gh-footer__category-title-link--hover-default">{{name}}</a>
+        {{/foreach}}
+    {{/get}}
+
+    {{#get "tags" filter="slug:[{{subCategory}}]"}}
+        {{#foreach tags}}
+            {{#if @first}}
+                <ol class="gh-footer__category-list">
+            {{/if}}
+
+                <li class="gh-footer__category-item">
+                    <a class="gh-footer__category-link" href="{{url}}" aria-label="{{name}}">{{name}}</a>
+                </li>
+
+            {{#if @last}}
+                </ol>
+            {{/if}}
+        {{/foreach}}
+    {{/get}}
+</div>

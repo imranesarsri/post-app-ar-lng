@@ -1,0 +1,52 @@
+<section class="gh-container--section{{#match themeSection "light-gray"}} gh-section--theme-light-gray{{/match}}{{#match themeSection "black"}} gh-section--theme-black{{/match}}">
+    <div class="gh-container">
+        <div class="gh-hero-wrapper gh-hero-wrapper--featured-type-1-2-3">
+
+            <div class="gh-features-posts-grid--two-columns">
+                {{#get "posts" limit="3" include="authors,tags" filter="featured:true" as |featuredPosts|}}
+                    {{#match featuredPosts.length "=" 3}}
+                        {{#foreach featuredPosts}}
+                        {{#if @first}}
+                            {{>featured-main-post type="1" classNames="gh-featured-main-post--two-columns gh-align-info"}}
+                        {{else}}
+                            {{>featured-main-post type="1" classNames="gh-featured-post--column gh-featured-post--type-2"}}
+                        {{/if}}
+                        {{/foreach}}
+                    {{else}}
+                        <div class="gh-posts--not-enought">{{t "not enough posts"}}</div>
+                    {{/match}}
+                {{/get}}
+            </div>
+
+            <div class="gh-latest-posts">
+                <h3 class="gh-latest-title">{{t "Latest Posts"}}</h3>
+                {{#get "posts" limit="6" include="authors,tags" as |latestPosts|}}
+                    {{#match latestPosts.length "=" 6}}
+                        {{#foreach latestPosts}}
+                            {{#if @first}}
+                                <div class="gh-latest-posts__wrapper-outher">
+                                {{>latest-post type="1-first" classNames="gh-latest-post--first"}}
+                                {{else}}
+                                    {{#match @index 1}}
+                                    <div class="gh-latest-posts__wrapper-inner">
+                                    {{/match}}
+
+                                    {{>latest-post type="1" classNames="gh-latest-post--default"}}
+
+                                    {{#if @last}}
+                                        </div>
+                                    {{/if}}
+                            {{/if}}
+                            {{#if @last}}
+                                </div>
+                            {{/if}}
+                        {{/foreach}}
+                    {{else}}
+                        <div class="gh-posts--not-enought">{{t "not enough posts"}}</div>
+                    {{/match}}
+                {{/get}}
+            </div>
+        </div>
+    </div>
+</section>
+
