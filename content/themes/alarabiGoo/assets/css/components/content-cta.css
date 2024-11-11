@@ -1,0 +1,183 @@
+.gh-post-subscribe-cta {
+    padding: 48px 64px;
+    background-color: var(--color-cta-bg);
+    border-radius: var(--border-radius-elements);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gh-post-subscribe-cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    max-width: 688px;
+    width: 100%;
+}
+
+.gh-post-subscribe-cta-content h2 {
+    color: var(--color-cta-text);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-main-post-title-no-feat);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-main-post-title);
+    text-align: center;
+}
+
+.gh-post-subscribe-cta-content p {
+    color: var(--color-cta-text);
+    font-size: var(--font-size-cta-text);
+    font-weight: 400;
+    line-height: var(--line-height-cta-text);
+    text-align: center;
+    margin-top: 8px;
+}
+
+.gh-post-subscribe-cta-content svg {
+    width: 48px;
+    height: 48px;
+}
+
+.gh-post-subscribe-cta-content svg path {
+    stroke: var(--color-cta-text) !important;
+}
+
+.gh-post-subscribe-cta-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.gh-post-subscribe-cta-btn {
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-buttons);
+
+    padding: 6px 24px;
+
+    font-family: var(--font-family-button);
+    font-size: 14px;
+    font-weight: var(--font-weight-button);
+
+    position: relative;
+}
+
+.gh-post-subscribe-cta-question {
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+.gh-post-subscribe-cta-btn span {
+    position: relative;
+    z-index: 5;
+
+    color: var(--color-cta-text);
+}
+
+.gh-post-subscribe-cta-btn:hover:after {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.gh-post-subscribe-cta-btn:after {
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--border-radius-buttons);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background-color 0.25s ease;
+    width: 100%;
+    z-index: 0;
+}
+
+.gh-post-subscribe-cta-question {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.gh-post-subscribe-cta-question__span {
+    color: #a5a5a5;
+}
+
+.gh-post-subscribe-cta-question__link {
+    text-decoration: none !important;
+    margin: 0 !important;
+
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    color: var(--color-cta-text) !important;
+    transition: color 0.3s ease !important;
+}
+
+.gh-post-subscribe-cta-question__link svg {
+    transition: rotate 0.3s ease;
+}
+
+.gh-post-subscribe-cta-question__link svg path {
+    stroke: var(--color-cta-text);
+    transition: stroke 0.3s ease;
+}
+
+.gh-post-subscribe-cta-question__link:hover {
+    color: var(--accent-color) !important;
+    opacity: 1 !important;
+}
+
+.gh-post-subscribe-cta-question__link:hover svg {
+    rotate: -45deg;
+}
+
+.gh-post-subscribe-cta-question__link:hover path {
+    stroke: var(--accent-color);
+}
+
+@media (max-width: 900px) {
+    .gh-post-subscribe-cta-btn:hover {
+        opacity: 1 !important;
+    }
+    .gh-post-subscribe-cta-btn:hover:after {
+        background-color: unset;
+    }
+    .gh-post-subscribe-cta-question__link:hover {
+        color: var(--color-cta-text) !important;
+    }
+    .gh-post-subscribe-cta-question__link:hover svg {
+        rotate: unset;
+    }
+    .gh-post-subscribe-cta-question__link:hover svg path {
+        stroke: var(--color-cta-text);
+    }
+}
+
+@media (max-width: 550px) {
+    .gh-post-subscribe-cta {
+        padding: 32px 48px;
+    }
+    .gh-post-subscribe-cta h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 450px) {
+    .gh-post-subscribe-cta {
+        padding: 16px 32px;
+    }
+}

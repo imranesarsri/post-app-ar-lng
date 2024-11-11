@@ -1,0 +1,35 @@
+{{{html}}}
+<aside class="gh-post-subscribe-cta">
+    <div class="gh-post-subscribe-cta-content">
+        {{>icons/lock-icon}}
+        {{#has visibility="paid"}}
+            <h2>{{t "This post is for paying subscribers only"}}</h2>
+            <p>{{t "Sign up or upgarde your account now to read the post and get access to the full library of posts for paid subscribers only."}}</p>
+        {{/has}}
+        {{#has visibility="members"}}
+            <h2>{{t "This post is for subscribers only"}}</h2>
+            <p>{{t "Sign up now to read the post and get access to the full library of posts for subscribers only."}}</p>
+        {{/has}}
+        {{#has visibility="tiers"}}
+            <h2>{{t "This post is for subscribers on the"}} {{tiers}} {{t "only"}}</h2>
+            <p>{{t "Upgrade your account now to read the post and get access to the full library of posts for"}} {{tiers}} {{t "subscribers only."}}</p>
+        {{/has}}
+    </div>
+    <div class="gh-post-subscribe-cta-btns">
+        {{#if @member}}
+            <a class="gh-post-subscribe-cta-btn" data-portal="account/plans" aria-label="{{t "Upgrade your account link"}}"><span>{{t "Upgrade Your Account"}}</span></a>
+        {{else}}
+            <a class="gh-post-subscribe-cta-btn" href="/signup" aria-label="{{t "Sign up link"}}"><span>{{t "Sign Up For Now"}}</span></a>
+            <p class="gh-post-subscribe-cta-question">
+                <span class="gh-post-subscribe-cta-question__span">{{t "Already have an account?"}}</span>
+                <a class="gh-post-subscribe-cta-question__link" href="{{@site.url}}/signin" aria-label="{{t "Sign in"}}">
+                    {{t "Sign in"}}
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1667 6L19 12M19 12L13.1667 18M19 12L5 12" stroke="#1D1D1F" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </p>
+        {{/if}}
+    </div>
+</aside>

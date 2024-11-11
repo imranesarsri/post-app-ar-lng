@@ -1,0 +1,102 @@
+<section class="gh-container--section{{#match themeSection "light-gray"}} gh-section--theme-light-gray{{/match}}{{#match themeSection "black"}} gh-section--theme-black{{/match}}">
+    <div class="gh-container">
+        {{#if tagName}}
+            {{#get "tags" filter="slug:{{tagName}}"}}
+                {{#foreach tags}}
+                    <h2 class="gh-posts-section__title">
+                        <a href="{{url}}" class="gh-posts-section__title-link">{{name}}</a>
+                    </h2>
+                {{/foreach}}
+            {{/get}}
+        {{/if}}
+
+        <div class="gh-hero-wrapper gh-hero-wrapper--featured-type-6">
+            {{#if tagName}}
+                {{#get "posts" limit='7' include="authors,tags" filter="tag:{{tagName}}"}}
+                    {{#match posts.length "=" 7}}
+                        {{#foreach posts}}
+
+                            {{#has number="1"}}
+                                {{>featured-main-post type="6" lazy="true" classNames="gh-featured-main-post--one-column gh-featured-main-post--no-feat gh-align-info"}}
+                                <div class="gh-features-posts-grid__right-column">
+                                <div class="gh-features-posts--flex-column">
+                            {{/has}}
+
+                            {{#has number="2, 3"}}
+                                {{>featured-post type="6" lazy="true" classNames="gh-featured-post--row gh-featured-post--row-reverse gh-featured-post--bb gh-featured-post--pb-16px gh-post--justify-content-center"}}
+                            {{/has}}
+
+                            {{#has number="4"}}
+                                </div>
+                                </div>
+                                <div class="gh-features-posts-grid__right-column gh-features-posts-grid--two-columns gh-features-posts--no-img gh-featured-post--pb-16px">
+                            {{/has}}
+
+                            {{#has number="4, 5"}}
+                                {{>featured-post classNames="gh-featured-post--row gh-featured-post--pt-16px gh-featured-post--title-fs gh-post--justify-content-center" hideImg='true'}}
+                            {{/has}}
+
+                            {{#has number="6"}}
+                                </div>
+                                <div class="gh-features-posts-grid__right-column gh-features-posts-grid--two-columns gh-features-posts--no-img">
+                            {{/has}}
+
+                                {{#has number="6, 7"}}
+                                {{>featured-post classNames="gh-featured-post--row gh-featured-post--pt-16px gh-featured-post--title-fs gh-post--justify-content-center" hideImg='true'}}
+                            {{/has}}
+
+                            {{#has number="7"}}
+                                </div>
+                            {{/has}}
+                        {{/foreach}}
+                    {{else}}
+                        <div class="gh-posts--not-enought">{{t "not enough posts"}}</div>
+                    {{/match}}
+                {{/get}}
+            {{else}}
+                {{#get "posts" limit='7' include="authors,tags" filter="featured:true" as |featuredPosts|}}
+                    {{#match featuredPosts.length "=" 7}}
+                        {{#foreach featuredPosts}}
+
+                            {{#has number="1"}}
+                                {{>featured-main-post type="6" classNames="gh-featured-main-post--one-column"}}
+                                <div class="gh-features-posts-grid__right-column">
+                                <div class="gh-features-posts--flex-column">
+                            {{/has}}
+
+                            {{#has number="2, 3"}}
+                                {{>featured-post type="6" classNames="gh-featured-post--row gh-featured-post--row-reverse gh-featured-post--bb gh-featured-post--pb-16px gh-post--justify-content-center"}}
+                            {{/has}}
+
+                            {{#has number="4"}}
+                                </div>
+                                </div>
+                                <div class="gh-features-posts-grid__right-column gh-features-posts-grid--two-columns gh-features-posts--no-img gh-featured-post--pb-16px">
+                            {{/has}}
+
+                            {{#has number="4, 5"}}
+                                {{>featured-post classNames="gh-featured-post--row gh-featured-post--pt-16px gh-featured-post--title-fs gh-post--justify-content-center" hideImg='true'}}
+                            {{/has}}
+
+                            {{#has number="6"}}
+                                </div>
+                                <div class="gh-features-posts-grid__right-column gh-features-posts-grid--two-columns gh-features-posts--no-img">
+                            {{/has}}
+
+                                {{#has number="6, 7"}}
+                                {{>featured-post classNames="gh-featured-post--row gh-featured-post--pt-16px gh-featured-post--title-fs gh-post--justify-content-center" hideImg='true'}}
+                            {{/has}}
+
+                            {{#has number="7"}}
+                                </div>
+                            {{/has}}
+
+                        {{/foreach}}
+                    {{else}}
+                        <div class="gh-posts--not-enought">{{t "not enough posts"}}</div>
+                    {{/match}}
+                {{/get}}
+            {{/if}}  
+        </div>
+    </div>
+</section>

@@ -1,0 +1,39 @@
+/* Styles applied only when <html lang="ar"> */
+html[lang="ar"] body {
+    direction: rtl;
+    text-align: right;
+}
+
+html[lang="ar"] .gh-article-sidebar {
+    padding-left: 32px !important;
+}
+
+html[lang="ar"] .gh-footer-bottom__legal {
+    margin-right: 32px;
+}
+
+html[lang="ar"] .gh-post-info__author-link {
+    margin-right: 4px;
+}
+
+html[lang="ar"] .gh-mobile-menu--open {
+    right: 0;
+}
+
+html[lang="ar"] .gh-burger-btn--close {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+html[lang="ar"] .gh-container {
+    direction: rtl;
+}
+
+
+
+/* fix logo Error */
+.gh-header--type-2 .gh-site-logo {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+}

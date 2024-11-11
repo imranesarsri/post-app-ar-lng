@@ -1,0 +1,201 @@
+/* Variables
+/* ---------------------------------------------------------- */
+
+:root {
+    --transition-time: 0.25s;
+}
+
+:root[data-theme='light'] {
+
+    /* Main color */
+    --color-main: #161616;
+    --color-text: #585858;
+    --color-bg-main: #fff;
+    --color-border: #D9D9D9;
+    --color-button-bg: #161616;
+    --color-tag: #585858;
+    --color-bg-secondary-buttons: #686868;
+    --color-bg-secondary-buttons--hover: #505050;
+
+
+    /* Color header */
+    --color-bg-header1-gray: #F0F0F0;
+    --color-bg-header1-black: #161616;
+    --color-bg-header2: #FFF;
+    --color-header-icon: #161616;
+
+    /* Color footer */
+    --color-bg-footer-gray: #F9F9F9;
+    --color-bg-footer-black: #161616;
+    --color-footer-sub-category: #5B5B5B;
+    --color-footer-sec-link: #717171;
+
+    /* Color theme section */
+    --color-bg-light-gray: #f9f9f9;
+    --color-bg-black: #161616;
+    --color-no-image-bg: #F1F1F2;
+
+    /* Color mobile menu */
+    --color-mobile-overlay: rgba(22, 22, 22, 0.9);
+    --color-mobile-bottom: #F0F0F0;
+    --color-mobile-border-bottom: #F0F0F0;
+
+    /* Color Dark mode btn */
+    --color-switch-btn: rgba(35, 39, 47, 0.089);
+
+    /* Color Banner */
+    --color-cta-bg: #161616;
+    --color-cta-title: #FFF;
+    --color-cta-text: #e5e5e5;
+    --banner-success-btn-bg-color: #5c5c5c;
+    --banner-success-btn-bg-color--hover: #404040;
+    --banner-form-error-color: #ff1d1d;
+
+    /* No Image Card Plug Colors */
+    --no-image-card-plug-bg-color: #F1F1F2;
+    --no-image-card-plug-bg-color--hover: #EDEDED;
+
+    /* Authors Page */
+    --color-author-card-meta: #616162;
+
+    /* Icons Hover Color */
+    --icons-hover-color: #828282;
+
+    /* Content color card */
+    --color-content-card-bg: #f6f6f6;
+    --color-content-card-description: #777779;
+    --color-content-card-author: #1D1D1D;
+    --color-content-card--hover: #eee;
+    --color-post-content-button-bg: #ededed;
+
+    /* Header Navigation Colors */
+    --header-nav-item-hover-bg-color: #d1d1d1;
+    --header-type-2-nav-item-hover-color: #7a7a7a;
+    --mobile-menu-subnav-item-color: #585858;
+
+    /* Form Page Colors */
+    --form-page-input-bg-color: #dedede;
+    --form-page-input-focus-color: #ededed;
+    --form-page-submit-btn-bg-color: #000;
+    --form-page-submit-btn-bg-color--hover: #3e3e3e;
+
+    /* Membership Page */
+    --membership-toggle-bg-color: #F4F4F4;
+    --membership-toggle-bg-color--hover: #eee;
+    --membership-card-bg-color: #F4F4F4;
+    --tier-card-hr: #E4E4E4;
+    --membership-signup-bg-color: #000;
+    --membership-signup-bg-color--hover: #3e3e3e;
+
+    /* Account Page */
+    --account-page-bg-color: #F9F9F9;
+
+    /* Announcement Bar */
+    --announcment-bar-dark-bg-color: #15171a;
+    --announcment-bar-light-bg-color: #f0f0f0;
+
+    /* Scroll To Top Button */
+    --scroll-top-bg-color: #f0f0f0;
+    --scroll-top-bg-color--hover: #E4E4E4;
+
+    /* Form Error */
+    --form-error-color: #d20000;
+}
+
+:root[data-theme='dark'] {
+
+    /* Main color */
+    --color-main: #EDEDED;
+    --color-text: #A2A2A2;
+    --color-bg-main: #1D1D1F;
+    --color-border: #393939;
+    --color-button-bg: #585858;
+    --color-tag: #FFF;
+    --color-bg-secondary-buttons: #4e4d4d;
+    --color-bg-secondary-buttons--hover: #353535;
+
+    /* Color header */
+    --color-bg-header1-gray: #161616;
+    --color-bg-header1-black: #161616;
+    --color-bg-header2: #161616;
+    --color-header-icon: #FFF;
+
+    /* Color footer */
+    --color-bg-footer-gray: #161616;
+    --color-bg-footer-black: #161616;
+    --color-footer-sub-category: #B9B9B9;
+    --color-footer-sec-link: #A2A2A2;
+
+    /* Color theme section */
+    --color-bg-light-gray: #161616;
+    --color-bg-black: #161616;
+    --color-no-image-bg: #fff;
+
+    /* Color mobile menu */
+    --color-mobile-overlay: rgba(210, 210, 210, 0.6);
+    --color-mobile-bottom: #161616;
+    --color-mobile-border-bottom: #393939;
+
+    /* Color Dark mode btn */
+    --color-switch-btn: rgba(246, 247, 249, 0.11);
+
+    /* Color Banner */
+    --color-cta-bg: #2E2E2E;
+    --color-cta-title: #161616;
+    --color-cta-text: #e5e5e5;
+    --banner-success-btn-bg-color: #5c5c5c;
+    --banner-success-btn-bg-color--hover: #1a1a1a;
+    --banner-form-error-color: #ff2626;
+
+    /* No Image Card Plug Colors */
+    --no-image-card-plug-bg-color: #29292A;
+    --no-image-card-plug-bg-color--hover: #000;
+
+    /* Authors Page */
+    --color-bg-author-card-image-plug: #29292A;
+    --color-bg-author-card-image-plug--hover: #000;
+    --color-author-card-meta: #A5A5A5;
+
+    /* Icons Hover Color */
+    --icons-hover-color: #828282;
+
+    /* Content color card */
+    --color-content-card-bg: #343435;
+    --color-content-card-description: #A5A5A5;
+    --color-content-card-author: #EDEDED;
+    --color-content-card--hover: #404041;
+    --color-post-content-button-bg: #343435;
+
+    /* Header Navigation Colors */
+    --header-nav-item-hover-bg-color: #505050;
+    --header-type-2-nav-item-hover-color: #adadad;
+    --mobile-menu-subnav-item-color: #A2A2A2;
+
+    /* Form Page Colors */
+    --form-page-input-bg-color: #29292a;
+    --form-page-input-focus-color: #000;
+    --form-page-submit-btn-bg-color: #000;
+    --form-page-submit-btn-bg-color--hover: #3f3f3f;
+
+    /* Membership Page */
+    --membership-toggle-bg-color: #343435;
+    --membership-toggle-bg-color--hover: #404041;
+    --membership-card-bg-color: #343435;
+    --tier-card-hr: #616162;
+    --membership-signup-bg-color: #000;
+    --membership-signup-bg-color--hover: #1c1c1c;
+
+    /* Account Page */
+    --account-page-bg-color: #161616;
+
+    /* Announcement Bar */
+    --announcment-bar-dark-bg-color: #000;
+    --announcment-bar-light-bg-color: #2d2d2d;
+
+    /* Scroll To Top Button */
+    --scroll-top-bg-color: #343435;
+    --scroll-top-bg-color--hover: #000;
+
+    /* Form Error */
+    --form-error-color: #ff0000;
+}

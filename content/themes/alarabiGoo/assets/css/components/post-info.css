@@ -1,0 +1,130 @@
+.gh-post-info {
+    font-family: var(--font-family-post-info);
+    font-size: var(--font-size-post-info);
+    line-height: var(--line-height-post-info);
+    font-weight: var(--font-weight-post-info);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 4px;
+}
+
+.gh-post-info-tag-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gh-post-info-tag-icon svg path {
+    stroke-width: 1.4;
+}
+
+.gh-post-info-tag-icon:hover .post-tag-icon__tooltip,
+.gh-post-info-tag-icon:focus-visible .post-tag-icon__tooltip {
+    display: block;
+    animation: fadeInAnimation var(--transition-time) ease;
+}
+
+.post-tag-icon__tooltip {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    padding: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    background-color: rgb(109, 109, 109, 85%);
+    width: max-content;
+    border-radius: var(--border-radius-elements);
+}
+
+.gh-post-info-tag-icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.gh-post-info-tag-icon--video svg path {
+    width: 14px;
+    height: 14px;
+    fill: var(--color-main);
+    transition: fill var(--transition-time) ease;
+}
+
+.gh-post-info-tag-icon--video:hover svg path {
+    fill: var(--ghost-accent-color);
+}
+
+.gh-post-info-tag-icon--featured svg path {
+    width: 14px;
+    height: 14px;
+    stroke: var(--color-main);
+    transition: stroke var(--transition-time) ease;
+}
+
+.gh-post-info-tag-icon--featured:hover svg path {
+    stroke: var(--ghost-accent-color);
+}
+
+.gh-post-info__author-start,
+.gh-post-info__date {
+    font-weight: var(--font-weight-post-info);
+
+    color: var(--color-text);
+}
+
+.gh-post-info__author-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.gh-post-info--video {
+    margin-left: 20px;
+}
+
+.gh-post-info__author-link {
+    color: var(--color-main);
+    transition: border-color var(--transition-time) ease,
+        color var(--transition-time) ease;
+    display: inline;
+    word-break: break-word;
+    line-height: var(--line-height-post-info);
+    font-weight: var(--font-weight-post-info);
+    margin-left: 4px;
+    position: relative;
+}
+
+.gh-post-info__author-link::after {
+    content: "";
+    background-color: var(--color-main);
+    width: 100%;
+    height: 1px;
+    transition: width var(--transition-time) ease,
+        background-color var(--transition-time) ease;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.gh-post-info__author-link:hover {
+    color: var(--accent-color);
+}
+
+.gh-post-info__author-link:hover::after {
+    width: 0;
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 900px) {
+    .gh-post-info__author-link:hover {
+        color: var(--color-main);
+    }
+
+    .gh-post-info__author-link:hover::after {
+        width: 100%;
+        background-color: var(--color-main);
+    }
+}
