@@ -1,7 +1,7 @@
 const errors = require('@tryghost/errors');
 const logging = require('@tryghost/logging');
 
-const { hbs } = require('../handlebars');
+const {hbs} = require('../handlebars');
 
 // Register an async handlebars helper for a given handlebars instance
 function asyncHelperWrapper(hbsInstance, name, fn) {
