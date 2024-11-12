@@ -1,12 +1,12 @@
 .lang-button {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    bottom: 3rem;
+    right: 3rem;
     z-index: 9999;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: #15171A;
+    background-color: #8E42FF;
     color: white;
     padding: 0.75rem 1.25rem;
     border: none;
@@ -32,28 +32,20 @@
     transform: scaleX(-1);
 }
 
-.ember-load-indicator {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    z-index: 9998;
-}
 
 [dir="rtl"] .lang-button {
-    left: 1rem;
+    left: 3rem;
     right: auto;
 }
 
-.loading .ember-load-indicator {
-    display: flex;
-}
+/* Styles for screens smaller than 500px */
+@media (max-width: 500px) {
+    .lang-button {
+        bottom: 7rem;
+        right: 2rem;
+    }
 
-.loaded .ember-load-indicator {
-    display: none;
+    [dir="rtl"] .lang-button {
+        left: 2rem;
+    }
 }
