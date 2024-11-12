@@ -9,7 +9,6 @@
 
     <title>Ghost Admin</title>
 
-
     <meta name="ghost-admin/config/environment"
         content="%7B%22modulePrefix%22%3A%22ghost-admin%22%2C%22environment%22%3A%22production%22%2C%22cdnUrl%22%3A%22%22%2C%22editorUrl%22%3A%22%22%2C%22rootURL%22%3A%22%22%2C%22locationType%22%3A%22trailing-hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%2C%22Array%22%3Atrue%2C%22String%22%3Atrue%2C%22Function%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_JQUERY_INTEGRATION%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22version%22%3A%225.100%22%2C%22name%22%3A%22ghost-admin%22%7D%2C%22ember-simple-auth%22%3A%7B%7D%2C%22%40sentry%2Fember%22%3A%7B%22disablePerformance%22%3Atrue%2C%22sentry%22%3A%7B%7D%7D%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Afalse%2C%22ember-load%22%3A%7B%22loadingIndicatorClass%22%3A%22ember-load-indicator%22%7D%2C%22editorFilename%22%3A%22koenig-lexical.umd.js%22%2C%22editorHash%22%3A%22a724a31dfe%22%2C%22adminXDemoFilename%22%3A%22admin-x-demo.js%22%2C%22adminXDemoHash%22%3A%227b54e3e101%22%2C%22adminXSettingsFilename%22%3A%22admin-x-settings.js%22%2C%22adminXSettingsHash%22%3A%221b2f79bda3%22%2C%22adminXActivitypubFilename%22%3A%22admin-x-activitypub.js%22%2C%22adminXActivitypubHash%22%3A%22d3e0f0e348%22%2C%22adminXActivitypubCustomUrl%22%3A%22https%3A%2F%2Fcdn.jsdelivr.net%2Fghost%2Fadmin-x-activitypub%400%2Fdist%2Fadmin-x-activitypub.js%22%7D" />
 
@@ -33,13 +32,11 @@
     <meta name="msapplication-square150x150logo" content="assets/img/medium-fef07013cffd5c45a655a250912a0ad7.png" />
     <meta name="msapplication-square310x310logo" content="assets/img/large-ac90af7c93a4b47e8d956fa9fef31d9d.png" />
 
-    <!-- variables that we don't want postcss-custom-properties to remove -->
     <style>
         :root {
             --editor-sidebar-width: 0px;
         }
-    </style>
-    <style>
+
         .lang-button {
             background-color: #4CAF50;
             color: white;
@@ -49,78 +46,194 @@
             cursor: pointer;
             font-size: 16px;
             transition: background-color 0.3s ease;
-            position: absolute;
+            position: fixed;
+            top: 20px;
+            right: 20px;
             z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .lang-button:hover {
             background-color: #45a049;
         }
+
+        .lang-icon {
+            transition: transform 0.3s ease;
+        }
+
+        [dir="rtl"] .lang-button {
+            left: 20px;
+            right: auto;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9998;
+        }
+
+        .loading-overlay.active {
+            display: flex;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #4CAF50;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 
     <link integrity="" rel="stylesheet" href="assets/vendor-0ede59da8efb5e28fa929557f7ff7154.css">
     <link integrity="" rel="stylesheet" href="assets/ghost-5be0a663eecbd5db9c3612b90050fa66.css" title="light">
-    <!-- Custom Stylesheet -->
     <link id="custom-stylesheet" rel="stylesheet" href="assets/admin-custom-styles/custom-admin.css" title="light">
-
 </head>
 
 <body>
-
     <div class="ember-load-indicator">
         <div class="gh-loading-content">
-            <video width="100" height="100" loop autoplay muted playsinline preload="metadata"
-                style="width: 100px; height: 100px;">
+            <video width="100" height="100" loop autoplay muted playsinline preload="metadata">
                 <source src="assets/videos/logo-loader-d91f93ba1dbf0f52a22815b5a571bd31.mp4" type="video/mp4" />
                 <div class="gh-loading-spinner"></div>
             </video>
         </div>
     </div>
 
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
 
-    <!-- Language Toggle Button -->
-    <button id="langButton" class="lang-button" onclick="toggleLanguage()">Change Language</button>
-
+    <button id="langButton" class="lang-button" aria-label="Toggle language">
+        <svg class="lang-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M2 12h20M12 2v20" />
+        </svg>
+        <span class="lang-text">English</span>
+    </button>
 
     <div id="ember-basic-dropdown-wormhole"></div>
 
     <script src="assets/vendor-88cd9f5cf5eba65221e2d2a636531eaa.js"></script>
     <script src="assets/chunk.874.5eb920d19e75683234c2.js"></script>
     <script src="assets/chunk.524.e153ea6250e2078275b2.js"></script>
-    <script src="assets/ghost-7ab268fc7cd7884eef525145d5fbb501.js"></script>
 
-
-    <!-- Language Toggle and Stylesheet Switcher Scripts -->
     <script>
-        // Toggle between English and Arabic languages
-        function toggleLanguage() {
-            const currentLang = document.body.classList.contains('en') ? 'en' : 'ar';
-            const newLang = currentLang === 'en' ? 'ar' : 'en';
+        class GhostLanguageManager {
+            constructor() {
+                this.currentLang = localStorage.getItem('ghost-admin-language') || 'en';
+                this.loadingOverlay = document.querySelector('.loading-overlay');
+                this.langButton = document.getElementById('langButton');
+                this.langText = this.langButton.querySelector('.lang-text');
+                this.scripts = {
+                    en: 'assets/ghost-7ab268fc7cd7884eef525145d5fbb501.js',
+                    ar: 'assets/translate-arabic/ghost.js'
+                };
+                this.init();
+            }
 
-            // Update language class and HTML language attribute
-            document.body.classList.remove(currentLang);
-            document.body.classList.add(newLang);
-            document.documentElement.lang = newLang;
+            init() {
+                this.setLanguage(this.currentLang, false);
+                this.langButton.addEventListener('click', () => this.toggleLanguage());
+            }
 
-            // Update the stylesheet based on the selected language
-            updateStylesheet(newLang);
+            showLoading() {
+                this.loadingOverlay.classList.add('active');
+            }
+
+            hideLoading() {
+                this.loadingOverlay.classList.remove('active');
+            }
+
+            async loadScript(src) {
+                return new Promise((resolve, reject) => {
+                    const script = document.createElement('script');
+                    script.id = 'ghost-admin-script';
+                    script.src = src;
+                    script.onload = resolve;
+                    script.onerror = () => {
+                        console.error(`Failed to load script: ${src}`);
+                        reject(new Error(`Script load failed: ${src}`));
+                    };
+                    document.body.appendChild(script);
+                });
+            }
+
+            removeCurrentScript() {
+                const existingScript = document.getElementById('ghost-admin-script');
+                if (existingScript) {
+                    existingScript.remove();
+                }
+            }
+
+            async setLanguage(lang, animate = true) {
+                if (animate) {
+                    this.showLoading();
+                }
+
+                try {
+                    // Update DOM
+                    document.documentElement.lang = lang;
+                    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+                    document.body.className = lang;
+
+                    // Update button text
+                    this.langText.textContent = lang === 'en' ? 'العربية' : 'English';
+
+                    // Update stylesheet
+                    const stylesheet = document.getElementById('custom-stylesheet');
+                    stylesheet.href = lang === 'ar' ? 'assets/admin-custom-styles/custom-admin.css' : '';
+
+                    // Load appropriate script
+                    this.removeCurrentScript();
+                    await this.loadScript(this.scripts[lang]);
+
+                    // Save preference
+                    this.currentLang = lang;
+                    localStorage.setItem('ghost-admin-language', lang);
+
+                } catch (error) {
+                    console.error('Language switch failed:', error);
+                    if (lang !== 'en') {
+                        await this.setLanguage('en', false);
+                    }
+                } finally {
+                    if (animate) {
+                        setTimeout(() => this.hideLoading(), 500);
+                    }
+                }
+            }
+
+            async toggleLanguage() {
+                const newLang = this.currentLang === 'en' ? 'ar' : 'en';
+                await this.setLanguage(newLang, true);
+            }
         }
 
-        // Update the custom stylesheet for language
-        function updateStylesheet(language) {
-            const stylesheet = document.getElementById('custom-stylesheet');
-            const basePath = 'assets/admin-custom-styles/';
-            const newStylesheet = language === 'ar' ? `${basePath}custom-admin-ar.css` : `${basePath}custom-admin.css`;
-
-            // Change the href of the custom stylesheet link
-            stylesheet.setAttribute('href', newStylesheet);
-        }
-
-        // Initialize the page with the correct stylesheet based on the current language
-        window.onload = function () {
-            const currentLang = document.documentElement.lang || 'en'; // Default to English
-            updateStylesheet(currentLang);
-        };
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            window.ghostLanguageManager = new GhostLanguageManager();
+        });
     </script>
 </body>
 
