@@ -56,6 +56,7 @@
         "defaults"
     ],
     "config": {
+        "locale": "en",
         "card_assets": true,
         "posts_per_page": 12,
         "image_sizes": {
