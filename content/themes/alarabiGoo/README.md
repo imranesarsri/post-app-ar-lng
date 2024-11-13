@@ -1,38 +1,39 @@
 # The Reporter
 
-The Reporter delivers news with clarity, showcased in a sleek magazine format.
+ALARABI delivers news with clarity, showcased in a sleek magazine format.
 
-&nbsp;
-
-## Useful links
-**Demos: https://reporter.highfivethemes.com/**
-**Documentation: https://highfivethemes.gitbook.io/the-reporter-user-documentation/**
 
 &nbsp;
 
 ## Features
 
-1. Dark mode with option for dark mode publication logo
-2. Custom Authors, Categories (tags), Post/Post with sidebar, Account, Sign In/Up, Subscribe, Error 404 and Membership pages
-3. 24 Custom featured posts section options
-4. 19 Custom posts sections options
-5. Customizable main page categories (tags)
-6. 3 Header options
-7. 2 Footer options
-8. Customizable footer menu categories (tags)
-9. Post page sidebar
-10. Customizable widget inside sidebar
-11. 3 variants of border-radius for buttons, images and containers
-12. 7 font-pairings options
-13. Customizable call-to-action text for subscribtion sections
-14. Translation-ready
+1. Dark mode with an option for a dark mode publication logo.
+2. Customizable pages for Authors, Categories (tags), Post/Post with sidebar, Account, Sign In/Up, Subscribe, Error 404, and Membership.
+3. 24 Custom featured posts section options.
+4. 19 Custom post section options.
+5. Customizable main page categories (tags).
+6. 3 Header layout options.
+7. 2 Footer layout options.
+8. Customizable footer menu categories (tags).
+9. Post page sidebar.
+10. Customizable widget inside the sidebar.
+11. 3 variants of border-radius for buttons, images, and containers.
+12. 7 font-pairing options.
+13. Customizable call-to-action text for subscription sections.
+14. Translation-ready.
+
+### Available Languages
+- **English**
+- **Arabic**
+- **French**
+
 
 ## Installation instructions
 
 1. Go to **Settings > Design** from the admin menu
 2. Click **Change theme** in the bottom left corner
 3. Then click the **Upload theme** button in the upper right corner
-4. Click inside the upload box to select a **the-reporter.zip**, or drag-and-drop the **the-reporter.zip** into the upload box
+4. Click inside the upload box to select a **the-alarabi.zip**, or drag-and-drop the **the-alarabi.zip** into the upload box
 5. Once uploaded, click **Activate** to activate the theme
 
 &nbsp;
@@ -61,17 +62,17 @@ The main templates files are:
 
 ## Development guide
 
-**The Reporter** theme provides a first-class development experience out of the box.
+**ALARABI** theme provides a first-class development experience out of the box.
 
 ### Setup
 
-To see realtime changes during development, symlink the The Reporter theme folder to the `content/themes` folder in your local Ghost install. 
+To see realtime changes during development, symlink the ALARABI theme folder to the `content/themes` folder in your local Ghost install. 
 
 ```bash
-ln -s /path/to/the-reporter /ghost/content/themes/the-reporter
+ln -s /path/to/alarabi /ghost/content/themes/alarabi
 ```
 
-Restart Ghost and select the **The Reporter** theme from **Settings**.
+Restart Ghost and select the **alarabi** theme from **Settings**.
 
 From the theme's root directory, install the dependencies:
 
@@ -119,4 +120,4 @@ npm run test
 
 ## Copyright & License
 
-Copyright (c) 2023 HighFiveThemes - Released under the MIT license.
+Copyright (c) 2024 ALARABI - Released under the MIT license.

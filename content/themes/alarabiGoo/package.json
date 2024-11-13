@@ -1,7 +1,7 @@
 {
-    "name": "the-reporter",
-    "description": "The Reporter delivers news with clarity, showcased in a sleek magazine format.",
-    "demo": "https://reporter-news.highfivethemes.com/",
+    "name": "alarabi",
+    "description": "ALARABI delivers news with clarity, showcased in a sleek magazine format.",
+    "demo": "https://pressrex.com/",
     "version": "1.1.3",
     "engines": {
         "ghost": ">=5.0.0"

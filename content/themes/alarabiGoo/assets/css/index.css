@@ -1,6 +1,6 @@
 /*
-Theme name: The-Reporter
-Version: 1.1.3
+Theme name: ALARABI
+Version: 1.1.0
 */
 
 /*
@@ -95,18 +95,12 @@ html,
     border-bottom: none;
 }
 
-.gh-section--theme-light-gray
-    .gh-hero-wrapper--featured-type-17-1
-    .gh-hero-ol-wrapper__li:nth-of-type(n + 6) {
+.gh-section--theme-light-gray .gh-hero-wrapper--featured-type-17-1 .gh-hero-ol-wrapper__li:nth-of-type(n + 6) {
     border-bottom: none;
 }
 
-.gh-section--theme-light-gray
-    .gh-hero-wrapper--featured-type-18-1
-    .gh-hero-ol-wrapper__li:nth-of-type(n + 9),
-.gh-section--theme-light-gray
-    .gh-hero-wrapper--featured-type-18-2
-    .gh-hero-ol-wrapper__li:nth-of-type(n + 9) {
+.gh-section--theme-light-gray .gh-hero-wrapper--featured-type-18-1 .gh-hero-ol-wrapper__li:nth-of-type(n + 9),
+.gh-section--theme-light-gray .gh-hero-wrapper--featured-type-18-2 .gh-hero-ol-wrapper__li:nth-of-type(n + 9) {
     border-bottom: none;
 }
 
@@ -118,14 +112,10 @@ html,
     padding-bottom: 0;
 }
 
-.gh-container--section.gh-section--theme-light-gray
-    + .gh-container--section.gh-section--theme-black,
-.gh-container--section.gh-section--theme-black
-    + .gh-container--section.gh-section--theme-light-gray,
-.gh-container--section.gh-section--theme-black
-    + .gh-container--section.gh-section--theme-black,
-.gh-container--section.gh-section--theme-light-gray
-    + .gh-container--section.gh-section--theme-light-gray {
+.gh-container--section.gh-section--theme-light-gray+.gh-container--section.gh-section--theme-black,
+.gh-container--section.gh-section--theme-black+.gh-container--section.gh-section--theme-light-gray,
+.gh-container--section.gh-section--theme-black+.gh-container--section.gh-section--theme-black,
+.gh-container--section.gh-section--theme-light-gray+.gh-container--section.gh-section--theme-light-gray {
     margin-top: 0;
 }
 
@@ -384,6 +374,7 @@ html,
 }
 
 @media (max-width: 900px) {
+
     .gh-card-image-wrapper:hover .gh-card-image,
     .gh-card-title-link:hover,
     .gh-site-logo:hover {
@@ -392,6 +383,7 @@ html,
 }
 
 @media (max-width: 650px) {
+
     .gh-site-logo-img,
     .gh-site-logo-img-dark-mode {
         height: 30px;
@@ -418,10 +410,11 @@ html,
 }
 
 @media (max-width: 370px) {
+
     .gh-site-logo-img,
     .gh-site-logo-img-dark-mode {
         height: 24px;
     }
 }
 
-/* 1.0.0 */
+/* 1.1.0 */
