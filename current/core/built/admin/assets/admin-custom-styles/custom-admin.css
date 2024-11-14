@@ -165,3 +165,97 @@ div .w-80 {
 .admin-x-settings .right-\[14px\] {
     left: 14px;
 }
+
+
+li.nav-list-item svg {
+    margin: 0 0 0 1rem !important;
+}
+
+.post-view-link {
+    left: 0 !important;
+    right: auto !important;
+}
+
+.gh-date-time-picker-timezone {
+    margin-right: -30px !important;
+    margin-left: 0 !important;
+}
+
+.gh-select svg {
+    left: 1.2rem !important;
+    right: inherit !important;
+}
+
+.settings-menu-delete-button svg {
+    margin: 0 0 2px 0.8rem !important;
+}
+
+li.nav-list-item .arrow-right {
+    left: 24px !important;
+    right: auto !important;
+}
+
+.gh-post-history .user-list-item-figure {
+    margin: 0 0 0 8px !important;
+}
+
+::selection {
+    background: rgba(88, 101, 116, .99);
+
+}
+
+::selection {
+    background: rgba(88, 101, 116, .99);
+
+}
+
+::selection {
+    background: #131416;
+
+}
+
+::selection {
+    background: #131416;
+
+}
+
+::selection {
+    background: #e6e9eb;
+
+}
+
+::selection {
+    background: #e6e9eb;
+
+}
+
+element {}
+
+.nav-list-item .gh-post-history-version-tag.current {
+    background: #373b43;
+
+    color: #a9b0b7;
+
+}
+
+.nav-list-item .gh-post-history-version-tag.current {
+    background: #e4e8ec;
+
+    color: #626d79;
+
+}
+
+.nav-list-item .gh-post-history-version-tag {
+    margin-right: .8rem;
+}
+
+
+.gh-publish-setting-title svg {
+    margin-left: 1.4rem;
+    margin-right: 0 !important;
+}
+
+.gh-publish-setting-title .icon-expand {
+    left: 0;
+    right: auto !important;
+}

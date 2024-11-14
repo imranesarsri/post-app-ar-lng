@@ -64,6 +64,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .gh-header--type-1 .gh-site-logo-img-dark-mode,
 .gh-header--type-1 .gh-site-logo-img {
     height: 100%;
@@ -237,6 +238,7 @@
 
     transition: color 0.3s ease;
 }
+
 .gh-mobile-menu-button svg path {
     transition: stroke 0.3s ease;
     stroke: var(--color-main);
@@ -295,24 +297,15 @@
     background-color: var(--header-nav-item-hover-bg-color);
 }
 
-.gh-header--type-2
-    .gh-header--bottom
-    .gh-nav-list-item:first-child
-    .gh-nav-menu-item {
+.gh-header--type-2 .gh-header--bottom .gh-nav-list-item:first-child .gh-nav-menu-item {
     padding: 0 12px 0 0;
 }
 
-.gh-header--type-2
-    .gh-header--bottom
-    .gh-nav-list-item:last-child
-    .gh-nav-menu-item {
+.gh-header--type-2 .gh-header--bottom .gh-nav-list-item:last-child .gh-nav-menu-item {
     padding: 0 0 0 12px;
 }
 
-.gh-header--type-2
-    .gh-header--bottom
-    .gh-nav-menu:hover
-    .gh-nav-menu-item:not(:hover) {
+.gh-header--type-2 .gh-header--bottom .gh-nav-menu:hover .gh-nav-menu-item:not(:hover) {
     color: var(--header-type-2-nav-item-hover-color);
 }
 
@@ -934,9 +927,7 @@
     display: block;
 }
 
-:root[data-theme="light"]
-    .gh-site-logo-has-DM-logo
-    .gh-site-logo-img-dark-mode {
+:root[data-theme="light"] .gh-site-logo-has-DM-logo .gh-site-logo-img-dark-mode {
     display: none;
 }
 
@@ -1018,6 +1009,7 @@
 }
 
 @media (max-width: 900px) {
+
     .gh-search:hover,
     .gh-switch-btn:hover,
     .gh-header--black .gh-search:hover,
@@ -1049,6 +1041,7 @@
     .gh-form__success-button:hover {
         background-color: var(--form-page-submit-btn-bg-color);
     }
+
     .gh-mobile-account-btn::after,
     .gh-form__submit-button::after {
         content: none;

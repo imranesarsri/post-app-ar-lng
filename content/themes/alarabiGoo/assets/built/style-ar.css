@@ -1,3 +1,10 @@
+/*? START to style Homepage featured 4  */
+
+html[lang="ar"] .gh-latest-posts {
+    padding-right: 24px;
+    padding-left: 0;
+}
+
 /* Styles applied only when <html lang="ar"> */
 html[lang="ar"] body {
     direction: rtl;
@@ -29,6 +36,88 @@ html[lang="ar"] .gh-container {
     direction: rtl;
 }
 
+/*? END to style Homepage featured 4  */
+
+/*? START to style Homepage featured 6  */
+
+html[lang="ar"] .gh-features-posts-grid__right-column {
+    padding-right: 24px;
+}
+
+html[lang="ar"] .gh-hero-wrapper--featured-type-6 .gh-features-posts--no-img article:first-child {
+    padding-left: 12px;
+    padding-right: 0;
+}
+
+html[lang="ar"] .gh-hero-wrapper--featured-type-6 .gh-features-posts--no-img article:last-child {
+    padding-right: 12px;
+}
+
+/*? END to style Homepage featured 6  */
+
+/*? START to style Homepage featured 7  */
+
+html[lang="ar"] .gh-hero-wrapper--featured-type-7>.post:nth-of-type(n+3) {
+    padding-right: 24px;
+    padding-left: 0;
+}
+
+html[lang="ar"] .gh-hero-wrapper--featured-type-7 .gh-features-posts-grid--two-columns {
+    padding-right: 24px;
+    padding-left: 0;
+}
+
+html[lang="ar"] .gh-hero-wrapper--featured-type-7>.post:nth-of-type(2) {
+    margin-left: 24px;
+    padding-right: 0;
+}
+
+html[lang="ar"] .gh-hero-wrapper--featured-type-7>.post:first-of-type {
+    margin-left: 24px;
+    padding-right: 0;
+}
+
+/*? START to style Homepage featured 8  */
+
+html[lang="ar"] .gh-hero-wrapper--featured-type-8 article+article {
+    margin-right: 24px;
+    margin-left: 0;
+}
+
+html[lang="ar"] .gh-hero-wrapper--featured-type-8>.post:first-of-type {
+    border-left: 1px solid var(--color-border);
+    border-right: 0px solid var(--color-border);
+    padding-left: 24px;
+    padding-right: 0;
+}
+
+/*? START to style Homepage featured 8  */
+
+/*? END to style Homepage featured 7  */
+
+
+
+/*? START to style Footer  */
+
+html[lang="ar"] .gh-footer .gh-social-icons a:last-child {
+    padding-right: 5px;
+    padding-left: 0px;
+}
+
+html[lang="ar"] .gh-footer .gh-social-icons a:first-child {
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+/*? END to style Footer  */
+
+/*? START to style Header type 1 gray and black  */
+html[lang="ar"] .gh-header__options {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/*? END to style Header type 1 gray and black  */
 
 
 /* fix logo Error */
@@ -36,4 +125,17 @@ html[lang="ar"] .gh-container {
     display: flex;
     height: 50%;
     justify-content: center;
+}
+
+@media (max-width: 500px) {
+    html[lang="ar"] .gh-header--type-2 .gh-site-logo {
+        right: 40px;
+        left: auto;
+        transform: none;
+    }
+
+    html[lang="ar"] .gh-burger-btn--close {
+        margin-left: 0;
+        margin-right: 10px;
+    }
 }
