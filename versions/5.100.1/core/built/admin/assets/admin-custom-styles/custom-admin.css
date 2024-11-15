@@ -259,3 +259,28 @@ element {}
     left: 0;
     right: auto !important;
 }
+
+.gh-btn-block svg,
+.gh-btn-icon svg {
+    margin-left: .6em;
+    margin-right: 0 !important;
+}
+
+.gh-analytics-actions-menu {
+    left: 0 !important;
+    right: auto !important;
+}
+
+
+figure {
+    margin-right: 0 !important;
+    margin-left: 1.6rem !important;
+}
+
+.gh-canvas-title-hide-for-mobile {
+    margin-right: 10px !important;
+}
+
+.gh-editor-post-status .view-post svg {
+    margin: 1px 0.6rem 0 0 !important;
+}
