@@ -17411,7 +17411,7 @@ const Sr = ({ title: e, description: t, children: n, beta: r = !1 }) => /* @__PU
       }
     );
   else {
-    let E = "Edit";
+    let E = "تعديل";
     a === "saved" && (E = "Saved"), S.push(
       {
         label: E,
@@ -21764,7 +21764,7 @@ const zT = ({ keywords: e }) => {
     ea,
     {
       ref: t,
-      action: /* @__PURE__ */ c.jsx(J, { color: "green", "data-testid": "edit-newsletter-button", label: "Edit", link: !0, onClick: a }),
+      action: /* @__PURE__ */ c.jsx(J, { color: "green", "data-testid": "edit-newsletter-button", label: "تعديل", link: !0, onClick: a }),
       className: n ? "opacity-75" : "",
       hideActions: !1,
       style: r,
@@ -22152,7 +22152,7 @@ const zT = ({ keywords: e }) => {
               inputRef: o,
               maxLength: 300,
               placeholder: h,
-              title: "Facebook title",
+              title: "عنوان الفيسبوك",
               value: p,
               onChange: b
             }
@@ -22162,7 +22162,7 @@ const zT = ({ keywords: e }) => {
             {
               maxLength: 300,
               placeholder: v,
-              title: "Facebook description",
+              title: "وصف الفيسبوك",
               value: m,
               onChange: y
             }
@@ -22178,13 +22178,13 @@ const zT = ({ keywords: e }) => {
   return /* @__PURE__ */ c.jsxs(
     ce,
     {
-      description: "Customize structured data of your site",
+      description: "تخصيص البيانات المهيكلة لموقعك",
       isEditing: n,
       keywords: e,
       navid: "facebook",
       saveState: r,
       testId: "facebook",
-      title: "Facebook card",
+      title: "بطاقة الفيسبوك",
       onCancel: s,
       onEditingChange: l,
       onSave: i,
@@ -22242,7 +22242,7 @@ const zT = ({ keywords: e }) => {
           }) : /* @__PURE__ */ c.jsxs("div", {
             className: "flex items-center gap-1 text-grey-900 dark:text-grey-400", children: [
             /* @__PURE__ */ c.jsx(fe, { colorClass: "text-black dark:text-white", name: "lock-unlocked", size: "sm" }),
-            /* @__PURE__ */ c.jsx("span", { children: "Your site is not password protected" })
+            /* @__PURE__ */ c.jsx("span", { children: "موقعك غير محمي بكلمة مرور" })
             ]
           })
         }
@@ -22255,8 +22255,8 @@ const zT = ({ keywords: e }) => {
       {
         checked: f,
         direction: "rtl",
-        hint: "All search engine optimization and social features will be disabled.",
-        label: "Enable password protection",
+        hint: "سيتم تعطيل جميع ميزات تحسين محرك البحث والميزات الاجتماعية.",
+        label: "تمكين الحماية بكلمة مرور",
         onChange: A
       }
     ),
@@ -22265,7 +22265,7 @@ const zT = ({ keywords: e }) => {
         {
           error: !!u.password,
           hint: u.password,
-          placeholder: "Enter password",
+          placeholder: "أدخل كلمة المرور",
           title: "Site password",
           value: p,
           hideTitle: !0,
@@ -22278,13 +22278,13 @@ const zT = ({ keywords: e }) => {
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      description: "Enable protection with a simple shared password.",
+      description: "تمكين الحماية باستخدام كلمة مرور مشتركة بسيطة.",
       isEditing: r,
       keywords: e,
       navid: "locksite",
       saveState: o,
       testId: "locksite",
-      title: "Make site private",
+      title: "جعل الموقع خاصاً",
       onCancel: s,
       onEditingChange: l,
       onSave: i,
@@ -22354,11 +22354,11 @@ const zT = ({ keywords: e }) => {
     /* @__PURE__ */ c.jsx(
       Ve,
       {
-        hint: "Recommended: 70 characters",
+        hint: "موصى به: 70 حرفاً",
         inputRef: i,
         maxLength: 300,
         placeholder: p,
-        title: "Meta title",
+        title: "عنوان Meta",
         value: d,
         onChange: A
       }
@@ -22366,10 +22366,10 @@ const zT = ({ keywords: e }) => {
     /* @__PURE__ */ c.jsx(
       Ve,
       {
-        hint: "Recommended: 156 characters",
+        hint: "موصى به: 156 حرفاً",
         maxLength: 500,
         placeholder: m,
-        title: "Meta description",
+        title: "وصف Meta",
         value: f,
         onChange: h
       }
@@ -22379,7 +22379,7 @@ const zT = ({ keywords: e }) => {
   return /* @__PURE__ */ c.jsxs(
     ce,
     {
-      description: "Extra content for search engines",
+      description: "محتوى إضافي لمحركات البحث",
       isEditing: n,
       keywords: e,
       navid: "metadata",
@@ -22426,17 +22426,17 @@ const zT = ({ keywords: e }) => {
   }, m = /* @__PURE__ */ c.jsx(xe, {
     values: [
       {
-        heading: "Site language",
+        heading: "لغة الموقع",
         key: "site-language",
         value: f
       }
     ]
   }), A = /* @__PURE__ */ c.jsxs(c.Fragment, {
     children: [
-      "Default: English (",
+      "اللغة الافتراضية هي الإنجليزية (",
     /* @__PURE__ */ c.jsx("strong", { children: "en" }),
-      "); find out more about",
-    /* @__PURE__ */ c.jsx("a", { className: "text-green-400", href: "https://ghost.org/docs/faq/translation/", rel: "noopener noreferrer", target: "_blank", children: " using Ghost in other languages" })
+      "); يمكنك التبديل ما بين ثلاث لغات:",
+    /* @__PURE__ */ c.jsx("a", { className: "text-green-400", href: "https://ghost.org/docs/faq/translation/", rel: "noopener noreferrer", target: "_blank", children: " العربية (ar), الفرنسية (fr), الإنجليزية (en)" })
     ]
   }), h = /* @__PURE__ */ c.jsx(xe, {
     columns: 1, children: /* @__PURE__ */ c.jsx(
@@ -22445,8 +22445,8 @@ const zT = ({ keywords: e }) => {
         error: !!l.publicationLanguage,
         hint: l.publicationLanguage || A,
         inputRef: a,
-        placeholder: "Site language",
-        title: "Site language",
+        placeholder: "لغة الموقع",
+        title: "لغة الموقع",
         value: f,
         onChange: p,
         onKeyDown: () => u("password")
@@ -22456,13 +22456,13 @@ const zT = ({ keywords: e }) => {
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      description: "Set the language/locale which is used on your site",
+      description: "تعيين اللغة المحلية المستخدمة في موقعك",
       isEditing: n,
       keywords: e,
       navid: "publication-language",
       saveState: r,
       testId: "publication-language",
-      title: "Publication Language",
+      title: "لغة الموقع",
       onCancel: i,
       onEditingChange: d,
       onSave: o,
@@ -23908,13 +23908,13 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
     {
       values: [
         {
-          heading: "URL of your publication’s Facebook Page",
+          heading: "عنوان URL لصفحة المنشور الخاص بك على فيسبوك",
           key: "facebook",
           value: m,
           hideEmptyValue: !0
         },
         {
-          heading: "URL of your X (formerly Twitter) profile",
+          heading: "عنوان URL لملفك الشخصي على X (تويتر سابقاً)",
           key: "twitter",
           value: h,
           hideEmptyValue: !0
@@ -23930,7 +23930,7 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
         hint: u.facebook,
         inputRef: a,
         placeholder: "https://www.facebook.com/ghost",
-        title: "URL of your publication’s Facebook Page",
+        title: "عنوان URL لصفحة المنشور الخاص بك على فيسبوك",
         value: m,
         onBlur: (I) => {
           try {
@@ -23952,7 +23952,7 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
         error: !!u.twitter,
         hint: u.twitter,
         placeholder: "https://x.com/ghost",
-        title: "URL of your X (formerly Twitter) profile",
+        title: "عنوان URL لملفك الشخصي على X (تويتر سابقاً)",
         value: h,
         onBlur: (I) => {
           try {
@@ -23973,13 +23973,13 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      description: "Link your social accounts for full structured data and rich card support",
+      description: "ربط حساباتك الاجتماعية للحصول على بيانات منظمة كاملة ودعم البطاقة الغنية",
       isEditing: n,
       keywords: e,
       navid: "social-accounts",
       saveState: r,
       testId: "social-accounts",
-      title: "Social accounts",
+      title: "الحسابات الاجتماعية",
       onCancel: i,
       onEditingChange: l,
       onSave: () => {
@@ -24276,7 +24276,7 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
     };
   }, [e]), /* @__PURE__ */ c.jsxs(c.Fragment, {
     children: [
-      "The local time here is currently ",
+      "التوقيت المحلي هنا حالياً هو ",
       t
     ]
   });
@@ -24314,7 +24314,7 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
         options: u,
         selectedOption: u.find((A) => A.value === l),
         testId: "timezone-select",
-        title: "Site timezone",
+        title: "المنطقة الزمنية للموقع",
         isSearchable: !0,
         onSelect: (A) => f(A == null ? void 0 : A.value)
       }
@@ -24323,13 +24323,13 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      description: "Set the time and date of your publication, used for all published posts",
+      description: "تعيين وقت وتاريخ النشر الخاص بك، ويستخدم لجميع المنشورات المنشورة",
       isEditing: n,
       keywords: e,
       navid: "timezone",
       saveState: r,
       testId: "timezone",
-      title: "Site timezone",
+      title: "المنطقة الزمنية للموقع",
       onCancel: i,
       onEditingChange: a,
       onSave: o,
@@ -24356,12 +24356,12 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
       columns: 2,
       values: [
         {
-          heading: "Site title",
+          heading: "عنوان الموقع",
           key: "site-title",
           value: u
         },
         {
-          heading: "Site description",
+          heading: "وصف الموقع",
           key: "site-description",
           value: d
         }
@@ -24372,11 +24372,11 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
     /* @__PURE__ */ c.jsx(
       Ve,
       {
-        hint: "The name of your site",
+        hint: "اسم موقعك",
         inputRef: o,
         maxLength: 150,
-        placeholder: "Site title",
-        title: "Site title",
+        placeholder: "عنوان الموقع",
+        title: "عنوان الموقع",
         value: u,
         onChange: f
       }
@@ -24384,10 +24384,10 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
     /* @__PURE__ */ c.jsx(
       Ve,
       {
-        hint: "A short description, used in your theme, meta data and search results",
+        hint: "وصف مختصر، يستخدم في القالب الخاص بك، والبيانات الوصفية ونتائج البحث",
         maxLength: 200,
-        placeholder: "Site description",
-        title: "Site description",
+        placeholder: "وصف الموقع",
+        title: "وصف الموقع",
         value: d,
         onChange: p
       }
@@ -24397,7 +24397,7 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      description: "The details used to identify your publication around the web",
+      description: "التفاصيل المستخدمة للتعريف بمنشورك عبر الويب",
       isEditing: n,
       keywords: e,
       navid: "general",
@@ -24485,7 +24485,7 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
               inputRef: o,
               maxLength: 300,
               placeholder: h,
-              title: "X title",
+              title: "عنوان X",
               value: p,
               onChange: b
             }
@@ -24495,7 +24495,7 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
             {
               maxLength: 300,
               placeholder: v,
-              title: "X description",
+              title: "وصف X",
               value: m,
               onChange: y
             }
@@ -24511,13 +24511,13 @@ const gP = (e) => `https://www.facebook.com/${e}`, pP = (e) => `https://x.com/${
   return /* @__PURE__ */ c.jsxs(
     ce,
     {
-      description: "Customize structured data of your site for X (formerly Twitter)",
+      description: "تخصيص البيانات المهيكلة لموقعك لـ X (تويتر سابقًا)",
       isEditing: n,
       keywords: e,
       navid: "twitter",
       saveState: r,
       testId: "twitter",
-      title: "X card",
+      title: "بطاقة X",
       onCancel: s,
       onEditingChange: l,
       onSave: i,
@@ -24700,7 +24700,7 @@ const PP = () => {
           " — ",
         /* @__PURE__ */ c.jsx("strong", { children: "Owner" }),
           " ",
-          Oi(n) && /* @__PURE__ */ c.jsx("button", { className: "ml-2 inline-block text-sm font-bold text-green group-hover:visible md:invisible", type: "button", children: "View profile" })
+          Oi(n) && /* @__PURE__ */ c.jsx("button", { className: "ml-2 inline-block text-sm font-bold text-green group-hover:visible md:invisible", type: "button", children: "عرض الملف الشخصي" })
         ]
       }),
       /* @__PURE__ */ c.jsx("span", { className: "text-xs text-grey-700", children: e.email })
@@ -24726,7 +24726,7 @@ const PP = () => {
       return /* @__PURE__ */ c.jsx(
         Qs,
         {
-          action: a && /* @__PURE__ */ c.jsx(J, { color: "green", label: "Edit", link: !0, onClick: () => o(i) }),
+          action: a && /* @__PURE__ */ c.jsx(J, { color: "green", label: "تعديل", link: !0, onClick: () => o(i) }),
           avatar: /* @__PURE__ */ c.jsx(Yu, { bgColor: gd(i.name ? i.name : i.email), image: i.profile_image ?? void 0, label: k2(i.name), labelColor: "white" }),
           bgOnHover: a,
           className: "min-h-[64px]",
@@ -24830,7 +24830,7 @@ const PP = () => {
   } = PP(), { updateRoute: p } = ne(), m = () => {
     p("staff/invite");
   }, A = /* @__PURE__ */ c.jsx(J, {
-    className: "mt-[-5px]", color: "clear", label: "Invite people", size: "sm", linkWithPadding: !0, onClick: () => {
+    className: "mt-[-5px]", color: "clear", label: "دعوة الأشخاص", size: "sm", linkWithPadding: !0, onClick: () => {
       m();
     }
   }), h = T2().getParam("tab"), v = h || "administrators", [b, y] = L(v);
@@ -24879,7 +24879,7 @@ const PP = () => {
       keywords: e,
       navid: "staff",
       testId: "users",
-      title: "Staff",
+      title: "فريق العمل",
       children: [
         /* @__PURE__ */ c.jsx(zP, { user: o }),
         (r.length > 1 || u.length > 0) && /* @__PURE__ */ c.jsx(ln, { selectedTab: b, tabs: M, testId: "user-tabview", onTabChange: I }),
@@ -26951,13 +26951,13 @@ const zz = ({ keywords: e }) => {
           isVisible: n(Object.values(Te).flat()), title: "الإعدادات العامة", children: [
         /* @__PURE__ */ c.jsx(ue, { icon: "textfield", keywords: Te.titleAndDescription, navid: "general", title: "العنوان والوصف", onClick: p }),
         /* @__PURE__ */ c.jsx(ue, { icon: "world-clock", keywords: Te.timeZone, navid: "timezone", title: "المنطقة الزمنية", onClick: p }),
-        /* @__PURE__ */ c.jsx(ue, { icon: "language", keywords: Te.publicationLanguage, navid: "publication-language", title: "Publication language", onClick: p }),
+        /* @__PURE__ */ c.jsx(ue, { icon: "language", keywords: Te.publicationLanguage, navid: "publication-language", title: "لغة الموقع", onClick: p }),
         /* @__PURE__ */ c.jsx(ue, { icon: "layer", keywords: Te.metadata, navid: "metadata", title: "Meta data", onClick: p }),
-        /* @__PURE__ */ c.jsx(ue, { icon: "twitter-x", keywords: Te.twitter, navid: "twitter", title: "X card", onClick: p }),
-        /* @__PURE__ */ c.jsx(ue, { icon: "facebook", keywords: Te.facebook, navid: "facebook", title: "Facebook card", onClick: p }),
-        /* @__PURE__ */ c.jsx(ue, { icon: "like", keywords: Te.socialAccounts, navid: "social-accounts", title: "Social accounts", onClick: p }),
+        /* @__PURE__ */ c.jsx(ue, { icon: "twitter-x", keywords: Te.twitter, navid: "twitter", title: "بطاقة X", onClick: p }),
+        /* @__PURE__ */ c.jsx(ue, { icon: "facebook", keywords: Te.facebook, navid: "facebook", title: "بطاقة الفيسبوك", onClick: p }),
+        /* @__PURE__ */ c.jsx(ue, { icon: "like", keywords: Te.socialAccounts, navid: "social-accounts", title: "الحسابات الاجتماعية", onClick: p }),
         /* @__PURE__ */ c.jsx(ue, { icon: "lock-locked", keywords: Te.lockSite, navid: "locksite", title: "Make this site private", onClick: p }),
-        /* @__PURE__ */ c.jsx(ue, { icon: "user-page", keywords: Te.users, navid: "staff", title: "Staff", onClick: p })
+        /* @__PURE__ */ c.jsx(ue, { icon: "user-page", keywords: Te.users, navid: "staff", title: "فريق العمل", onClick: p })
           ]
         }),
       /* @__PURE__ */ c.jsxs(cr, {
