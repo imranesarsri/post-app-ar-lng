@@ -12,3 +12,17 @@
 ```
 - FIle name : **navigation.hbs** 
 - FIle path : content\themes\alarabiGoo\partials\navigation.hbs
+
+## Dashboard 
+### Settings
+
+```bash
+
+const lang = document.documentElement.getAttribute('lang');
+const module = await import(lang === 'ar' ? './settings-ar.mjs' : './index-f6338b55.mjs');
+
+export const AdminXApp = module.cg;
+
+```
+
+## Theme
