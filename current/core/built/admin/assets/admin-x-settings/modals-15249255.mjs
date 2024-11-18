@@ -2,7 +2,7 @@ var V1 = Object.defineProperty;
 var _1 = (t, s, r) => s in t ? V1(t, s, { enumerable: !0, configurable: !0, writable: !0, value: r }) : t[s] = r;
 var gc = (t, s, r) => (_1(t, typeof s != "symbol" ? s + "" : s, r), r);
 const lang = document.documentElement.getAttribute('lang');
-const module = await import(lang === 'ar' ? './settings-ar.mjs' : './index-f6338b55.mjs');
+const module = await import(lang === 'ar' ? '../translate-arabic/settings-ar.mjs' : './index-f6338b55.mjs');
 
 // Dynamically assign the imports based on the selected module
 const {

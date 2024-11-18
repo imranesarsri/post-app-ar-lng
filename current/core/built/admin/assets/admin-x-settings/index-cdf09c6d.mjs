@@ -1,5 +1,5 @@
 const lang = document.documentElement.getAttribute('lang');
-const module = await import(lang === 'ar' ? './settings-ar.mjs' : './index-f6338b55.mjs');
+const module = await import(lang === 'ar' ? '../translate-arabic/settings-ar.mjs' : './index-f6338b55.mjs');
 
 // Destructure only the needed exports
 const { a_: Ie, U: Qa, b0: ll } = module;

@@ -1,6 +1,16 @@
 # ALARABI
 
-##  Delete button sign up
+## Dashboard
+### Settings
+
+```js
+const lang = document.documentElement.getAttribute('lang');
+const module = await import(lang === 'ar' ? '../translate-arabic/settings-ar.mjs' : './index-f6338b55.mjs');
+
+export const AdminXApp = module.cg;
+
+```
+### Delete button sign up
 - delete this code 
 ```hbs
 <ul class="gh-sub-nav">
@@ -13,16 +23,5 @@
 - FIle name : **navigation.hbs** 
 - FIle path : content\themes\alarabiGoo\partials\navigation.hbs
 
-## Dashboard 
-### Settings
-
-```bash
-
-const lang = document.documentElement.getAttribute('lang');
-const module = await import(lang === 'ar' ? './settings-ar.mjs' : './index-f6338b55.mjs');
-
-export const AdminXApp = module.cg;
-
-```
 
 ## Theme
