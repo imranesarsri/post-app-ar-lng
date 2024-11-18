@@ -10716,7 +10716,7 @@ function Fs(e) {
     e || n((r) => r ?? String(JC++));
   }, [e]), e || (t ? `radix-${t}` : "");
 }
-const XC = ({ clearBg: e, ...t }) => /* @__PURE__ */ c.jsx(Wr.DropdownIndicator, { ...t, children: /* @__PURE__ */ c.jsx("div", { className: `absolute top-1/2 mt-[-5px] block h-2 w-2 rotate-45 border-[1px] border-l-0 border-t-0 border-grey-900 content-[''] dark:border-grey-400 ${e ? "right-2" : "right-[14px]"} ` }) }), qC = (e) => /* @__PURE__ */ c.jsx(Wr.ClearIndicator, { ...e, children: /* @__PURE__ */ c.jsx(fe, { className: "mr-2", name: "close", size: "xs" }) }), KC = ({ children: e, ...t }) => /* @__PURE__ */ c.jsxs(Wr.Option, {
+const XC = ({ clearBg: e, ...t }) => /* @__PURE__ */ c.jsx(Wr.DropdownIndicator, { ...t, children: /* @__PURE__ */ c.jsx("div", { className: `absolute top-1/2 mt-[-5px] block h-2 w-2 rotate-45 border-[1px] border-l-0 border-t-0 border-grey-900 content-[''] dark:border-grey-400 ${e ? "left-2" : "left-[14px]"} ` }) }), qC = (e) => /* @__PURE__ */ c.jsx(Wr.ClearIndicator, { ...e, children: /* @__PURE__ */ c.jsx(fe, { className: "mr-2", name: "close", size: "xs" }) }), KC = ({ children: e, ...t }) => /* @__PURE__ */ c.jsxs(Wr.Option, {
   ...t, children: [
   /* @__PURE__ */ c.jsxs("span", {
     className: t.isSelected ? "relative flex w-full items-center justify-between gap-2" : "", "data-testid": "select-option", "data-value": t.data.value, children: [
@@ -12048,7 +12048,7 @@ const GD = ({
     children: [
       o && /* @__PURE__ */ c.jsx(fe, { className: "mb-0.5 mr-1.5 inline", name: o, size: "sm" }),
       t,
-      typeof i == "number" && /* @__PURE__ */ c.jsx("span", { className: "ml-1.5 rounded-full bg-grey-200 px-1.5 py-[2px] text-xs font-medium text-grey-800 dark:bg-grey-900 dark:text-grey-300", children: new Intl.NumberFormat().format(i) })
+      typeof i == "number" && /* @__PURE__ */ c.jsx("span", { className: "mr-1.5 rounded-full bg-grey-200 px-1.5 py-[2px] text-xs font-medium text-grey-800 dark:bg-grey-900 dark:text-grey-300", children: new Intl.NumberFormat().format(i) })
     ]
   }
 ), VD = ({
@@ -17517,7 +17517,7 @@ const Sr = ({ title: e, description: t, children: n, beta: r = !1 }) => /* @__PU
   }, m = (A) => {
     A == null || A.stopPropagation(), f((h) => h === "desc" ? "asc" : "desc"), r(d);
   };
-  return o || (o = /* @__PURE__ */ c.jsx(J, { className: "flex-row-reverse", icon: `${d === "asc" ? "arrow-up" : "arrow-down"}`, iconColorClass: "!w-3 !h-3 !mr-0 ml-1.5", label: `${(a = l.find((A) => A.selected)) == null ? void 0 : a.label}`, ...i })), /* @__PURE__ */ c.jsx(D7, {
+  return o || (o = /* @__PURE__ */ c.jsx(J, { className: "flex-row-reverse", icon: `${d === "asc" ? "arrow-up" : "arrow-down"}`, iconColorClass: "!w-3 !h-3 !mr-0 mr-1.5", label: `${(a = l.find((A) => A.selected)) == null ? void 0 : a.label}`, ...i })), /* @__PURE__ */ c.jsx(D7, {
     position: s, trigger: o, children: /* @__PURE__ */ c.jsxs("div", {
       className: "flex flex-col", children: [
     /* @__PURE__ */ c.jsx("div", { className: "cursor-default select-none border-b border-b-grey-200 p-2 pl-3 text-sm font-semibold dark:border-b-grey-800", children: "Sort by" }),
@@ -20212,7 +20212,7 @@ const N2 = ye(void 0), Ck = ({ children: e }) => {
     {
       afterClose: e,
       backDropClick: !1,
-      cancelLabel: "Close",
+      cancelLabel: "إغلاق",
       footer: /* @__PURE__ */ c.jsx(c.Fragment, {}),
       height: "full",
       size: "full",
@@ -20225,7 +20225,7 @@ const N2 = ye(void 0), Ck = ({ children: e }) => {
           /* @__PURE__ */ c.jsx(yo, {
             buttons: [
               {
-                label: "Close",
+                label: "إغلاق",
                 color: "outline",
                 onClick: () => {
                   o.remove(), e == null || e();
@@ -20514,9 +20514,9 @@ const D2 = ye({
   {
     customHeader: /* @__PURE__ */ c.jsxs("div", {
       className: "z-10 flex items-start justify-between", children: [
-      /* @__PURE__ */ c.jsx(Sr, { description: "Add custom code to your publication.", title: "Code injection" }),
+      /* @__PURE__ */ c.jsx(Sr, { description: "إضافة رمز مخصص إلى المنشور الخاص بك.", title: "Code injection" }),
       /* @__PURE__ */ c.jsx(J, {
-        className: "mt-[-5px]", color: "clear", label: "Open", size: "sm", onClick: () => {
+        className: "mt-[-5px]", color: "clear", label: "فتح", size: "sm", onClick: () => {
           Ke.show(Lk);
         }
       })
@@ -20560,11 +20560,11 @@ const D2 = ye({
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      customHeader: /* @__PURE__ */ c.jsx(Sr, { description: "Permanently delete all posts and tags from the database, a hard reset", title: "Danger zone" }),
+      customHeader: /* @__PURE__ */ c.jsx(Sr, { description: "حذف جميع المنشورات والوسوم من قاعدة البيانات نهائيًا، إعادة تعيين ثابت", title: "منطقة الخطر" }),
       keywords: e,
       navid: "dangerzone",
       testId: "dangerzone",
-      children: /* @__PURE__ */ c.jsx("div", { children: /* @__PURE__ */ c.jsx(J, { color: "red", label: "Delete all content", onClick: o }) })
+      children: /* @__PURE__ */ c.jsx("div", { children: /* @__PURE__ */ c.jsx(J, { color: "red", label: "حذف جميع المحتويات", onClick: o }) })
     }
   );
 }, Xk = ge(Jk, "Danger zone"), qk = ({ keywords: e }) => {
@@ -20574,12 +20574,12 @@ const D2 = ye({
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "View history", size: "sm", onClick: n }),
-      description: "View system event log",
+      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "عرض السجل التاريخي", size: "sm", onClick: n }),
+      description: "عرض سجل أحداث النظام",
       keywords: e,
       navid: "history",
       testId: "history",
-      title: "History"
+      title: "سجل التاريخي"
     }
   );
 }, Kk = ge(qk, "History");
@@ -20665,7 +20665,7 @@ function fd() {
           ],
           cropSelectPresetFilter: "landscape",
           cropSelectPresetOptions: [
-            [void 0, "Custom"],
+            [void 0, "مخصص"],
             [1, "Square"],
             // shown when cropSelectPresetFilter is set to 'landscape'
             [2 / 1, "2:1"],
@@ -20769,7 +20769,7 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
     m == null || m.stopPropagation(), s ? u({ route: "pro", isExternal: !0 }) : r();
   }, f = (m) => {
     m == null || m.stopPropagation(), o == null || o();
-  }, p = l ? /* @__PURE__ */ c.jsx(J, { color: "red", label: "Delete", link: !0, onClick: f }) : s ? /* @__PURE__ */ c.jsx(J, { icon: "lock-locked", label: "Upgrade", link: !0, onClick: d }) : /* @__PURE__ */ c.jsx(J, { color: "green", label: "Configure", link: !0, onClick: d });
+  }, p = l ? /* @__PURE__ */ c.jsx(J, { color: "red", label: "Delete", link: !0, onClick: f }) : s ? /* @__PURE__ */ c.jsx(J, { icon: "lock-locked", label: "Upgrade", link: !0, onClick: d }) : /* @__PURE__ */ c.jsx(J, { color: "green", label: "التهيئة", link: !0, onClick: d });
   return /* @__PURE__ */ c.jsx(
     Qs,
     {
@@ -20783,7 +20783,7 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
         className: "inline-flex items-center gap-1", children: [
           t,
           " ",
-        /* @__PURE__ */ c.jsx("span", { className: "inline-flex items-center rounded-full bg-[rgba(48,207,67,0.15)] px-1.5 py-0.5 text-2xs font-semibold uppercase tracking-wide text-green", children: "Active" })
+        /* @__PURE__ */ c.jsx("span", { className: "inline-flex items-center rounded-full bg-[rgba(48,207,67,0.15)] px-1.5 py-0.5 text-2xs font-semibold uppercase tracking-wide text-green", children: "نشط" })
         ]
       }) : t,
       onClick: d
@@ -20808,7 +20808,7 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
         action: () => {
           n("integrations/zapier");
         },
-        detail: "Automation for your apps",
+        detail: "التشغيل الآلي لتطبيقاتك",
         disabled: r,
         icon: /* @__PURE__ */ c.jsx(iT, { className: "h-8 w-8" }),
         testId: "zapier-integration",
@@ -20822,7 +20822,7 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
           n("integrations/slack");
         },
         active: u && d,
-        detail: "A messaging app for teams",
+        detail: "تطبيق مراسلة للفرق",
         icon: /* @__PURE__ */ c.jsx(rT, { className: "h-8 w-8" }),
         testId: "slack-integration",
         title: "Slack"
@@ -20835,7 +20835,7 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
           n("integrations/amp");
         },
         active: s,
-        detail: "Google AMP will be removed in Ghost 6.0",
+        detail: "ستتم إزالة Google AMP من Google AMP في الإصدار 6.0 من Ghost 6.0",
         icon: /* @__PURE__ */ c.jsx(_k, { className: "h-8 w-8" }),
         testId: "amp-integration",
         title: "AMP"
@@ -20848,7 +20848,7 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
           n("integrations/unsplash");
         },
         active: a,
-        detail: "Beautiful, free photos",
+        detail: "صور جميلة ومجانية",
         icon: /* @__PURE__ */ c.jsx(oT, { className: "h-8 w-8" }),
         testId: "unsplash-integration",
         title: "Unsplash"
@@ -20861,7 +20861,7 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
           n("integrations/firstpromoter");
         },
         active: l,
-        detail: "Launch your member referral program",
+        detail: "إطلاق برنامج إحالة الأعضاء",
         icon: /* @__PURE__ */ c.jsx($k, { className: "h-8 w-8" }),
         testId: "firstpromoter-integration",
         title: "FirstPromoter"
@@ -20874,7 +20874,7 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
           n("integrations/pintura");
         },
         active: o.isEnabled,
-        detail: "Advanced image editing",
+        detail: "تحرير متقدم للصور",
         icon: /* @__PURE__ */ c.jsx(nT, { className: "h-8 w-8" }),
         testId: "pintura-integration",
         title: "Pintura"
@@ -20890,7 +20890,7 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
         Rn,
         {
           action: () => t({ route: `integrations/${o.id}` }),
-          detail: /* @__PURE__ */ c.jsx("div", { className: "line-clamp-2 break-words", children: /* @__PURE__ */ c.jsx("span", { title: `${o.name}: ${o.description || "No description"}`, children: o.description || "No description" }) }),
+          detail: /* @__PURE__ */ c.jsx("div", { className: "line-clamp-2 break-words", children: /* @__PURE__ */ c.jsx("span", { title: `${o.name}: ${o.description || "لا يوجد وصف"}`, children: o.description || "لا يوجد وصف" }) }),
           icon: o.icon_image ? /* @__PURE__ */ c.jsx("img", { className: "h-8 w-8 shrink-0 object-cover", role: "presentation", src: o.icon_image }) : /* @__PURE__ */ c.jsx(fe, { className: "w-8 shrink-0", name: "integration" }),
           title: o.name,
           custom: !0,
@@ -20918,21 +20918,21 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
         }
       )
     )
-  }) : /* @__PURE__ */ c.jsx(tr, { icon: "integration", children: "No custom integration." });
+  }) : /* @__PURE__ */ c.jsx(tr, { icon: "integration", children: "لا يوجد تكامل مخصص." });
 }, lT = ({ keywords: e }) => {
   const [t, n] = L("built-in"), { data: { integrations: r } = { integrations: [] } } = eT(), { updateRoute: o } = ne(), i = [
     {
       id: "built-in",
-      title: "Built-in",
+      title: "مدمج في",
       contents: /* @__PURE__ */ c.jsx(sT, {})
     },
     {
       id: "custom",
-      title: "Custom",
+      title: "مخصص",
       contents: /* @__PURE__ */ c.jsx(aT, { integrations: r.filter((a) => a.type === "custom") })
     }
   ], s = /* @__PURE__ */ c.jsx(J, {
-    className: "mt-[-5px] hidden md:!visible md:!block", color: "clear", label: "Add custom integration", size: "sm", onClick: () => {
+    className: "mt-[-5px] hidden md:!visible md:!block", color: "clear", label: "إضافة تكامل مخصّص", size: "sm", onClick: () => {
       o("integrations/new"), n("custom");
     }
   });
@@ -20940,15 +20940,15 @@ const _k = (e) => /* @__PURE__ */ g("svg", { width: 256, height: 256, viewBox: "
     ce,
     {
       customButtons: s,
-      description: "Make Ghost work with apps and tools",
+      description: "اجعل ghost يعمل مع التطبيقات والأدوات",
       keywords: e,
       navid: "integrations",
       testId: "integrations",
-      title: "Integrations",
+      title: "عمليات الدمج",
       children: [
         /* @__PURE__ */ c.jsx("div", {
         className: "flex justify-center rounded border border-green px-4 py-2 md:hidden", children: /* @__PURE__ */ c.jsx(J, {
-          color: "green", label: "Add custom integration", link: !0, onClick: () => {
+          color: "green", label: "إضافة تكامل مخصّص", link: !0, onClick: () => {
             o("integrations/new"), n("custom");
           }
         })
@@ -21094,36 +21094,36 @@ const Pi = ({ label: e, flag: t }) => {
       dr,
       {
         action: /* @__PURE__ */ c.jsx(Pi, { flag: "editorExcerpt" }),
-        detail: /* @__PURE__ */ c.jsx(c.Fragment, { children: "Adds the excerpt input below the post title in the editor" }),
-        title: "Show post excerpt inline"
+        detail: /* @__PURE__ */ c.jsx(c.Fragment, { children: "يضيف حقل مقتطفات النصوص أسفل عنوان المنشور في المحرر" }),
+        title: "إظهار مقتطفات المنشور في المحرر"
       }
     ),
-    /* @__PURE__ */ c.jsx(
+/* @__PURE__ */ c.jsx(
       dr,
       {
         action: /* @__PURE__ */ c.jsx(Pi, { flag: "additionalPaymentMethods" }),
         detail: /* @__PURE__ */ c.jsxs(c.Fragment, {
           children: [
-            "Enable support for CashApp, iDEAL, Bancontact, and others. ",
-          /* @__PURE__ */ c.jsx("a", { className: "text-green", href: "https://ghost.org/help/payment-methods", rel: "noopener noreferrer", target: "_blank", children: "Learn more →" })
+            "تفعيل الدعم لـ CashApp وiDEAL وBancontact وغيرها. ",
+      /* @__PURE__ */ c.jsx("a", { className: "text-green", href: "https://ghost.org/help/payment-methods", rel: "noopener noreferrer", target: "_blank", children: "تعرف على المزيد →" })
           ]
         }),
-        title: "Additional payment methods"
+        title: "طرق دفع إضافية"
       }
     ),
-    /* @__PURE__ */ c.jsx(
+/* @__PURE__ */ c.jsx(
       dr,
       {
         action: /* @__PURE__ */ c.jsx(Pi, { flag: "i18n" }),
         detail: /* @__PURE__ */ c.jsxs(c.Fragment, {
           children: [
-            "Translate your membership flows into your publication language (",
-          /* @__PURE__ */ c.jsx("a", { className: "text-green", href: "https://github.com/TryGhost/Ghost/tree/main/ghost/i18n/locales", rel: "noopener noreferrer", target: "_blank", children: "supported languages" }),
-            "). Don’t see yours? ",
-          /* @__PURE__ */ c.jsx("a", { className: "text-green", href: "https://forum.ghost.org/t/help-translate-ghost-beta/37461", rel: "noopener noreferrer", target: "_blank", children: "Get involved" })
+            "ترجمة تدفقات العضوية إلى لغة منشورك (",
+      /* @__PURE__ */ c.jsx("a", { className: "text-green", href: "https://github.com/TryGhost/Ghost/tree/main/ghost/i18n/locales", rel: "noopener noreferrer", target: "_blank", children: "اللغات المدعومة" }),
+            "). لا ترى لغتك؟ ",
+      /* @__PURE__ */ c.jsx("a", { className: "text-green", href: "https://forum.ghost.org/t/help-translate-ghost-beta/37461", rel: "noopener noreferrer", target: "_blank", children: "شارك في الترجمة" })
           ]
         }),
-        title: "Portal translation"
+        title: "ترجمة البوابة"
       }
     ),
     /* @__PURE__ */ c.jsx(
@@ -21147,21 +21147,21 @@ const Pi = ({ label: e, flag: t }) => {
                   o(!1);
                 }
               },
-              children: /* @__PURE__ */ c.jsx(J, { color: "grey", label: r ? "Uploading ..." : "Upload redirects file", size: "sm", tag: "div" })
+              children: /* @__PURE__ */ c.jsx(J, { color: "grey", label: r ? "Uploading ..." : "تحميل ملف إعادة التوجيه", size: "sm", tag: "div" })
             }
           ),
-          /* @__PURE__ */ c.jsx(J, { color: "green", label: "Download current redirects", link: !0, onClick: () => pT() })
+          /* @__PURE__ */ c.jsx(J, { color: "green", label: "تنزيل عمليات إعادة التوجيه الحالية", link: !0, onClick: () => pT() })
           ]
         }),
         detail: /* @__PURE__ */ c.jsxs(c.Fragment, {
           children: [
-            "Configure redirects for old or moved content, ",
+            "تكوين عمليات إعادة التوجيه للمحتوى القديم أو المنقول, ",
           /* @__PURE__ */ c.jsx("br", {}),
-            " more info in the ",
-          /* @__PURE__ */ c.jsx("a", { className: "text-green", href: "https://ghost.org/tutorials/implementing-redirects/", rel: "noopener noreferrer", target: "_blank", children: "docs" })
+            " المزيد من المعلومات في ",
+          /* @__PURE__ */ c.jsx("a", { className: "text-green", href: "https://ghost.org/tutorials/implementing-redirects/", rel: "noopener noreferrer", target: "_blank", children: "المستندات" })
           ]
         }),
-        title: "Redirects"
+        title: "إعادة توجيه"
       }
     ),
     /* @__PURE__ */ c.jsx(
@@ -21185,14 +21185,14 @@ const Pi = ({ label: e, flag: t }) => {
                   s(!1);
                 }
               },
-              children: /* @__PURE__ */ c.jsx(J, { color: "grey", label: i ? "Uploading ..." : "Upload routes file", size: "sm", tag: "div" })
+              children: /* @__PURE__ */ c.jsx(J, { color: "grey", label: i ? "Uploading ..." : "رفع ملف المسارات", size: "sm", tag: "div" })
             }
           ),
-          /* @__PURE__ */ c.jsx(J, { color: "green", label: "Download current routes", link: !0, onClick: () => hT() })
+          /* @__PURE__ */ c.jsx(J, { color: "green", label: "تنزيل المسارات الحالية", link: !0, onClick: () => hT() })
           ]
         }),
-        detail: "Configure dynamic routing by modifying the routes.yaml file",
-        title: "Routes"
+        detail: "قم بتكوين التوجيه الديناميكي عن طريق تعديل ملف routes.yaml",
+        title: "المسارات"
       }
     )
     ]
@@ -21201,7 +21201,7 @@ const Pi = ({ label: e, flag: t }) => {
   const [t, n] = L("labs-beta-features"), [r, o] = L(!1), { config: i } = Ze(), s = [
     {
       id: "labs-beta-features",
-      title: "Beta features",
+      title: "ميزات الإصدار التجريبي",
       contents: /* @__PURE__ */ c.jsx(vT, {})
     },
     i.enableDeveloperExperiments && {
@@ -21215,13 +21215,13 @@ const Pi = ({ label: e, flag: t }) => {
     {
       customHeader: /* @__PURE__ */ c.jsxs("div", {
         className: "z-10 flex items-start justify-between", children: [
-        /* @__PURE__ */ c.jsx(Sr, { description: "This is a testing ground for new or experimental features. They may change, break or inexplicably disappear at any time.", title: "Labs" }),
+        /* @__PURE__ */ c.jsx(Sr, { description: "هذه ساحة اختبار للميزات الجديدة أو التجريبية. قد تتغير أو تتعطل أو تختفي بشكل غير مفهوم في أي وقت.", title: "Labs" }),
           r ? /* @__PURE__ */ c.jsx(J, {
-            className: "mt-[-5px]", color: "grey", label: "Close", size: "sm", onClick: () => {
+            className: "mt-[-5px]", color: "grey", label: "إغلاق", size: "sm", onClick: () => {
               o(!1);
             }
           }) : /* @__PURE__ */ c.jsx(J, {
-            className: "mt-[-5px]", color: "clear", label: "Open", size: "sm", onClick: () => {
+            className: "mt-[-5px]", color: "clear", label: "فتح", size: "sm", onClick: () => {
               o(!0);
             }
           })
@@ -21238,9 +21238,9 @@ const Pi = ({ label: e, flag: t }) => {
   className: "flex flex-col items-center gap-3 pb-5 pt-10", children: [
   /* @__PURE__ */ c.jsxs("div", {
     children: [
-      "Download all of your ",
-    /* @__PURE__ */ c.jsx("strong", { children: "posts and settings" }),
-      " in a single, glorious JSON file."
+      "قم بتنزيل جميع ",
+    /* @__PURE__ */ c.jsx("strong", { children: "المنشورات والإعدادات" }),
+      " في ملف JSON واحد رائع."
     ]
   }),
   /* @__PURE__ */ c.jsx(J, { className: "!h-9 !font-semibold", color: "grey", icon: "export", iconColorClass: "!h-5 !w-auto", label: "تصدير المحتوى", onClick: () => Yk() })
@@ -21254,7 +21254,7 @@ const Pi = ({ label: e, flag: t }) => {
       okLabel: "",
       size: "sm",
       testId: "universal-import-modal",
-      title: "Universal import",
+      title: "الاستيراد العالمي",
       children: /* @__PURE__ */ c.jsx("div", {
         className: "py-4 leading-9", children: /* @__PURE__ */ c.jsx(
           Hi,
@@ -21339,7 +21339,7 @@ const Pi = ({ label: e, flag: t }) => {
       bi,
       {
         icon: /* @__PURE__ */ c.jsx(fe, { className: "h-4 w-auto", name: "import" }),
-        title: "Universal import",
+        title: "الاستيراد العالمي",
         onClick: t
       }
     )
@@ -21349,7 +21349,7 @@ const Pi = ({ label: e, flag: t }) => {
   const [t, n] = L("import"), r = [
     {
       id: "import",
-      title: "Import",
+      title: "استيراد",
       contents: /* @__PURE__ */ c.jsx(CT, {})
     },
     {
@@ -21361,7 +21361,7 @@ const Pi = ({ label: e, flag: t }) => {
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      customHeader: /* @__PURE__ */ c.jsx(Sr, { description: "Import content, members and subscriptions from other platforms or export your Ghost data.", title: "Migration tools" }),
+      customHeader: /* @__PURE__ */ c.jsx(Sr, { description: "قم باستيراد المحتوى والأعضاء والاشتراكات من منصات أخرى أو قم بتصدير بيانات Ghost الخاصة بك.", title: "Migration tools" }),
       keywords: e,
       navid: "migration",
       testId: "migrationtools",
@@ -21377,9 +21377,9 @@ const Pi = ({ label: e, flag: t }) => {
   codeInjection: ["advanced", "code injection", "head", "footer"],
   labs: ["advanced", "labs", "alpha", "beta", "flag", "routes", "redirect", "translation", "editor", "portal"],
   history: ["advanced", "history", "log", "events", "user events", "staff"],
-  dangerzone: ["danger", "danger zone", "delete", "content", "delete all content", "delete site"]
+  dangerzone: ["danger", "منطقة الخطر", "delete", "content", "حذف جميع المحتويات", "delete site"]
 }, LT = () => /* @__PURE__ */ c.jsxs(qr, {
-  keywords: Object.values(st).flat(), title: "Advanced", children: [
+  keywords: Object.values(st).flat(), title: "متقدم", children: [
   /* @__PURE__ */ c.jsx(cT, { keywords: st.integrations }),
   /* @__PURE__ */ c.jsx(ST, { keywords: st.migrationtools }),
   /* @__PURE__ */ c.jsx(Gk, { keywords: st.codeInjection }),
@@ -21468,25 +21468,25 @@ const TT = [{
     setSelectedSegments: s
   };
 }, el = [{
-  label: "Whoever has access to the post",
-  hint: "Free posts to everyone, premium posts sent to paid members",
-  value: "visibility"
+  "label": "من يمكنه الوصول إلى المنشور",
+  "hint": "المنشورات المجانية متاحة للجميع، والمنشورات المميزة تُرسل للأعضاء المدفوعين",
+  "value": "visibility"
 }, {
-  label: "All members",
-  hint: "Everyone who is subscribed to newsletter updates, whether free or paid members",
-  value: "all-members"
+  "label": "جميع الأعضاء",
+  "hint": "كل من هو مشترك في تحديثات النشرة الإخبارية، سواء كانوا أعضاء مجانيين أو مدفوعين",
+  "value": "all-members"
 }, {
-  label: "Paid-members only",
-  hint: "People who have a premium subscription",
-  value: "paid-only"
+  "label": "الأعضاء المدفوعون فقط",
+  "hint": "الأشخاص الذين لديهم اشتراك مميز",
+  "value": "paid-only"
 }, {
-  label: "Specific people",
-  hint: "Only people with any of the selected tiers or labels",
-  value: "segment"
+  "label": "أشخاص محددون",
+  "hint": "فقط الأشخاص الذين ينتمون إلى أحد المستويات أو العلامات المحددة",
+  "value": "segment"
 }, {
-  label: "Usually nobody",
-  hint: "Newsletters are off for new posts, but can be enabled when needed",
-  value: "none"
+  "label": "عادةً لا أحد",
+  "hint": "النشرات الإخبارية معطلة للمنشورات الجديدة، ولكن يمكن تفعيلها عند الحاجة",
+  "value": "none"
 }];
 function PT({
   defaultEmailRecipients: e,
@@ -21522,7 +21522,7 @@ const zT = ({ keywords: e }) => {
     {
       values: [
         {
-          heading: "Default Newsletter recipients",
+          heading: "مستلمو النشرة الإخبارية الافتراضيون",
           key: "default-recipients",
           value: zi(el, d)
         }
@@ -21533,11 +21533,11 @@ const zT = ({ keywords: e }) => {
     /* @__PURE__ */ c.jsx(
       Fn,
       {
-        hint: "Who should receive your posts by default?",
+        hint: "من الذي يجب أن يتلقى مشاركاتك بشكل افتراضي؟",
         options: el,
         selectedOption: el.find((I) => I.value === d),
         testId: "default-recipients-select",
-        title: "Default Newsletter recipients",
+        title: "مستلمو النشرة الإخبارية الافتراضيون",
         onSelect: (I) => {
           I && h(I.value);
         }
@@ -21559,13 +21559,13 @@ const zT = ({ keywords: e }) => {
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      description: "When you publish new content, who do you usually want to send it to?",
+      description: "عندما تنشر محتوى جديدًا، إلى من تريد عادةً إرساله عادةً؟",
       isEditing: n,
       keywords: e,
       navid: "default-recipients",
       saveState: r,
       testId: "default-recipients",
-      title: "Default recipients",
+      title: "المستلمون الافتراضيون",
       onCancel: i,
       onEditingChange: a,
       onSave: o,
@@ -21597,11 +21597,11 @@ const zT = ({ keywords: e }) => {
     ce,
     {
       customButtons: u,
-      description: "Newsletter features are active, posts can be sent by email",
+      description: "ميزات النشرة الإخبارية نشطة، ويمكن إرسال المنشورات عبر البريد الإلكتروني",
       keywords: e,
       navid: "enable-newsletters",
       testId: "enable-newsletters",
-      title: "Newsletter sending",
+      title: "إرسال الرسائل الإخبارية",
       children: /* @__PURE__ */ c.jsx(
         xe,
         {
@@ -21614,7 +21614,7 @@ const zT = ({ keywords: e }) => {
                 /* @__PURE__ */ c.jsxs("div", {
                   className: "flex items-center gap-2", children: [
                   /* @__PURE__ */ c.jsx(fe, { colorClass: "text-green", name: "check", size: "sm" }),
-                  /* @__PURE__ */ c.jsx("span", { children: "Enabled" })
+                  /* @__PURE__ */ c.jsx("span", { children: "ممكّنة" })
                   ]
                 }),
                   a && /* @__PURE__ */ c.jsxs(sg, {
@@ -21664,9 +21664,9 @@ const zT = ({ keywords: e }) => {
     }
   ] : [
     {
-      heading: "Status",
+      heading: "الحالة",
       key: "status",
-      value: "Mailgun is not set up"
+      value: "لم يتم إعداد Mailgun"
     }
   ], h = /* @__PURE__ */ c.jsx(
     xe,
@@ -21721,8 +21721,8 @@ const zT = ({ keywords: e }) => {
     })
   }), y = /* @__PURE__ */ c.jsxs(c.Fragment, {
     children: [
-      "The Mailgun API is used for bulk email newsletter delivery. ",
-    /* @__PURE__ */ c.jsx(es, { href: "https://ghost.org/docs/faq/mailgun-newsletters/", target: "_blank", children: "Why is this required?" })
+      "تُستخدم واجهة برمجة تطبيقات Mailgun API لتسليم الرسائل الإخبارية عبر البريد الإلكتروني بالجملة. ",
+    /* @__PURE__ */ c.jsx(es, { href: "https://ghost.org/docs/faq/mailgun-newsletters/", target: "_blank", children: "لماذا هذا مطلوب؟" })
     ]
   });
   return /* @__PURE__ */ c.jsx(
@@ -21787,7 +21787,7 @@ const zT = ({ keywords: e }) => {
       className: "w-full", onClick: n, children: /* @__PURE__ */ c.jsxs("div", {
         className: "flex grow flex-col", children: [
       /* @__PURE__ */ c.jsx("span", { className: "font-medium", children: e.name }),
-      /* @__PURE__ */ c.jsx("span", { className: "mt-0.5 text-xs leading-tight text-grey-700", children: e.description || "No description" })
+      /* @__PURE__ */ c.jsx("span", { className: "mt-0.5 text-xs leading-tight text-grey-700", children: e.description || "لا يوجد وصف" })
         ]
       })
     }),
@@ -21795,7 +21795,7 @@ const zT = ({ keywords: e }) => {
       className: "hidden md:!visible md:!table-cell md:min-w-[11rem]", onClick: n, children: /* @__PURE__ */ c.jsxs("div", {
         className: "flex grow flex-col", children: [
       /* @__PURE__ */ c.jsx("span", { children: Ot(((r = e.count) == null ? void 0 : r.active_members) || 0) }),
-      /* @__PURE__ */ c.jsx("span", { className: "mt-0.5 whitespace-nowrap text-xs leading-tight text-grey-700", children: "Subscribers" })
+      /* @__PURE__ */ c.jsx("span", { className: "mt-0.5 whitespace-nowrap text-xs leading-tight text-grey-700", children: "المشتركون" })
         ]
       })
     }),
@@ -21803,7 +21803,7 @@ const zT = ({ keywords: e }) => {
       className: "hidden md:!visible md:!table-cell md:min-w-[11rem]", onClick: n, children: /* @__PURE__ */ c.jsxs("div", {
         className: "flex grow flex-col", children: [
       /* @__PURE__ */ c.jsx("span", { children: Ot(((o = e.count) == null ? void 0 : o.posts) || 0) }),
-      /* @__PURE__ */ c.jsx("span", { className: "mt-0.5 whitespace-nowrap text-xs leading-tight text-grey-700", children: "Delivered" })
+      /* @__PURE__ */ c.jsx("span", { className: "mt-0.5 whitespace-nowrap text-xs leading-tight text-grey-700", children: "تم التسليم" })
         ]
       })
     })
@@ -21997,7 +21997,7 @@ const zT = ({ keywords: e }) => {
     })();
   }, [p, A, m]);
   const b = /* @__PURE__ */ c.jsx(J, {
-    className: "mt-[-5px]", color: "clear", label: "Add newsletter", size: "sm", onClick: () => {
+    className: "mt-[-5px]", color: "clear", label: "إضافة رسالة إخبارية", size: "sm", onClick: () => {
       n();
     }
   }), y = h.filter((x) => x.status === "active").sort((x, w) => x.sort_order - w.sort_order) || [], I = h.filter((x) => x.status !== "active"), M = async (x, w) => {
@@ -22017,12 +22017,12 @@ const zT = ({ keywords: e }) => {
   }, N = [
     {
       id: "active-newsletters",
-      title: "Active",
+      title: "نشط",
       contents: /* @__PURE__ */ c.jsx(p1, { isLoading: l, newsletters: y, isSortable: !0, onSort: M })
     },
     {
       id: "archived-newsletters",
-      title: "Archived",
+      title: "الأرشيف",
       contents: /* @__PURE__ */ c.jsx(p1, { isLoading: l, newsletters: I })
     }
   ];
@@ -22033,7 +22033,7 @@ const zT = ({ keywords: e }) => {
       keywords: e,
       navid: "newsletters",
       testId: "newsletters",
-      title: "Newsletters",
+      title: "النشرات الإخبارية",
       children: [
         /* @__PURE__ */ c.jsx(ln, { selectedTab: r, tabs: N, onTabChange: o }),
         a === !1 && /* @__PURE__ */ c.jsx(
@@ -22055,7 +22055,7 @@ const zT = ({ keywords: e }) => {
 }, JT = () => {
   const { settings: e, config: t } = Ze(), [n] = Se(e, ["editor_default_email_recipients"]);
   return /* @__PURE__ */ c.jsxs(qr, {
-    keywords: Object.values(Ct).flat(), title: "Email newsletter", children: [
+    keywords: Object.values(Ct).flat(), title: "النشرة الإخبارية عبر البريد الإلكتروني", children: [
     /* @__PURE__ */ c.jsx(HT, { keywords: Ct.enableNewsletters }),
       n !== "disabled" && /* @__PURE__ */ c.jsxs(c.Fragment, {
         children: [
@@ -24923,12 +24923,12 @@ const PP = () => {
   return /* @__PURE__ */ c.jsx(
     ce,
     {
-      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "Embed", size: "sm", onClick: n }),
-      description: "Grow your audience from anywhere on the web",
+      customButtons: /* @__PURE__ */ c.jsx(J, { className: "mt-[-5px]", color: "clear", label: "تضمين", size: "sm", onClick: n }),
+      description: "زيادة جمهورك من أي مكان على الويب",
       keywords: e,
       navid: "embed-signup-form",
       testId: "embed-signup-form",
-      title: "Embeddable signup form"
+      title: "نموذج اشتراك قابل للتضمين"
     }
   );
 }, bd = "TiersResponseType", fa = Uo({
@@ -25241,8 +25241,8 @@ const ga = "OffersResponseType", J2 = vt({
     return M.status === "archived" || N && N.active === !1;
   });
   let a = [
-    { id: "active", title: "Active" },
-    { id: "archived", title: "Archived" }
+    { id: "active", title: "نشط" },
+    { id: "archived", title: "الأرشيف" }
   ];
   const { sortingState: l, setSortingState: u } = Wk(), d = l == null ? void 0 : l.find((M) => M.type === "offers"), [f, p] = L("active"), m = (d == null ? void 0 : d.option) || "date-added", A = (d == null ? void 0 : d.direction) || "desc", h = (M) => {
     sessionStorage.setItem("editOfferPageSource", "offersIndex"), t(`offers/edit/${M}`);
@@ -25343,7 +25343,7 @@ const ga = "OffersResponseType", J2 = vt({
   }), I = [
     {
       key: "cancel-modal",
-      label: "Close",
+      label: "إغلاق",
       onClick: () => {
         e.remove(), t("offers");
       }
@@ -25599,7 +25599,7 @@ const ga = "OffersResponseType", J2 = vt({
       e.recommending_back && /* @__PURE__ */ c.jsx(Vt, { className: "w-[1%] whitespace-nowrap group-hover/table-row:visible md:invisible", children: /* @__PURE__ */ c.jsx("div", { className: "mt-1 whitespace-nowrap text-right text-sm text-grey-700", children: "Recommending" }) })
     ]
   });
-}, $P = ({ incomingRecommendations: e, stats: t, pagination: n, showMore: r, isLoading: o }) => o || e.length ? /* @__PURE__ */ c.jsx(Mr, { isLoading: o, pagination: n, showMore: r, hintSeparator: !0, children: e.map((i) => /* @__PURE__ */ c.jsx(_P, { incomingRecommendation: i, stats: t }, i.id)) }) : /* @__PURE__ */ c.jsx(tr, { children: /* @__PURE__ */ c.jsx("span", { className: "max-w-[40ch] text-center", children: "No one’s recommended you yet. Once they do, you’ll find them here along with how many memberships they’ve driven." }) }), w1 = function (e, t, n) {
+}, $P = ({ incomingRecommendations: e, stats: t, pagination: n, showMore: r, isLoading: o }) => o || e.length ? /* @__PURE__ */ c.jsx(Mr, { isLoading: o, pagination: n, showMore: r, hintSeparator: !0, children: e.map((i) => /* @__PURE__ */ c.jsx(_P, { incomingRecommendation: i, stats: t }, i.id)) }) : /* @__PURE__ */ c.jsx(tr, { children: /* @__PURE__ */ c.jsx("span", { className: "max-w-[40ch] text-center", children: "لم يوصِ بك أحد بعد. بمجرد أن يفعلوا ذلك، ستجدهم هنا مع عدد العضويات التي قاموا بقيادتها." }) }), w1 = function (e, t, n) {
   const r = { ...e };
   switch (t) {
     case "title":
@@ -25804,7 +25804,7 @@ const ga = "OffersResponseType", J2 = vt({
       animate: t ?? !0,
       backDropClick: !1,
       buttonsDisabled: m.disabled,
-      cancelLabel: "Close",
+      cancelLabel: "إغلاق",
       leftButtonProps: A,
       okColor: m.color,
       okLabel: m.label || "حفظ",
@@ -25894,14 +25894,14 @@ const ga = "OffersResponseType", J2 = vt({
   ) : /* @__PURE__ */ c.jsxs(tr, {
     children: [
     /* @__PURE__ */ c.jsx(J, {
-      color: "grey", label: "Add first recommendation", size: "sm", onClick: () => {
+      color: "grey", label: "إضافة التوصية الأولى", size: "sm", onClick: () => {
         a();
       }
     }),
     /* @__PURE__ */ c.jsxs("span", {
       className: "mt-2 max-w-[40ch] text-center text-xs", children: [
-        "Need inspiration? ",
-      /* @__PURE__ */ c.jsx(es, { href: "https://ghost.org/explore", target: "_blank", children: "Explore thousands of sites" })
+        "هل تحتاج إلى إلهام؟ ",
+      /* @__PURE__ */ c.jsx(es, { href: "https://ghost.org/explore", target: "_blank", children: "استكشف آلاف المواقع" })
       ]
     })
     ]
@@ -25964,20 +25964,20 @@ const ga = "OffersResponseType", J2 = vt({
   }, [b, y] = L("your-recommendations"), I = [
     {
       id: "your-recommendations",
-      title: "Your recommendations",
+      title: "توصياتك",
       counter: (j = r == null ? void 0 : r.pagination) == null ? void 0 : j.total,
       contents: /* @__PURE__ */ c.jsx(lz, { isLoading: i, recommendations: o ?? [], showMore: l })
     },
     {
       id: "recommending-you",
-      title: "Recommending you",
+      title: "توصية لك",
       counter: (C = d == null ? void 0 : d.pagination) == null ? void 0 : C.total,
       contents: /* @__PURE__ */ c.jsx($P, { incomingRecommendations: u ?? [], isLoading: f || h, showMore: v, stats: A ?? [] })
     }
   ], M = /* @__PURE__ */ c.jsx(c.Fragment, { children: "قم بالتوصية بأي منشور سيجده جمهورك ذا قيمة، واكتشف متى يوصي بك الآخرون." }), { updateRoute: N } = ne(), x = () => {
     N("recommendations/add");
   }, w = /* @__PURE__ */ c.jsx(J, {
-    className: "mt-[-5px] hidden md:!visible md:!block", color: "clear", label: "Add recommendation", size: "sm", onClick: () => {
+    className: "mt-[-5px] hidden md:!visible md:!block", color: "clear", label: "إضافة توصية", size: "sm", onClick: () => {
       x();
     }
   });
@@ -25996,7 +25996,7 @@ const ga = "OffersResponseType", J2 = vt({
       children: [
         /* @__PURE__ */ c.jsx("div", {
         className: "flex justify-center rounded border border-green px-4 py-2 md:hidden", children: /* @__PURE__ */ c.jsx(J, {
-          color: "light-grey", label: "Add recommendation", link: !0, onClick: () => {
+          color: "light-grey", label: "إضافة توصية", link: !0, onClick: () => {
             x();
           }
         })
@@ -26227,11 +26227,11 @@ const ga = "OffersResponseType", J2 = vt({
     "comments_enabled"
   ]), p = zi(al, l), m = zi(ll, u), A = zi(cl, f), { data: { tiers: h } = {} } = fa(), v = [
     {
-      label: "Active Tiers",
+      label: "المستويات النشطة",
       options: (h == null ? void 0 : h.filter(({ active: x }) => x).map((x) => ({ value: x.id, label: x.name }))) || []
     },
     {
-      label: "Archived Tiers",
+      label: "المستويات المؤرشفة",
       options: (h == null ? void 0 : h.filter(({ active: x }) => !x).map((x) => ({ value: x.id, label: x.name }))) || []
     }
   ], b = JSON.parse(d || "[]"), y = v.flatMap((x) => x.options).filter((x) => b.includes(x.value)), I = (x) => {
@@ -26572,7 +26572,7 @@ const ga = "OffersResponseType", J2 = vt({
         ]
       }),
         e.trial_days ? /* @__PURE__ */ c.jsx("div", { className: "mb-4 mt-1", children: /* @__PURE__ */ c.jsx(eh, { size: "sm", trialDays: e.trial_days }) }) : "",
-    /* @__PURE__ */ c.jsx("div", { className: "mt-2 line-clamp-2 text-[1.4rem] font-medium", children: e.description || /* @__PURE__ */ c.jsx("span", { className: "opacity-30", children: "No description" }) })
+    /* @__PURE__ */ c.jsx("div", { className: "mt-2 line-clamp-2 text-[1.4rem] font-medium", children: e.description || /* @__PURE__ */ c.jsx("span", { className: "opacity-30", children: "لا يوجد وصف" }) })
       ]
     })
   });
@@ -26620,12 +26620,12 @@ const ga = "OffersResponseType", J2 = vt({
   }, m = (v) => [...v].sort((b, y) => (b.monthly_price ?? 0) - (y.monthly_price ?? 0)), A = [
     {
       id: "active-tiers",
-      title: "Active",
+      title: "نشط",
       contents: /* @__PURE__ */ c.jsx(ul, { tab: "active-tiers", tiers: m(u) })
     },
     {
       id: "archived-tiers",
-      title: "Archived",
+      title: "الأرشيف",
       contents: /* @__PURE__ */ c.jsx(ul, { tab: "archive-tiers", tiers: m(d) })
     }
   ];
@@ -26979,26 +26979,26 @@ const zz = ({ keywords: e }) => {
       /* @__PURE__ */ c.jsxs(cr, {
           isVisible: n(Object.values(Dt).flat()), title: "النمو", children: [
         /* @__PURE__ */ c.jsx(ue, { icon: "heart", keywords: Dt.recommendations, navid: "recommendations", title: "التوصيات", onClick: p }),
-        /* @__PURE__ */ c.jsx(ue, { icon: "emailfield", keywords: Dt.embedSignupForm, navid: "embed-signup-form", title: "Embeddable signup form", onClick: p }),
+        /* @__PURE__ */ c.jsx(ue, { icon: "emailfield", keywords: Dt.embedSignupForm, navid: "embed-signup-form", title: "نموذج اشتراك قابل للتضمين", onClick: p }),
             f && /* @__PURE__ */ c.jsx(ue, { icon: "discount", keywords: Dt.offers, navid: "offers", title: "Offers", onClick: p }),
             f && /* @__PURE__ */ c.jsx(ue, { icon: "piggybank", keywords: Dt.tips, navid: "tips-and-donations", title: "Tips & donations", onClick: p })
           ]
         }),
       /* @__PURE__ */ c.jsxs(cr, {
-          isVisible: n(Object.values(Ct).flat()), title: "Email newsletter", children: [
-        /* @__PURE__ */ c.jsx(ue, { icon: "email-check", keywords: Ct.enableNewsletters, navid: "enable-newsletters", title: "Newsletter sending", onClick: p }),
+          isVisible: n(Object.values(Ct).flat()), title: "النشرة الإخبارية عبر البريد الإلكتروني", children: [
+        /* @__PURE__ */ c.jsx(ue, { icon: "email-check", keywords: Ct.enableNewsletters, navid: "enable-newsletters", title: "إرسال الرسائل الإخبارية", onClick: p }),
             d !== "disabled" && /* @__PURE__ */ c.jsxs(c.Fragment, {
               children: [
-          /* @__PURE__ */ c.jsx(ue, { icon: "recepients", keywords: Ct.defaultRecipients, navid: "default-recipients", title: "Default recipients", onClick: p }),
-          /* @__PURE__ */ c.jsx(ue, { icon: "email", keywords: Ct.newsletters, navid: "newsletters", title: "Newsletters", onClick: p }),
+          /* @__PURE__ */ c.jsx(ue, { icon: "recepients", keywords: Ct.defaultRecipients, navid: "default-recipients", title: "المستلمون الافتراضيون", onClick: p }),
+          /* @__PURE__ */ c.jsx(ue, { icon: "email", keywords: Ct.newsletters, navid: "newsletters", title: "النشرات الإخبارية", onClick: p }),
                 !u.mailgunIsConfigured && /* @__PURE__ */ c.jsx(ue, { icon: "at-sign", keywords: Ct.mailgun, navid: "mailgun", title: "Mailgun settings", onClick: p })
               ]
             })
           ]
         }),
       /* @__PURE__ */ c.jsxs(cr, {
-          isVisible: n(Object.values(st).flat()), title: "Advanced", children: [
-        /* @__PURE__ */ c.jsx(ue, { icon: "modules-3", keywords: st.integrations, navid: "integrations", title: "Integrations", onClick: p }),
+          isVisible: n(Object.values(st).flat()), title: "متقدم", children: [
+        /* @__PURE__ */ c.jsx(ue, { icon: "modules-3", keywords: st.integrations, navid: "integrations", title: "عمليات الدمج", onClick: p }),
         /* @__PURE__ */ c.jsx(ue, { icon: "download", keywords: st.migrationtools, navid: "migration", title: "الاستيراد/التصدير", onClick: p }),
         /* @__PURE__ */ c.jsx(ue, { icon: "brackets", keywords: st.codeInjection, navid: "code-injection", title: "Code injection", onClick: p }),
         /* @__PURE__ */ c.jsx(ue, { icon: "labs-flask", keywords: st.labs, navid: "labs", title: "Labs", onClick: p }),
