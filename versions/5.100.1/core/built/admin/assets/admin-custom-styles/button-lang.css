@@ -1,0 +1,51 @@
+.lang-button {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #8E42FF;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lang-button:hover {
+    background-color: #2b2d2f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lang-button:active {
+    transform: translateY(0);
+}
+
+.lang-button[data-language="ar"] .lang-icon {
+    transform: scaleX(-1);
+}
+
+
+[dir="rtl"] .lang-button {
+    left: 3rem;
+    right: auto;
+}
+
+/* Styles for screens smaller than 500px */
+@media (max-width: 500px) {
+    .lang-button {
+        bottom: 7rem;
+        right: 2rem;
+    }
+
+    [dir="rtl"] .lang-button {
+        left: 2rem;
+    }
+}
