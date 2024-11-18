@@ -59,6 +59,11 @@ body {
 
 }
 
+#done-button-container {
+    left: 0 !important;
+    right: auto !important;
+}
+
 .admin-x-settings .data-\[state\=checked\]\:translate-x-\[14px\][data-state=checked] {
     --tw-translate-x: -14px !important;
 }
