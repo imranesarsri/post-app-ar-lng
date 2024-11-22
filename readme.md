@@ -25,3 +25,18 @@ export const AdminXApp = module.cg;
 
 
 ## Theme
+
+
+
+## Tasks
+- Translates
+  - Translate word 'Posts', 'Post'
+  - Translate placeholder="Page title" => '/editor/page'
+- Delete
+  - Delete download theme => 'settings/design/change-theme'
+  - Delete
+- Create 
+  - Create group links for show all layouts (8 layouts)
+  - Create
+- Documentation
+  - Create Documentation
