@@ -1,15 +1,27 @@
 # ALARABI
 
 ## Dashboard
-### Settings
+- **All the changes I made are in this path:** 'current\core\built\admin\assets'
+- Add folder css style **admin-custom-styles**
+- Add folder translate arabic **translate-arabic**
+- Change files in **admin-x-settings** folder, Any file located in folder 'admin-x-settings' and using './index-f6338b55.mjs':
+  - admin-x-settings.js
+  - CodeEditorView-26137e6e.mjs
+  - index-cdf09c6d.mjs
+  - modals-15249255.mjs
+  - Change it to this
 
-```js
-const lang = document.documentElement.getAttribute('lang');
-const module = await import(lang === 'ar' ? '../translate-arabic/settings-ar.mjs' : './index-f6338b55.mjs');
+  ```js
+  const lang = document.documentElement.getAttribute('lang');
+  const module = await import(lang === 'ar' ? '../translate-arabic/settings-ar.mjs' : './index-f6338b55.mjs');
 
-export const AdminXApp = module.cg;
+  export const AdminXApp = module.cg;
+  ```
+  > [!NOTE]
+  > All files inside folder **admin-x-settings** have different names from one project to another.
 
-```
+
+
 ### Delete button sign up
 - delete this code 
 ```hbs
