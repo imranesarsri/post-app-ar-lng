@@ -5,6 +5,14 @@ collections:
     permalink: /{slug}/
     template: index
 
+  /featured1/:
+    permalink: /{slug}/
+    template: featured1
+
+  /featured2/:
+    permalink: /{slug}/
+    template: featured2
+
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/

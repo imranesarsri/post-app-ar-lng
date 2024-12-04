@@ -25,6 +25,8 @@ export const AdminXApp = module.cg;
 
 
 ## Theme
+- Create **alarabiGoo** Theme
+- 
 
 
 
