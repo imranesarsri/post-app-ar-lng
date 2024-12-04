@@ -23,12 +23,41 @@ export const AdminXApp = module.cg;
 - FIle name : **navigation.hbs** 
 - FIle path : content\themes\alarabiGoo\partials\navigation.hbs
 
+___
 
 ## Theme
-- Create **alarabiGoo** Theme
-- 
+- Use **alarabiGoo** Theme
+- Add **css style** (for fix error and add rtl style)
+  - PATH '\themes\alarabiGoo\assets\built\style-ar.css'
+- Fix error show images after push posts with workflow m8n
+  - Change **feature_image** to **twitter_image**
+  - Change All this pages
+    - archive.hbs
+    - author.hbs
+    - custom-authors.hbs
+    - custom-categories.hbs
+    - custom-post-with-lightbox.hbs
+    - custom-post-with-sidebar-and-lightbox.hbs
+    - custom-post-with-sidebar.hbs
+    - page.hbs
+    - post.hbs
+    - tag.hbs
+- If you want to add page, example 'featured1.hbs' :
+  - Create a **featured1.hbs** file directly inside theme **alarabiGoo**
+  - Open in this file: **routes.yaml**, in this path 'content\settings\routes.yaml'
+  - Add link :
+      ```yaml
+        collections:
+        
+        /featured1/:
+          permalink: /{slug}/
+          template: featured1
+      ```
+  - '/featured1/:' this is route name
+  - 'template: featured1' this is file name
 
 
+___
 
 ## Tasks
 - Translates

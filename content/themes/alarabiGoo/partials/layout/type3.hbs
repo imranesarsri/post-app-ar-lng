@@ -30,7 +30,7 @@
                     {{/match}}
                 {{/get}}
             {{else}}
-                {{#get "posts" limit='5' include="authors,tags" filter="featured:true" as |featuredPosts|}}
+                {{#get "posts" limit='5' include="authors,tags" filter="featured:true,tags:politics" as |featuredPosts|}}
                     {{#match featuredPosts.length "=" 5}}
                         {{#foreach featuredPosts}}
 

@@ -70,7 +70,7 @@
                     {{/match}}
                 {{/get}}
             {{else}}
-                {{#get "posts" limit='10' include="authors,tags" filter="featured:true" as |featuredPosts|}}
+                {{#get "posts" limit='10' include="authors,tags" filter="featured:true,tags:science" as |featuredPosts|}}
                     {{#match featuredPosts.length "=" 10}}
                         {{#foreach featuredPosts}}
 

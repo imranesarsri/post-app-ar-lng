@@ -76,18 +76,18 @@
             {{#foreach posts}}
             <div class="gh-archive-page-post gh-posts-feed-post{{^if tags}} no-tags{{/if}}">
                 <a href={{url}} class="gh-archive-page-post-image-wrapper-link">
-                    {{#if feature_image}}
+                    {{#if twitter_image}}
                     <picture>
-                        <source srcset="{{img_url feature_image size="1000" format="webp" }} 1000w, {{img_url feature_image size="800"
-                            format="webp" }} 800w, {{img_url feature_image size="600" format="webp" }} 600w, {{img_url feature_image
+                        <source srcset="{{img_url twitter_image size="1000" format="webp" }} 1000w, {{img_url twitter_image size="800"
+                            format="webp" }} 800w, {{img_url twitter_image size="600" format="webp" }} 600w, {{img_url twitter_image
                             size="500" format="webp" }} 500w"
                             sizes="(max-width: 550px) 100vw, (max-width: 900px) 48vw, (max-width: 1250px) 31vw, (max-width: 1480px) 22vw, (min-width: 1481px) 332px"
                             type="image/webp">
-                        <img class="gh-archive-page-post-image" srcset="{{img_url feature_image size="1000"}} 1000w, {{img_url
-                            feature_image size="800" }} 800w, {{img_url feature_image size="600" }} 600w, {{img_url feature_image size="500"
+                        <img class="gh-archive-page-post-image" srcset="{{img_url twitter_image size="1000"}} 1000w, {{img_url
+                            twitter_image size="800" }} 800w, {{img_url twitter_image size="600" }} 600w, {{img_url twitter_image size="500"
                             }} 500w"
                             sizes="(max-width: 550px) 100vw, (max-width: 900px) 48vw, (max-width: 1250px) 31vw, (max-width: 1480px) 22vw, (min-width: 1481px) 332px"
-                            src="{{img_url feature_image size="1000"}}" alt="{{title}} {{t "post image"}}" />
+                            src="{{img_url twitter_image size="1000"}}" alt="{{title}} {{t "post image"}}" />
                     </picture>
                     {{else}}
                     <div class="gh-archive-page-post-image-plug">

@@ -3,7 +3,7 @@
         <div class="gh-hero-wrapper gh-hero-wrapper--featured-type-1-2-3">
 
             <div class="gh-features-posts-grid--two-columns">
-                {{#get "posts" limit="3" include="authors,tags" filter="featured:true" as |featuredPosts|}}
+                {{#get "posts" limit="3" include="authors,tags" filter="featured:true,tags:lifestyle" as |featuredPosts|}}
                     {{#match featuredPosts.length "=" 3}}
                         {{#foreach featuredPosts}}
                         {{#if @first}}

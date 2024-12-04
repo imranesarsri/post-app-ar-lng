@@ -54,7 +54,7 @@
                     {{/match}}
                 {{/get}}
             {{else}}
-                {{#get "posts" limit='7' include="authors,tags" filter="featured:true" as |featuredPosts|}}
+                {{#get "posts" limit='7' include="authors,tags" filter="featured:true,tags:tech" as |featuredPosts|}}
                     {{#match featuredPosts.length "=" 7}}
                         {{#foreach featuredPosts}}
 
